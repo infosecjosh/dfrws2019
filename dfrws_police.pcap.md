@@ -16,22 +16,22 @@
 
 |Name|IP(s)| Communicates with...| Subnet Owner | Notes|
 |----|-----|---------------------|--------------|------|
-|    |23.23.78.17 | 10.20.30.23→UDP(33434) | Amazon Inc | |
-|    |23.23.189.37 | 10.20.30.23→UDP(33434,40317,49317) | Amazon Inc | |
-|    |31.13.64.35 | | Facebook | |
-|    |31.13.64.16 | | Facebook | |
-|    |34.224.5.65 | | Amazon Data Services | |
-|    |35.195.59.182 | | Google Cloud | |
-|    |52.46.156.66 | | Amazon Data Services Canada | |
-|    |54.72.123.194 | | Amazon Data Services Ireland | |
-|    |54.152.107.0 | | Amazon Inc | |
-|    |66.135.44.92 | | ServerBeach | |
-|    |72.21.192.213 | | Amazon | _NTP Server?_ |
-|    |130.223.8.20 | | *Lausanne, Switzerland* | DNS |
-|    |144.76.81.240 | | Hetzner Online GmbH | |
-|    |172.217.23.106 | | Google | |
-|    |172.217.16.142 | | Google | |
-|    |216.58.205.174 | | Google | |
-|    |217.147.208.1 | | Nexellent AG (Switzerland) | |
+| ec2-23-23-78-17.compute-1.amazonaws.com   |23.23.78.17 | 10.20.30.23→UDP(33434) | Amazon Inc | |
+| ec2-23-23-189-37.compute-1.amazonaws.com   |23.23.189.37 | 10.20.30.23→UDP(33434,40317,49317) | Amazon Inc | |
+| edge-star-mini-shv-01-amt2.facebook.com   |31.13.64.35 | | Facebook | |
+| edge-star-shv-01-amt2.facebook.com   |31.13.64.16 | | Facebook | |
+| ec2-34-224-5-65.compute-1.amazonaws.com   |34.224.5.65 | | Amazon Data Services | |
+| 182.59.195.35.bc.googleusercontent.com   |35.195.59.182 | | Google Cloud | |
+| _none_   |52.46.156.66 | | Amazon Data Services Canada | |
+| ec2-54-72-123-194.eu-west-1.compute.amazonaws.com   |54.72.123.194 | | Amazon Data Services Ireland | |
+| ec2-54-152-107-0.compute-1.amazonaws.com   |54.152.107.0 | | Amazon Inc | |
+| mdnworldwide.com   |66.135.44.92 | | ServerBeach | |
+| _none_   |72.21.192.213 | | Amazon | _NTP Server?_ |
+| ins1.unil.ch   |130.223.8.20 | | *Lausanne, Switzerland* | DNS |
+| hma.vestiacom.com   |144.76.81.240 | | Hetzner Online GmbH | |
+| mil04s23-in-f10.1e100.net   |172.217.23.106 | | Google | |
+| zrh04s06-in-f142.1e100.net 	   |172.217.16.142 | | Google | |
+| mil04s28-in-f14.1e100.net   |216.58.205.174 | | Google | |
+| ns1.nexellent.net   |217.147.208.1 | | Nexellent AG (Switzerland) | |
 | _multicast_ |239.255.255.250| 10.20.30.1→UDP(1900) | | SSDP NOTIFY (upnp) |
 
