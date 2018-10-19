@@ -26,7 +26,7 @@
 |    |54.72.123.194 | | Amazon Data Services Ireland | |
 |    |54.152.107.0 | | Amazon Inc | |
 |    |66.135.44.92 | | ServerBeach | |
-|    |72.21.192.213 | | Amazon | __NTP Server?_ |
+|    |72.21.192.213 | | Amazon | _NTP Server?_ |
 |    |130.223.8.20 | | *Lausanne, Switzerland* | DNS |
 |    |144.76.81.240 | | Hetzner Online GmbH | |
 |    |172.217.23.106 | | Google | |
