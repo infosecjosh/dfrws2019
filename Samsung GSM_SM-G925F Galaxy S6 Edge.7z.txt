@@ -173,6 +173,6 @@ $ cat diskstats
    8      32 sdc 1 0 8 0 0 0 0 0 0 0 0
  253       0 vnswap0 0 0 0 0 0 0 0 0 0 0 0
 
-
+ sudo mount -o loop,offset=4329570304 /home/joshuacl/Downloads/Samsung/blk0_sda.bin /mnt/Samsung/
   
   
