@@ -26,12 +26,12 @@
 | ec2-54-72-123-194.eu-west-1.compute.amazonaws.com   |54.72.123.194 | Amazon Data Services Ireland | |
 | ec2-54-152-107-0.compute-1.amazonaws.com   |54.152.107.0 | Amazon Inc | |
 | mdnworldwide.com   |66.135.44.92 | ServerBeach | |
-| _none_   |72.21.192.213 | Amazon | _NTP Server?_ |
-| ins1.unil.ch   |130.223.8.20 | *Lausanne, Switzerland* | DNS |
+| _none_   |72.21.192.213 | Amazon | Served NTP to 10.20.30.23 |
+| ins1.unil.ch   |130.223.8.20 | *Lausanne, Switzerland* | DNS for 10.20.30.21 and 10.20.30.15 |
 | hma.vestiacom.com   |144.76.81.240 | Hetzner Online GmbH | |
 | mil04s23-in-f10.1e100.net   |172.217.23.106 | Google | |
 | zrh04s06-in-f142.1e100.net 	   |172.217.16.142 | Google | |
 | mil04s28-in-f14.1e100.net   |216.58.205.174 | Google | |
-| ns1.nexellent.net   |217.147.208.1 | Nexellent AG (Switzerland) | |
+| ns1.nexellent.net   |217.147.208.1 | Nexellent AG (Switzerland) | served NTP to 10.20.30.15 |
 | _multicast_ |239.255.255.250| _none_ | SSDP NOTIFY (upnp) |
 
