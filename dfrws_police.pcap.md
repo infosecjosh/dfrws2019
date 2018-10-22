@@ -2,7 +2,7 @@
 
 |Name|MAC|IP(s)|OUI|Notes|
 |----|---|-----|---|-----|
-|    |b8:27:eb:0e:3b:45|10.20.30.1|Raspberry PI|Gateway|
+|    |b8:27:eb:0e:3b:45|10.20.30.1|Raspberry PI|Gateway, "Pi-Pinapple" according to cellphone Chrome history|
 |    |18:b4:30:61:c9:ef|10.20.30.13|NestLabs| |
 |    |d8:fb:5e:e1:01:92|10.20.30.15| Askey Computer Corp | _most likely QBee camera_ |
 |    |08:02:8e:ff:75:4f|10.20.30.17|Netgear | arlo |
