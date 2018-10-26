@@ -48,14 +48,46 @@ Based on U-Boot settings above:
 | Linux kernel    | BFC40000                | 03840000               | Raw (vmlinux) memory image |
 
 ## How to extract cramfs (plus trailing garbage)
+### First try
 Based on environment variables and inferred flash layout, this was attempted
 `$ dd if=ismart_00.img of=root.cramfs bs=1 skip=0x140000 count=0x3700000`
 
 This results in a zero-length file because `ismart_00.img` is only 8MB (0x800000) in length.
 The count is too long.  This implies that the image does not start at 0xBC400000 and/or kernel is missing from image.
 
-*Second Try*
+### Second Try
+
 Extracting as mucbh as possible (by omitting `count` argument).
 ```
 $dd if=ismart_00.img of=root.cramfs bs=1c skip=0x140000
 ```
+This did not result in a useable cramfs image.
+
+### Look for cramfs signature
+
+```
+$ apt install cramfsprogs
+$ mkdir x
+$ touch x/y.txt
+$ mkcramfs x.cramfs
+$ xxd x.cramfs | head
+00000000: 453d cd28 0010 0000 0300 0000 0000 0000  E=.(............
+00000010: 436f 6d70 7265 7373 6564 2052 4f4d 4653  Compressed ROMFS
+00000020: 41fd 76d9 0000 0000 0000 0000 0200 0000  A.v.............
+00000030: 436f 6d70 7265 7373 6564 0000 0000 0000  Compressed......
+00000040: f841 0000 1400 0087 c004 0000 f881 0000  .A..............
+00000050: 0000 0087 0200 0000 792e 7478 7400 0000  ........y.txt...
+00000060: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+00000070: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+00000080: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+00000090: 0000 0000 0000 0000 0000 0000 0000 0000  ................
+```
+*Note* Format includes signature `Compressed ROMFS`
+Verified by format description at http://formats.kaitai.io/cramfs/index.html
+
+```
+$ grep Compressed ismart_00.img || echo not found
+not found
+```
+
+*Conclusion: `ismart_00.img` does not contain a cramfs filesystem.
