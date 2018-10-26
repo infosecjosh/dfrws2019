@@ -44,5 +44,5 @@ Based on U-Boot settings above:
 | Data Type       | Start CPU address (Hex) | Offset into image file (Hex) | Format |
 |-----------------|-------------------------|------------------------|--------|
 | U-Boot          | BC400000                | 0                      | Boot loader                | 
-| Linux kernel    | BFC40000                | 9000000                | Raw (vmlinux) memory image |
-| Initial Ramdisk | BC540000                | 0200000                | Cramfs |
+| Linux kernel    | BFC40000                | 3840000                | Raw (vmlinux) memory image |
+| Initial Ramdisk | BC540000                | 0140000                | Cramfs |
