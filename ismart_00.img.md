@@ -41,7 +41,7 @@ String Findings:
 
 Based on U-Boot settings above:
 
-| Data Type       | Start CPU address (Hex) | Offset into image file (Hex) | Format |
+| Data Type       | Start CPU address (Hex) | Offset into flash area (Hex) | Format |
 |-----------------|-------------------------|------------------------|--------|
 | U-Boot          | BC400000                | 00000000               | Boot loader                | 
 | Initial Ramdisk | BC540000                | 00140000               | Cramfs |
