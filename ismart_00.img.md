@@ -50,7 +50,9 @@ Based on U-Boot settings above:
 ## Attempts to find/extract cramfs
 ### First try
 Based on environment variables and inferred flash layout, this was attempted
-`$ dd if=ismart_00.img of=root.cramfs bs=1 skip=0x140000 count=0x3700000`
+```bash
+$ dd if=ismart_00.img of=root.cramfs bs=1 skip=0x140000 count=0x3700000
+```
 
 This results in a zero-length file because `ismart_00.img` is only 8MB (0x800000) in length.
 The count is too long.  This implies that the image does not start at 0xBC400000 and/or kernel is missing from image.
@@ -59,7 +61,7 @@ The count is too long.  This implies that the image does not start at 0xBC400000
 
 Extract as much as possible at the target offset (by omitting `count` argument).
 ```
-$dd if=ismart_00.img of=root.cramfs bs=1c skip=0x140000
+$ dd if=ismart_00.img of=root.cramfs bs=1c skip=0x140000
 ```
 This did not result in a useable cramfs image.
 
@@ -69,7 +71,7 @@ This did not result in a useable cramfs image.
 $ apt install cramfsprogs
 $ mkdir x
 $ touch x/y.txt
-$ mkcramfs x.cramfs
+$ mkcramfs x x.cramfs
 $ xxd x.cramfs | head
 00000000: 453d cd28 0010 0000 0300 0000 0000 0000  E=.(............
 00000010: 436f 6d70 7265 7373 6564 2052 4f4d 4653  Compressed ROMFS
