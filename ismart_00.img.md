@@ -55,15 +55,15 @@ Based on environment variables and inferred flash layout, this was attempted
 This results in a zero-length file because `ismart_00.img` is only 8MB (0x800000) in length.
 The count is too long.  This implies that the image does not start at 0xBC400000 and/or kernel is missing from image.
 
-### Second Try
+### Second Try -- allow for smaller file
 
-Extracting as mucbh as possible (by omitting `count` argument).
+Extract as much as possible at the target offset (by omitting `count` argument).
 ```
 $dd if=ismart_00.img of=root.cramfs bs=1c skip=0x140000
 ```
 This did not result in a useable cramfs image.
 
-### Look for cramfs signature
+### Third try -- Look for cramfs signature
 
 ```
 $ apt install cramfsprogs
@@ -90,4 +90,4 @@ $ grep Compressed ismart_00.img || echo not found
 not found
 ```
 
-*Conclusion: `ismart_00.img` does not contain a cramfs filesystem.
+*Conclusion: `ismart_00.img` does not contain a cramfs filesystem.*
