@@ -47,7 +47,7 @@ Based on U-Boot settings above:
 | Initial Ramdisk | BC540000                | 00140000               | Cramfs |
 | Linux kernel    | BFC40000                | 03840000               | Raw (vmlinux) memory image |
 
-## How to extract cramfs (plus trailing garbage)
+## Attempts to find/extract cramfs
 ### First try
 Based on environment variables and inferred flash layout, this was attempted
 `$ dd if=ismart_00.img of=root.cramfs bs=1 skip=0x140000 count=0x3700000`
