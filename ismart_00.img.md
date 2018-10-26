@@ -37,3 +37,12 @@ String Findings:
 |u_fs=era bc540000 bc83ffff;cp.b 8A100000 BC540000 $(filesize) | erases flash from bc540000 through bc83ffff, then copies cramfs to b5c40000 |
 |test_tftp=tftp 8A100000 root.cramfs;run test_tftp | Loads the cramfs over and over, apparently to test tftp |
 
+## Flash Layout
+
+Based on U-Boot settings above:
+
+| Data Type       | Start CPU address (Hex) | Offset into image file (Hex) | Format |
+|-----------------|-------------------------|------------------------|--------|
+| U-Boot          | BC400000                | 0                      | Boot loader                | 
+| Linux kernel    | BFC40000                | 9000000                | Raw (vmlinux) memory image |
+| Initial Ramdisk | BC540000                | 0200000                | Cramfs |
