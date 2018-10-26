@@ -32,8 +32,8 @@ String Findings:
 |kernel_addr=BFC40000 | starting address of raw kernel address. Should be an offset into flash segment |
 |u-boot=u-boot.bin |  The name of the u-boot binary, which was/is flashed onto SPI Flash |
 |load=tftp 8A100000 $(u-boot) | Command that loads the u-boot binary into RAM |
-|u_b=protect off 1:0-1;era 1:0-1;cp.b 8A100000 BC400000 $(filesize) | disables flash write protection, then copies u-boot.bin from RAM into Flash |
+|u_b=protect off 1:0-1;era 1:0-1;cp.b 8A100000 BC400000 $(filesize) | disables flash write protection, erases entire flash segment, then copies u-boot.bin from RAM into Flash |
 |loadfs=tftp 8A100000 root.cramfs | loads the cramfs filesystem into RAM from a TFTP server |
-|u_fs=era bc540000 bc83ffff;cp.b 8A100000 BC540000 $(filesize) |
+|u_fs=era bc540000 bc83ffff;cp.b 8A100000 BC540000 $(filesize) | erases flash from bc540000 through bc83ffff, then copies cramfs to b5c40000 |
 |test_tftp=tftp 8A100000 root.cramfs;run test_tftp | Loads the cramfs over and over, apparently to test tftp |
 
