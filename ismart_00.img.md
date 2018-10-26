@@ -11,7 +11,7 @@ Files ismart_00.img and ismart_80.img are identical
 ASCII Strings inspected using `strings ismart_00.img | less`
 
 String Findings:
-   * File appears to be a `SPI Flash Image`
+   * ~File appears to be a `SPI Flash Image`~ _string was in the image, but challenge description indicates this is a memory image~
    * Contains a U-Boot boot loader, version 1.1.3: `U-Boot 1.1.3 (Apr 28 2013 - 17:57:40)`
    * Contains a block of u-boot environment variables (next section)
 
