@@ -43,6 +43,10 @@ Based on U-Boot settings above:
 
 | Data Type       | Start CPU address (Hex) | Offset into image file (Hex) | Format |
 |-----------------|-------------------------|------------------------|--------|
-| U-Boot          | BC400000                | 0                      | Boot loader                | 
-| Linux kernel    | BFC40000                | 3840000                | Raw (vmlinux) memory image |
-| Initial Ramdisk | BC540000                | 0140000                | Cramfs |
+| U-Boot          | BC400000                | 00000000               | Boot loader                | 
+| Initial Ramdisk | BC540000                | 00140000               | Cramfs |
+| Linux kernel    | BFC40000                | 03840000               | Raw (vmlinux) memory image |
+
+## Command to extract cramfs (plus trailing garbage)
+Based on environment variables and inferred flash layout, this was attempted
+`$ dd if=ismart_00.img of=root.cramfs bs=1 skip=0x140000`
