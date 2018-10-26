@@ -94,7 +94,8 @@ not found
 
 ## No cramfs.  Why?
 
-Re-reading the challenge details:
-| The digital forensic specialist preserves the diagnostic logs from the iSmartAlarm base station, and acquires a copy of the filesystem of the WinkHub. He also collects the iSmartAlarm and Arlo base stations to perform an in-depth analysis at the forensic laboratory.
+Re-reading the [challenge details](https://github.com/dfrws/dfrws2018-challenge/blob/master/challenge-details):
+
+> The digital forensic specialist preserves the diagnostic logs from the iSmartAlarm base station, and acquires a copy of the filesystem of the WinkHub. He also collects the iSmartAlarm and Arlo base stations to perform an in-depth analysis at the forensic laboratory.
 
 So these are probably memory images taken while u-boot is running -- not flash images.  Still, only 8MB were collected, which is probably smaller than the Cube's full RAM.
