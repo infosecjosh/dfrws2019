@@ -1,4 +1,4 @@
-## Comparison of ismart_00.img and ismart_80.md
+## Comparison of ismart_00.img and ismart_80.img
 
 The two files are identical
 ```bash
