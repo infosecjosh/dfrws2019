@@ -1,21 +1,22 @@
 # Overview
 
-This repository is our team's work toward the [DFRWS Challenge 2018](https://www.dfrws.org/dfrws-forensic-challenge).
+This repository is our team's work toward DFRWS Challenge 2018
 
-The challenge repository is located [here](https://github.com/dfrws/dfrws2018-challenge/)
-
-Artifacts are located [here](https://drive.google.com/drive/folders/17szABuOp3wEI9FAWsx5Q4ThAtjPecm4Q?usp=sharing)
+## URLs
+   * [Challenge annoncement page](https://www.dfrws.org/dfrws-forensic-challenge)
+   * [challenge github repo](https://github.com/dfrws/dfrws2018-challenge/)
+   * [challenge artifacts on github](https://drive.google.com/drive/folders/17szABuOp3wEI9FAWsx5Q4ThAtjPecm4Q?usp=sharing)
 
 # Challenge details
 
 ![drug lab floorplan](https://raw.githubusercontent.com/dfrws/dfrws2018-challenge/master/DFRWS2018-IoT-ForensicChallengeDiagram.png)
 
-```
-DFRWS 2018 Challenge Details
 
-SUBMISSION DEADLINE: Mar. 20, 2019
+## DFRWS 2018 Challenge Details
 
-SCENARIO
+**SUBMISSION DEADLINE: Mar. 20, 2019**
+
+### SCENARIO
 On 17 May 2018 at 10:40, the police were alerted that an illegal drug lab was invaded and unsuccessfully set on fire. The police respond promptly, and a forensic team is on scene at 10:45, including a digital forensic specialist.
 
 The owner the illegal drug lab, Jessie Pinkman, is nowhere to be found. Police interrogate two of Jessie Pinkman’s known associates: D. Pandana and S. Varga. Pandana and Verga admit having access to the drug lab’s WiFi network but deny any involvement in the raid. They also say that Jessie Pinkman’s had the IoT security systems installed because he feared attacks from a rival gang and that Jessie kept the alarm engaged in “Home” mode whenever he was inside the drug lab.
@@ -32,7 +33,7 @@ Back at the forensic laboratory, the digital forensic specialist uses the bootlo
 
 Jessie Pinkman's Samsung Galaxy Edge S6 is found at the scene, likely dropped during the raid. The digital forensic specialist acquires a physical image of this Samsung device.
 
-CHALLENGE QUESTIONS
+### CHALLENGE QUESTIONS
 The Attorney General needs answers to the following questions:
 
  + At what time was the illegal drug lab raided?
@@ -52,7 +53,7 @@ This DFRWS IoT Forensic Challenge aspires to motivate new approaches to forensic
 	4.	Evaluating and Expressing Conclusions: Assigning the probability of the results given two competing propositions (e.g. The prime suspect committed the offense, versus some unknown person did).
 
 
-CHALLENGE DATA
+### CHALLENGE DATA
 
 Available for download: 
   GDrive: https://drive.google.com/drive/folders/17szABuOp3wEI9FAWsx5Q4ThAtjPecm4Q?usp=sharing
@@ -114,4 +115,3 @@ Contestants may enter individually, or as a team, with no restrictions.
 ACKNOWLEDGEMENTS
 
 The DFRWS would like to thank Francesco Servida and Eoghan Casey at the School of Criminal Sciences at University of Lausanne for creating this Forensic Challenge in coordination with DFRWS.
-```
