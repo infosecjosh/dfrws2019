@@ -1,0 +1,16 @@
+# Generated via:
+#    sed -e '1,$s/[^/]*$//' userdata_pictures.txt  | sort -u
+
+/mnt/userdata/data/com.amazon.dee.app/cache/image_cache/v2.ols100.1/15/
+/mnt/userdata/data/com.amazon.dee.app/cache/image_manager_disk_cache/
+/mnt/userdata/data/com.android.chrome/app_chrome/Default/
+/mnt/userdata/data/com.android.chrome/app_chrome/Default/Search Logo/
+/mnt/userdata/data/com.google.android.gm/cache/jpinkman2018@gmail.com/
+/mnt/userdata/data/com.google.android.gms/files/images/people-cover-photos/jpinkman2018@gmail.com/~3/c5dqxl-2uHZ82ah9p7yxrVF1ZssrJNSV_15Nu0TUZwzCWqmtoLxCUJgEzLGtxsrJ6-v6R6rKU_-FYm881TTiMCJ_=/
+/mnt/userdata/data/com.microsoft.office.onenote/files/data/
+/mnt/userdata/data/com.netgear.android/cache/cams/
+/mnt/userdata/data/com.netgear.android/cache/http/
+/mnt/userdata/data/com.netgear.android/cache/thumbs/
+/mnt/userdata/data/com.netgear.android/files/
+/mnt/userdata/data/com.quirky.android.wink.wink/cache/image_manager_disk_cache/
+/mnt/userdata/data/com.sec.android.app.music/custom_image/
