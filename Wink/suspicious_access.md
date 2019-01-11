@@ -263,6 +263,7 @@ The user:
 
 ### Inspection of `/root/.ash_history`
 
+```
 # cat root/.ash_history 
 ls
 cd /
