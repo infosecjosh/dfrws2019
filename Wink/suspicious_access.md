@@ -309,4 +309,21 @@ This user:
    5. Edits `/var/log/all.log` (aka `/tmp/all.log`)
    6. Inspects (possibly copies) `/.ssh/authorized_keys`... which does not exist in the current image
    7. Reviews system logs again
-   
+
+## Where else does `fluffy` appear in our artifacts?
+
+```
+$ sudo find . -type f -print0 | sudo xargs -0 grep -i fluffy
+[sudo] password for sift: 
+./wink/fs/database/authorized_keys:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDfsxSzezIJ89i98gO9HxfKAdJnX1bHx3j8v/QSD8hXZPOXKUy9/TMSz1dwRTj3jbFZMn5B6W1NoeXc1ZrgmRBBX5wEDXJYNEnAP59Y4znTx4RwD08DtLzbeRcyDyFk11ve4AW6Li9hkC+v50wYx5XED4hv2JUUQo9F0jgFKRXvI9a1u+3uXIHiNB3xGVmM7jbMnCB3JUxpwvKt2WNdJQeXZj82TsBCuAtWycF2LbZv/FdZpMZCS6GsORSDoyQz/trXt7ubhTT75I7Xp0TglArGgcwCg60ydohVH7mBEXzQ4EBC/Y05wCFSgGnSHnuYSxCiiDzu43pAWyxV35IGjuWh fluffy@hogwarts
+./wink/fs/database_default/db_backup/authorized_keys:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDfsxSzezIJ89i98gO9HxfKAdJnX1bHx3j8v/QSD8hXZPOXKUy9/TMSz1dwRTj3jbFZMn5B6W1NoeXc1ZrgmRBBX5wEDXJYNEnAP59Y4znTx4RwD08DtLzbeRcyDyFk11ve4AW6Li9hkC+v50wYx5XED4hv2JUUQo9F0jgFKRXvI9a1u+3uXIHiNB3xGVmM7jbMnCB3JUxpwvKt2WNdJQeXZj82TsBCuAtWycF2LbZv/FdZpMZCS6GsORSDoyQz/trXt7ubhTT75I7Xp0TglArGgcwCg60ydohVH7mBEXzQ4EBC/Y05wCFSgGnSHnuYSxCiiDzu43pAWyxV35IGjuWh fluffy@hogwarts
+./wink/fs/root/.ssh/authorized_keys:ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDfsxSzezIJ89i98gO9HxfKAdJnX1bHx3j8v/QSD8hXZPOXKUy9/TMSz1dwRTj3jbFZMn5B6W1NoeXc1ZrgmRBBX5wEDXJYNEnAP59Y4znTx4RwD08DtLzbeRcyDyFk11ve4AW6Li9hkC+v50wYx5XED4hv2JUUQo9F0jgFKRXvI9a1u+3uXIHiNB3xGVmM7jbMnCB3JUxpwvKt2WNdJQeXZj82TsBCuAtWycF2LbZv/FdZpMZCS6GsORSDoyQz/trXt7ubhTT75I7Xp0TglArGgcwCg60ydohVH7mBEXzQ4EBC/Y05wCFSgGnSHnuYSxCiiDzu43pAWyxV35IGjuWh fluffy@hogwarts
+Binary file ./arlo/dfrws_arlo.img matches
+Binary file ./samsung/blk0_sda.bin matches
+```
+
+The `fluffy@hogwarts` key appears in the wink `/database` and `/database_default/db_backup` directories, which implies it was injected onto the device using the backup/restore tools.
+
+# TODO
+
+Investigate appearances of `fluffy` in the Arlo and Samsung images.
