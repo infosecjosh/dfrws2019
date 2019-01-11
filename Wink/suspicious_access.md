@@ -328,3 +328,6 @@ The `fluffy@hogwarts` key appears in the wink `/database` and `/database_default
 # TODO
 
 Investigate appearances of `fluffy` in the Arlo and Samsung images.
+
+Investigate http://www.dial-multiscreen.org/
+   * SSDP traffic referencing dial-multiscreen-org appears in proximity to `Fluffy` in `dfrws_arlo.img`
