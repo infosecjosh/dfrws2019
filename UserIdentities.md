@@ -1,5 +1,14 @@
 # User identities and associations
 
+## ISmartAlarm ids
+
+| User | Most Likely Identity | Related accounts/identities | Notes |
+| - | - | - |
+| JPinkman | Jessie Pinkman | jpinkman2018@gmail.com | |
+| TheBoss | S. Varga | | _associated with Varga by process of elimination_ |
+| pandadodu | D. Pandana | _associated with Pandana due to name similarity_ ||
+
+
 ## fluffy
 
    * `fluffy@hogwarts` ssh key on Wink device.  Logged in as root from `172.21.94.4`
