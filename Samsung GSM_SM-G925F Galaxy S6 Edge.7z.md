@@ -1,28 +1,60 @@
-Physical extraction of Jessie Pinkman’s Samsung phone
+# Physical extraction of Jessie Pinkman’s Samsung phone
+  
   File/Folder: Samsung GSM_SM-G925F Galaxy S6 Edge.7z
   SHA256: ae83b8ec1d4338f6c4e0a312e73d7b410904fab504f7510723362efe6186b757
   
-  1) download image
-  2) verify hash
-  ae83b8ec1d4338f6c4e0a312e73d7b410904fab504f7510723362efe6186b757  Samsung GSM_SM-G925F Galaxy S6 Edge.7z
-  
-3) extract 7z
+## Download and verify the integrity of downloaded artifact
 
-4) ls contents
-$ ls
+First we downloaded and verified the integrity of the downloaded artifact to the SHA256 hash provided by the challenge.
+```
+# sha256sum Samsung\ GSM_SM-G925F\ Galaxy\ S6\ Edge.7z 
+ae83b8ec1d4338f6c4e0a312e73d7b410904fab504f7510723362efe6186b757  Samsung GSM_SM-G925F Galaxy S6 Edge.7z
+```
+
+Then we extracted the large 7zip file.
+
+```
+# mkdir samsung_galaxy_s6
+# 7z x Samsung\ GSM_SM-G925F\ Galaxy\ S6\ Edge.7z -osamsung_s6/
+
+7-Zip [64] 9.20  Copyright (c) 1999-2010 Igor Pavlov  2010-11-18
+p7zip Version 9.20 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,2 CPUs)
+
+Processing archive: Samsung GSM_SM-G925F Galaxy S6 Edge.7z
+
+
+Extracting  blk0_sda.bin
+Extracting  blk16_sdb.bin
+Extracting  blk32_sdc.bin
+Extracting  procdata.zip
+
+Everything is Ok
+
+Files: 4
+Size:       31999719108
+Compressed: 7109827923
+
+```
+Then we listed the contents of the file
+
+```
+# ls samsung_s6
 blk0_sda.bin  blk16_sdb.bin  blk32_sdc.bin  procdata.zip
+```
 
-5) run file against conten
+Then we ran file against the contents to attempt to determine the filetypes.
 
-$ file *
+```
+# file *
 blk0_sda.bin:  DOS/MBR boot sector; partition 1 : ID=0xee, start-CHS (0x0,0,0), end-CHS (0x0,0,0), startsector 1, 7810047 sectors, extended partition table (last)
 blk16_sdb.bin: data
 blk32_sdc.bin: data
 procdata.zip:  Zip archive data, at least v2.0 to extract
+```
 
 
 
-5) run mmls against contents
+run mmls against contents
 $ mmls blk0_sda.bin
 GUID Partition Table (EFI)
 Offset Sector: 0
