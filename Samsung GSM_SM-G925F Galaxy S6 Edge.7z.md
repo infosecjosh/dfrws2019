@@ -35,7 +35,7 @@ Size:       31999719108
 Compressed: 7109827923
 
 ```
-Then we listed the contents of the file
+Then we listed the extracted files.
 
 ```
 # ls samsung_s6
@@ -53,6 +53,7 @@ procdata.zip:  Zip archive data, at least v2.0 to extract
 ```
 
 
+Then for each of the blk* files we ran the mmls command to display the partition layout of a volume system.  
 
 run mmls against contents
 ```
@@ -181,6 +182,7 @@ tmpfs /storage tmpfs rw,seclabel,relatime,size=1371712k,nr_inodes=342928,mode=75
 /data/media /mnt/runtime/read/emulated sdcardfs rw,seclabel,nosuid,nodev,noexec,relatime,low_uid=1023,low_gid=1023,gid=9997,multi_user,mask=0027,reserved=20MB 0 0
 /data/media /mnt/runtime/write/emulated sdcardfs rw,seclabel,nosuid,nodev,noexec,relatime,low_uid=1023,low_gid=1023,gid=9997,multi_user,mask=0007,reserved=20MB 0 0
 ```
+
 ```
 $ cat diskstats
    1       0 ram0 0 0 0 0 0 0 0 0 0 0 0
@@ -245,8 +247,8 @@ not the best way to do this
   "SuperLab Tabletting Camera"
 
 found a lot in the Chrome sqlite3 db
-  
-  INSERT INTO "urls" VALUES(1,'https://inbox.google.com/accounts/SetOSID?authuser=0&continue=https%3A%2F%2Finbox.google.com%2F%3Fpli%3D1&osidt=ALWU2cuzXI8vadmxJJkzpn2ArZ6rTOMW63fT9spEisIFAuNHFBl_nGyns5Uv1S2TleaGGJY6HYgfc9VMYN67A5-ms9-eK4xS_KoFhwNzmtMWYjOKFkmebLFs3Ari8tCm7Kbk2adYtJ8u','Inbox – jpinkman2018@gmail.com',1,0,13165668726083260,0);
+
+INSERT INTO "urls" VALUES(1,'https://inbox.google.com/accounts/SetOSID?authuser=0&continue=https%3A%2F%2Finbox.google.com%2F%3Fpli%3D1&osidt=ALWU2cuzXI8vadmxJJkzpn2ArZ6rTOMW63fT9spEisIFAuNHFBl_nGyns5Uv1S2TleaGGJY6HYgfc9VMYN67A5-ms9-eK4xS_KoFhwNzmtMWYjOKFkmebLFs3Ari8tCm7Kbk2adYtJ8u','Inbox – jpinkman2018@gmail.com',1,0,13165668726083260,0);
 INSERT INTO "urls" VALUES(2,'https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://inbox.google.com/&followup=https://inbox.google.com/&authuser=0','Inbox – jpinkman2018@gmail.com',1,0,13165668726083260,0);
 INSERT INTO "urls" VALUES(3,'https://alexa.amazon.com/?openid.assoc_handle=amzn_dp_project_dee&aToken=Atza%7CIwEBIIo1qQmNeh1tckOQMNJw2UWhwTlcdMnCwqsat7buVIO9Z8ovh1hva51ZZSOqcDhEjoqPs7VrqxZDVGZMQBEOG-pJPeYKudyn5fV3_c9_CWEx2E1--jvCaMpLU3_dpcWesP7FWfKjJbaQ6md579RDvG-dQ3lIzWI1kUDH1pppIibn1Q0zCOzDo9eS0CB2KaOyKV3H7hAzIfGsQyfvI74y_VT1XCbiqPTP341EvX98vGpm9wFub22VWinIPquikUVCUbV2rNfejJ1ch_JfAtVN2E5xNK-8R2b388xZxCjueCi_PEdRCyzBjXkFAseb-pWQ9XywTTRpa_yd07x12m5bv5z8E_uAqajLv-eV6yQmlYK1i9uGuKZ8OVI7xoV94A1_qTU68Oek_6XMq6jdnGfFcRYG&openid.claimed_id=https%3A%2F%2Fwww.amazon.com%2Fap%2Fid%2Famzn1.account.AGGMG4DRSURCQ7QT4TCLAINUZT2Q&openid.identity=https%3A%2F%2Fwww.amazon.com%2Fap%2Fid%2Famzn1.account.AGGMG4DRSURCQ7QT4TCLAINUZT2Q&openid.mode=id_res&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.op_endpoint=https%3A%2F%2Fwww.amazon.com%2Fap%2Fsignin&openid.response_nonce=2018-03-27T08%3A26%3A39Z-6673743547905493514&openid.return_to=https%3A%2F%2Falexa.amazon.com%2F&openid.signed=assoc_handle%2CaToken%2Cclaimed_id%2Cidentity%2Cmode%2Cns%2Cop_endpoint%2Cresponse_nonce%2Creturn_to%2Cns.pape%2Cpape.auth_policies%2Cpape.auth_time%2Csigned&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.auth_policies=http%3A%2F%2Fschemas.openid.net%2Fpape%2Fpolicies%2F2007%2F06%2Fnone&openid.pape.auth_time=2018-03-27T08%3A26%3A39Z&openid.sig=TMLVwLuyUWnOzHYVRJoxO4s7MD%2Bujs5iMuVYF%2BTDnD0%3D&serial=&','Amazon Alexa',1,0,13166612808855851,0);
 INSERT INTO "urls" VALUES(4,'https://alexa.amazon.de/spa/index.html','Amazon Anmelden',1,0,13166613117577335,0);
