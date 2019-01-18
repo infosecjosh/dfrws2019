@@ -55,6 +55,7 @@ procdata.zip:  Zip archive data, at least v2.0 to extract
 
 
 run mmls against contents
+```
 $ mmls blk0_sda.bin
 GUID Partition Table (EFI)
 Offset Sector: 0
@@ -84,17 +85,39 @@ Units are in 4096-byte sectors
 020:  016       0001044224   0001057023   0000012800   HIDDEN
 021:  017       0001057024   0007808255   0006751232   USERDATA
 022:  -------   0007808256   0007810047   0000001792   Unallocated
+```
 
-joshuacl@instance-1 -> ~/D/Samsung
+```
 $ mmls blk16_sdb.bin
 Cannot determine partition type
-joshuacl@instance-1 -> ~/D/Samsung
+```
+```
 $ mmls blk32_sdc.bin
 Cannot determine partition type
+```
 
-4) unzip procdata.zip
-joshuacl@instance-1 -> ~/D/Samsung
-$ unzip procdata.zip -d procdata
+```
+# 7z x Samsung\ GSM_SM-G925F\ Galaxy\ S6\ Edge.7z -osamsung_s6/
+
+7-Zip [64] 9.20  Copyright (c) 1999-2010 Igor Pavlov  2010-11-18
+p7zip Version 9.20 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,2 CPUs)
+
+Processing archive: Samsung GSM_SM-G925F Galaxy S6 Edge.7z
+
+
+Extracting  blk0_sda.bin
+Extracting  blk16_sdb.bin
+Extracting  blk32_sdc.bin
+Extracting  procdata.zip
+
+Everything is Ok
+
+Files: 4
+Size:       31999719108
+Compressed: 7109827923
+
+```
+# unzip procdata.zip -d procdata
 Archive:  procdata.zip
  extracting: procdata/partitions
  extracting: procdata/mounts
@@ -105,10 +128,9 @@ Archive:  procdata.zip
  extracting: procdata/radio
  extracting: procdata/events
 
-
-  5) display files from procdata.zip
-  
-  $ cat cpuinfo
+```
+```
+# cat cpuinfo
 Processor       : AArch64 Processor rev 0 (aarch64)
 processor       : 0
 processor       : 1
@@ -126,8 +148,10 @@ CPU part        : 0xd07
 CPU revision    : 0
 
 Hardware        : SAMSUNG Exynos7420
+```
 
-$ cat mounts
+```
+# cat mounts
 rootfs / rootfs ro,seclabel 0 0
 tmpfs /dev tmpfs rw,seclabel,nosuid,relatime,size=1371712k,nr_inodes=342928,mode=755 0 0
 devpts /dev/pts devpts rw,seclabel,relatime,mode=600 0 0
@@ -156,7 +180,8 @@ tmpfs /storage tmpfs rw,seclabel,relatime,size=1371712k,nr_inodes=342928,mode=75
 /data/media /storage/emulated sdcardfs rw,seclabel,nosuid,nodev,noexec,relatime,low_uid=1023,low_gid=1023,gid=1015,multi_user,mask=0006,reserved=20MB 0 0
 /data/media /mnt/runtime/read/emulated sdcardfs rw,seclabel,nosuid,nodev,noexec,relatime,low_uid=1023,low_gid=1023,gid=9997,multi_user,mask=0027,reserved=20MB 0 0
 /data/media /mnt/runtime/write/emulated sdcardfs rw,seclabel,nosuid,nodev,noexec,relatime,low_uid=1023,low_gid=1023,gid=9997,multi_user,mask=0007,reserved=20MB 0 0
-
+```
+```
 $ cat diskstats
    1       0 ram0 0 0 0 0 0 0 0 0 0 0 0
    1       1 ram1 0 0 0 0 0 0 0 0 0 0 0
@@ -204,9 +229,16 @@ $ cat diskstats
    8      16 sdb 1 0 8 0 0 0 0 0 0 0 0
    8      32 sdc 1 0 8 0 0 0 0 0 0 0 0
  253       0 vnswap0 0 0 0 0 0 0 0 0 0 0 0
+```
 
+not the best way to do this
+
+```
  sudo mount -o loop,offset=4329570304 /home/joshuacl/Downloads/Samsung/blk0_sda.bin /mnt/Samsung/
-  
+```
+
+
+
   need to look more into wink databaes files /mnt/Samsung/data/com.quirky.android.wink.wink/databases/persistenceDB
   
   "SuperLab Kitchen Nest Protect (LabSmoker)""
