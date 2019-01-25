@@ -11,8 +11,8 @@
 |    |ac:5f:3e:73:e3:78|10.20.30.21| Samsung | |
 | flex-dvt |b4:79:a7:25:02:fa|10.20.30.22| Samsung | wink |
 |    | 74:75:48:96:23:24 | 10.20.30.23 | Amazon Technologies | _amazon echo?_ |
-| Cthulhuuuu''s iPhone | a6:f1:e8:08:25:d7 | <unknown> | _not in pcap but present in Samsung wifi logs_ |
-|    | a6:f1:e8:80:85:64 | 172.20.10.1 | recorded in tv.peel.app database on Samsung phone |
+| Cthulhuuuu''s iPhone | a6:f1:e8:08:25:d7 | <unknown> | | _not in pcap but present in Samsung wifi logs_ |
+|    | a6:f1:e8:80:85:64 | 172.20.10.1 | | recorded in tv.peel.app database on Samsung phone |
 
 # WAN Hosts
 
