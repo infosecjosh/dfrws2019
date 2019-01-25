@@ -251,6 +251,7 @@ not the best way to do this
 
 found a lot in the Chrome sqlite3 db
 
+```
 INSERT INTO "urls" VALUES(1,'https://inbox.google.com/accounts/SetOSID?authuser=0&continue=https%3A%2F%2Finbox.google.com%2F%3Fpli%3D1&osidt=ALWU2cuzXI8vadmxJJkzpn2ArZ6rTOMW63fT9spEisIFAuNHFBl_nGyns5Uv1S2TleaGGJY6HYgfc9VMYN67A5-ms9-eK4xS_KoFhwNzmtMWYjOKFkmebLFs3Ari8tCm7Kbk2adYtJ8u','Inbox – jpinkman2018@gmail.com',1,0,13165668726083260,0);
 INSERT INTO "urls" VALUES(2,'https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://inbox.google.com/&followup=https://inbox.google.com/&authuser=0','Inbox – jpinkman2018@gmail.com',1,0,13165668726083260,0);
 INSERT INTO "urls" VALUES(3,'https://alexa.amazon.com/?openid.assoc_handle=amzn_dp_project_dee&aToken=Atza%7CIwEBIIo1qQmNeh1tckOQMNJw2UWhwTlcdMnCwqsat7buVIO9Z8ovh1hva51ZZSOqcDhEjoqPs7VrqxZDVGZMQBEOG-pJPeYKudyn5fV3_c9_CWEx2E1--jvCaMpLU3_dpcWesP7FWfKjJbaQ6md579RDvG-dQ3lIzWI1kUDH1pppIibn1Q0zCOzDo9eS0CB2KaOyKV3H7hAzIfGsQyfvI74y_VT1XCbiqPTP341EvX98vGpm9wFub22VWinIPquikUVCUbV2rNfejJ1ch_JfAtVN2E5xNK-8R2b388xZxCjueCi_PEdRCyzBjXkFAseb-pWQ9XywTTRpa_yd07x12m5bv5z8E_uAqajLv-eV6yQmlYK1i9uGuKZ8OVI7xoV94A1_qTU68Oek_6XMq6jdnGfFcRYG&openid.claimed_id=https%3A%2F%2Fwww.amazon.com%2Fap%2Fid%2Famzn1.account.AGGMG4DRSURCQ7QT4TCLAINUZT2Q&openid.identity=https%3A%2F%2Fwww.amazon.com%2Fap%2Fid%2Famzn1.account.AGGMG4DRSURCQ7QT4TCLAINUZT2Q&openid.mode=id_res&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.op_endpoint=https%3A%2F%2Fwww.amazon.com%2Fap%2Fsignin&openid.response_nonce=2018-03-27T08%3A26%3A39Z-6673743547905493514&openid.return_to=https%3A%2F%2Falexa.amazon.com%2F&openid.signed=assoc_handle%2CaToken%2Cclaimed_id%2Cidentity%2Cmode%2Cns%2Cop_endpoint%2Cresponse_nonce%2Creturn_to%2Cns.pape%2Cpape.auth_policies%2Cpape.auth_time%2Csigned&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.auth_policies=http%3A%2F%2Fschemas.openid.net%2Fpape%2Fpolicies%2F2007%2F06%2Fnone&openid.pape.auth_time=2018-03-27T08%3A26%3A39Z&openid.sig=TMLVwLuyUWnOzHYVRJoxO4s7MD%2Bujs5iMuVYF%2BTDnD0%3D&serial=&','Amazon Alexa',1,0,13166612808855851,0);
@@ -302,5 +303,5 @@ INSERT INTO "urls" VALUES(48,'https://m.apkpure.com/search?q=Alexa','Alexa searc
 INSERT INTO "urls" VALUES(49,'https://m.apkpure.com/amazon-alexa/com.amazon.dee.app','Amazon Alexa APK Download - Free Music & Audio APP for Android | APKPure.com',1,0,13170856558095383,0);
 INSERT INTO "urls" VALUES(50,'https://m.apkpure.com/amazon-alexa/com.amazon.dee.app/download?from=details','Download Amazon Alexa 2.2.208186.0 APK | APKPure.com',1,0,13170856560903504,0);
 DELETE FROM sqlite_sequence;
-
+```
   
