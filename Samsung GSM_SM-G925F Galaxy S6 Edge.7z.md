@@ -11,7 +11,9 @@ First we downloaded and verified the integrity of the downloaded artifact to the
 ae83b8ec1d4338f6c4e0a312e73d7b410904fab504f7510723362efe6186b757  Samsung GSM_SM-G925F Galaxy S6 Edge.7z
 ```
 
-Then we extracted the large 7zip file.
+## Extract the 7zip file contents for analysis
+
+During the next step we extracted the compressed 7zip file and began looking at its contents.
 
 ```
 # mkdir samsung_galaxy_s6
