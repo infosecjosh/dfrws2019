@@ -305,3 +305,29 @@ INSERT INTO "urls" VALUES(50,'https://m.apkpure.com/amazon-alexa/com.amazon.dee.
 DELETE FROM sqlite_sequence;
 ```
   
+  
+```  
+root@siftworkstation -> /m/samsung 
+# find . -name *download*
+./media/0/Android/data/com.google.android.googlequicksearchbox/files/download_cache
+./media/0/Android/data/flipboard.boxer.app/files/image-download-cache
+./media/0/Android/data/com.android.providers.downloads
+./media/0/Android/data/com.google.android.tts/files/download_cache
+./data/com.google.android.configupdater/files/downloads
+./data/com.android.providers.downloads
+./data/com.android.providers.downloads/cache/downloadfile.bin
+./data/com.android.providers.downloads/databases/downloads.db
+./data/com.android.providers.downloads/databases/downloads.db-journal
+./data/com.google.android.gms/cache/downloadservice
+./data/com.google.android.gms/databases/downloads.db
+./data/com.google.android.gms/databases/downloads.db-journal
+./data/com.google.android.gms/app_download
+./data/com.facebook.appmanager/databases/file_downloader
+./data/com.facebook.appmanager/databases/file_downloader-journal
+./data/com.facebook.appmanager/databases/downloads.db
+./data/com.facebook.appmanager/databases/downloads.db-journal
+./data/com.instagram.android/app_downloaded_modules
+./data/com.facebook.katana/lib-xzs/libdownloadservice-jni.so
+./data/com.google.android.gm/files/downloads
+./data/com.google.android.apps.maps/app_offline_downloads
+```
