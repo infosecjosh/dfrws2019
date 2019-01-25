@@ -118,6 +118,7 @@ Everything is Ok
 Files: 4
 Size:       31999719108
 Compressed: 7109827923
+```
 
 ```
 # unzip procdata.zip -d procdata
