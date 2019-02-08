@@ -6,7 +6,8 @@
 | - | - | - | - |
 | JPinkman | Jessie Pinkman | jpinkman2018@gmail.com | |
 | TheBoss | S. Varga | | _associated with Varga by process of elimination_ |
-| pandadodu | D. Pandana | _associated with Pandana due to name similarity_ ||
+| pandadodu | D. Pandana | | _associated with Pandana due to name similarity_ |
+| | | emidnight@gmail.com | _email addr present in com.quirky.android.wink.wink_preferences.xml_ |
 
 
 ## fluffy
