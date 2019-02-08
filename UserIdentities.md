@@ -8,6 +8,7 @@
 | TheBoss | S. Varga | | _associated with Varga by process of elimination_ |
 | pandadodu | D. Pandana | | _associated with Pandana due to name similarity_ |
 | | | emidnight@gmail.com | _email addr present in com.quirky.android.wink.wink_preferences.xml_ |
+| | | francesco | _user id present in data/com.android.chrome/app_chrome/Default/Web Data_ |
 
 
 ## fluffy
