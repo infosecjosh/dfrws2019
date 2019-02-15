@@ -71,13 +71,13 @@ Source: Screenshot_20180330-203515.png
 ## TheBouncer status pages
 | Date | Time | Event | Source |
 | - | - | - | - |
-| 3/29/18 | 11:02 | Closed | /mnt/userdata/media/0/DCIM/Screenshots/Screenshot_20180330-203522.png |
-| 3/29/18 | 11:00 | Opened | /mnt/userdata/media/0/DCIM/Screenshots/Screenshot_20180330-203522.png |
-| 3/28/18 | 11:39 | Closed | /mnt/userdata/media/0/DCIM/Screenshots/Screenshot_20180330-203522.png |
-| 3/28/18 | 11:28 | Opened | /mnt/userdata/media/0/DCIM/Screenshots/Screenshot_20180330-203522.png |
-| 3/28/18 | 11:25 | Closed | /mnt/userdata/media/0/DCIM/Screenshots/Screenshot_20180330-203522.png |
-| 3/28/18 | 11:25 | Opened | /mnt/userdata/media/0/DCIM/Screenshots/Screenshot_20180330-203522.png |
-| 3/28/18 | 11:21 | Closed | /mnt/userdata/media/0/DCIM/Screenshots/Screenshot_20180330-203522.png |
+| 3/29/18 | 11:02 | Closed | /mnt/userdata/media/0/DCIM/Screenshots/Screenshot_20180330-203522.png, plus duplicate |
+| 3/29/18 | 11:00 | Opened | /mnt/userdata/media/0/DCIM/Screenshots/Screenshot_20180330-203522.png, plus duplicate |
+| 3/28/18 | 11:39 | Closed | /mnt/userdata/media/0/DCIM/Screenshots/Screenshot_20180330-203522.png, plus duplicate |
+| 3/28/18 | 11:28 | Opened | /mnt/userdata/media/0/DCIM/Screenshots/Screenshot_20180330-203522.png, plus duplicate |
+| 3/28/18 | 11:25 | Closed | /mnt/userdata/media/0/DCIM/Screenshots/Screenshot_20180330-203522.png, plus duplicate |
+| 3/28/18 | 11:25 | Opened | /mnt/userdata/media/0/DCIM/Screenshots/Screenshot_20180330-203522.png, plus duplicate |
+| 3/28/18 | 11:21 | Closed | /mnt/userdata/media/0/DCIM/Screenshots/Screenshot_20180330-203522.png, plus duplicate |
 | - | - | - | - |
 | 3/28/18 | 11:21 | Closed | /mnt/userdata/media/0/DCIM/Screenshots/Screenshot_20180330-203531.png |
 | 3/28/18 | 11:18 | Opened | /mnt/userdata/media/0/DCIM/Screenshots/Screenshot_20180330-203531.png |
