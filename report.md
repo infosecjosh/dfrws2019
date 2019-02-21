@@ -27,14 +27,16 @@ From October 2018 through the submission deadline the SPAWAR Systems Center Atla
 | Network capture | network/dfrws_police.pcap | 1837ee390e060079fab1e17cafff88a1837610ef951153ddcb7cd85ad478228e |
 
    
- 
-As part of the challenge "The Attorney General needs answers to the following questions:
+## Executive Summary  
+As part of the challenge the Attorney General needs answers to the following questions:
 
  + At what time was the illegal drug lab raided?
+ 
  + Could any of the two friends of Jessie Pinkman have been involved in the raid?
    If YES:
           - Which friend?
           - What is the confidence in such hypothesis?
+          
 + How was the QBee camera disabled?
 
 ## Data Extraction
