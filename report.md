@@ -51,7 +51,6 @@ You may view the analysis of each artifact by clicking the heading of the File D
 
 Two files were provided, however we observed that these files have the same hash and verified that they are a bit for bit duplicate, so we analyzed only one of the files.
 
-
 ### Arlo – Memory image
 arlo/dfrws_arlo.img | 3b957a90a57e5e4485aa78d79c9a04270a2ae93f503165c2a0204de918d7ac70 
 
@@ -63,7 +62,7 @@ arlo/arlo_nand.tar.gz | 857455859086cd6face6115e72cb1c63d2befe11db92beec52d1f706
 ### WinkHub – Filesystem TAR archive | wink/wink.tar.gz 
 083e7428dc1d0ca335bbcfc11c6263720ab8145ffc637954a7733afc7b23e8c6
 
-### [Amazon Echo](https://gitlab.com/lewis.joshua/dfrws2019/blob/master/echo_analysis.md) – Extraction of cloud data obtained via CIFT 
+### [Amazon Echo – Extraction of cloud data obtained via CIFT](https://gitlab.com/lewis.joshua/dfrws2019/blob/master/echo_analysis.md)  
 
 ### [Network capture](https://gitlab.com/lewis.joshua/dfrws2019/blob/master/dfrws_police.pcap.md)
 
