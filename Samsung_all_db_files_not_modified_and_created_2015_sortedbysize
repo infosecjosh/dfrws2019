@@ -1,3 +1,5 @@
+find . -name *.db | xargs stat ./com.android.settings/databases/search_index.db -c "%n "Access:" %x "Modify:" %y "Change:" %z "Size:" %s" | grep -v "Create: 2015*Modify: 2015" | sort -nk 15 > ~/samsung.txt
+
 ./com.android.providers.settings/databases/settings.db Access: 2018-05-17 09:32:38.270000115 +0000 Modify: 2018-05-17 09:32:38.270000115 +0000 Change: 2018-05-17 09:32:38.270000115 +0000 Size: 0
 ./com.microsoft.office.excel/files/aria/offlineKVP.db Access: 2018-05-15 12:23:22.748004476 +0000 Modify: 2018-05-15 12:23:22.758004477 +0000 Change: 2018-05-15 12:23:22.758004477 +0000 Size: 201
 ./com.microsoft.office.powerpoint/files/aria/offlineKVP.db Access: 2018-05-15 12:01:41.578003856 +0000 Modify: 2018-05-15 12:01:41.588003856 +0000 Change: 2018-05-15 12:01:41.588003856 +0000 Size: 201
