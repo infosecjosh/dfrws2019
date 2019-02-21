@@ -1,6 +1,7 @@
 # Analysis of Jessie Pinkman’s Samsung phone
   
   File/Folder: Samsung GSM_SM-G925F Galaxy S6 Edge.7z
+  
   SHA256: ae83b8ec1d4338f6c4e0a312e73d7b410904fab504f7510723362efe6186b757
   
 ## Download and verify the integrity of downloaded artifact
