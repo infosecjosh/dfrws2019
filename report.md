@@ -42,18 +42,15 @@ As part of the challenge the Attorney General needs answers to the following que
 
 ## Evidence Analysis
 
-### Jessie Pinkman's Samsung phone
+You may view the analysis of each artifact by clicking the heading of the File Description.
+### [Jessie Pinkman's Samsung phone](https://gitlab.com/lewis.joshua/dfrws2019/blob/master/Samsung%20GSM_SM-G925F%20Galaxy%20S6%20Edge.7z.md)
 
-[Samsung GSM_SM-G925F Galaxy S6 Edge.7z](https://gitlab.com/lewis.joshua/dfrws2019/blob/master/Samsung%20GSM_SM-G925F%20Galaxy%20S6%20Edge.7z.md) | ae83b8ec1d4338f6c4e0a312e73d7b410904fab504f7510723362efe6186b757 |
+### [iSmartAlarm – Diagnostic logs]()
 
-### iSmartAlarm – Diagnostic logs 
+### [iSmartAlarm – Memory images]()
 
-ismartalarm/diagnostics/2018-05-17T10_54_28/server_stream | 8033ba6d37ad7f8ba22587ae560c04dba703962ed16ede8c36a55c9553913736 |
+Two files were provided, however we observed that these files have the same hash and verified that they are a bit for bit duplicate, so we analyzed only one of the files.
 
-### iSmartAlarm – Memory images
-
-dump/ismart_00.img, dump/ismart_80.img | b175f98ddb8c79e5a1e7db84eeaa691991939065ae17bad84cdbd915f65d9a10 b175f98ddb8c79e5a1e7db84eeaa691991939065ae17bad84cdbd915f65d9a10  |
-* We observed that these files have the same hash so only analyzed one.*
 
 ### Arlo – Memory image
 arlo/dfrws_arlo.img | 3b957a90a57e5e4485aa78d79c9a04270a2ae93f503165c2a0204de918d7ac70 
@@ -67,7 +64,6 @@ arlo/arlo_nand.tar.gz | 857455859086cd6face6115e72cb1c63d2befe11db92beec52d1f706
 083e7428dc1d0ca335bbcfc11c6263720ab8145ffc637954a7733afc7b23e8c6
 
 ### [Amazon Echo](https://gitlab.com/lewis.joshua/dfrws2019/blob/master/echo_analysis.md) – Extraction of cloud data obtained via CIFT 
-echo/(2018-07-01_13.17.01)_CIFT_RESULT.zip | 7ee2d77a3297bb7ea4030444be6e0e150a272b3302d4f68453e8cfa11ef3241f 
 
 ### Network capture 
  network/dfrws_police.pcap | 1837ee390e060079fab1e17cafff88a1837610ef951153ddcb7cd85ad478228e
