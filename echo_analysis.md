@@ -19,7 +19,7 @@ During the next step we extracted the zip file and began reviewing the contents.
 
 ```
 # mkdir echo
-# unzip echo/\(2018-07-01_13.17.01)_CIFT_RESULT.zip -decho/
+# unzip echo/\(2018-07-01_13.17.01)_CIFT_RESULT.zip -d echo/
 
 <paste here what shown on screen>
 
