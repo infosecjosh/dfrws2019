@@ -56,8 +56,7 @@ arlo/dfrws_arlo.img | 3b957a90a57e5e4485aa78d79c9a04270a2ae93f503165c2a0204de918
 
 ### Arlo – NVRAM settings
 arlo/nvram.log | f5d680d354a261576dc8601047899b5173dbbad374a868a20b97fbd963dca798
-### Arlo – NAND: TAR archive of the folder /tmp/media/nand 
-arlo/arlo_nand.tar.gz | 857455859086cd6face6115e72cb1c63d2befe11db92beec52d1f70618c5e421 
+### [Arlo – NAND: TAR archive of the folder /tmp/media/nand](https://gitlab.com/lewis.joshua/dfrws2019/blob/master/arlo/nand.md)
 
 ### WinkHub – Filesystem TAR archive | wink/wink.tar.gz 
 083e7428dc1d0ca335bbcfc11c6263720ab8145ffc637954a7733afc7b23e8c6
