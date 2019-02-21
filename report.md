@@ -64,7 +64,7 @@ arlo/arlo_nand.tar.gz | 857455859086cd6face6115e72cb1c63d2befe11db92beec52d1f706
 ### WinkHub – Filesystem TAR archive | wink/wink.tar.gz 
 083e7428dc1d0ca335bbcfc11c6263720ab8145ffc637954a7733afc7b23e8c6
 
-### [Amazon Echo – Extraction of cloud data obtained via CIFT] (https://gitlab.com/lewis.joshua/dfrws2019/blob/master/echo_analysis.md) 
+### [Amazon Echo – Extraction of cloud data obtained via CIFT](https://gitlab.com/lewis.joshua/dfrws2019/blob/master/echo_analysis.md) 
 echo/(2018-07-01_13.17.01)_CIFT_RESULT.zip | 7ee2d77a3297bb7ea4030444be6e0e150a272b3302d4f68453e8cfa11ef3241f 
 
 ### Network capture 
