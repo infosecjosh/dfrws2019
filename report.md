@@ -1,7 +1,7 @@
 # DFRWS Challenge 2019 
 Submission by ORG
 
-Team: Joshua Lewis, Nicholas Phillpott, Randy Sharo, Shawn Zwach
+Team: Joshua Lewis, Nicholas Phillpott, Randy Sharo, Shawn Zwach, Kelly Hines
 
 Submission date:
 
