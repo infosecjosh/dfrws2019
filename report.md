@@ -47,11 +47,12 @@ As part of the challenge the Attorney General needs answers to the following que
 
 ### iSmartAlarm – Diagnostic logs 
 
-| ismartalarm/diagnostics/2018-05-17T10_54_28/server_stream | 8033ba6d37ad7f8ba22587ae560c04dba703962ed16ede8c36a55c9553913736 |
+ismartalarm/diagnostics/2018-05-17T10_54_28/server_stream | 8033ba6d37ad7f8ba22587ae560c04dba703962ed16ede8c36a55c9553913736 |
 
 ### iSmartAlarm – Memory images
 
 dump/ismart_00.img, dump/ismart_80.img | b175f98ddb8c79e5a1e7db84eeaa691991939065ae17bad84cdbd915f65d9a10 b175f98ddb8c79e5a1e7db84eeaa691991939065ae17bad84cdbd915f65d9a10  |
+* We observed that these files have the same hash so only analyzed one.*
 
 ### Arlo – Memory image
 arlo/dfrws_arlo.img | 3b957a90a57e5e4485aa78d79c9a04270a2ae93f503165c2a0204de918d7ac70 
