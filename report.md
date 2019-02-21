@@ -13,6 +13,7 @@ Revision date:
 
 From October 2018 through the submission deadline the SPAWAR Systems Center Atlantic (SSC-LANT) performed a digital forensics examination of the following devices. This report will outline the data extraction, alternative conclusions, and the tools developed to answer the questions presented by the challenge.  
 
+* Below is a listing of the artifacts that were provided by the challenge.  This includes a description of the file, filename, and sha256 hash of the file.
 
 | File Description | Filename | SHA256 Hash |
 | ------ | ------ | --------- |
