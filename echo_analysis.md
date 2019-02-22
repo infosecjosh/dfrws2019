@@ -298,4 +298,19 @@ VOICE
 (2018-05-30T11_09_58+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav
 
 
+```
+Then we analyze contents of the extracted files.
 
+```
+# ls echo_data/\(2018-07-01_13.17.01)_CIFT_RESULT
+cift_amazon_alexa_ACCOUNT.csv        cift_amazon_alexa_SETTING_WIFI.csv
+cift_amazon_alexa_ACQUIRED_FILE.csv  cift_amazon_alexa_SKILL.csv
+cift_amazon_alexa_ALEXA_DEVICE.csv   cift_amazon_alexa_TIMELINE.csv
+cift_amazon_alexa.db                 Evidence_Library
+cift_amazon_alexa_SETTING_MISC.csv   last_progress_log.txt
+
+| File  | Description  | Notable Items  |
+|-------|--------------|----------------|
+|       |              |                |
+|       |              |                |
+|       |              |                |
