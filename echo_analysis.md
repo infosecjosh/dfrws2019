@@ -307,7 +307,7 @@ Then we analyze contents of the extracted files in root level of extract.
 
 | Filename | Description | Related accounts/identities | Notes |
 | - | - | - | - |
-| cift_amazon_alexa_ACCOUNT.csv | Contains records (columnns customer_email,customer_name,phone_number,customer_id,comms_id,authenticated,source) from table ACCOUNT  | jpinkman2018@gmail.com | Jessie Pinkman is the customer for this Alexas device (customer id A2F07N8TDIAK5U |
+| cift_amazon_alexa_ACCOUNT.csv | Contains records (columnns customer_email,customer_name,phone_number,customer_id,comms_id,authenticated,source) from table ACCOUNT  | jpinkman2018@gmail.com | Jessie Pinkman is the customer for this Alexas device (customer id A2F07N8TDIAK5U) |
 | cift_amazon_alexa_ACQUIRED_FILE.csv | S. Varga | | _associated with Varga by process of elimination_ |
 | cift_amazon_alexa_ALEXA_DEVICE.csv | D. Pandana | | _associated with Pandana due to name similarity_ |
 | cift_amazon_alexa.db | | emidnight@gmail.com | _email addr present in com.quirky.android.wink.wink_preferences.xml_ |
