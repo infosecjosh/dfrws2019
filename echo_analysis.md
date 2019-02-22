@@ -309,6 +309,12 @@ cift_amazon_alexa_ALEXA_DEVICE.csv   cift_amazon_alexa_TIMELINE.csv
 cift_amazon_alexa.db                 Evidence_Library
 cift_amazon_alexa_SETTING_MISC.csv   last_progress_log.txt
 
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
+
 | File  | Description  | Notable Items  |
 |-------|--------------|----------------|
 |       |              |                |
