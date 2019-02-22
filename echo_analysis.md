@@ -1,17 +1,4 @@
-# Analysis
-
-## Review of extracted files
-
-| User | Most Likely Identity | Related accounts/identities | Notes |
-| - | - | - | - |
-| JPinkman | Jessie Pinkman | jpinkman2018@gmail.com | |
-| TheBoss | S. Varga | | _associated with Varga by process of elimination_ |
-| pandadodu | D. Pandana | | _associated with Pandana due to name similarity_ |
-| | | emidnight@gmail.com | _email addr present in com.quirky.android.wink.wink_preferences.xml_ |
-| | | francesco | _user id present in data/com.android.chrome/app_chrome/Default/Web Data_ |
-
-
-# Analysis of Jessie Pinkman’s Amazon Echo
+# Data Extraction of Amazon Echo Evidence
   Evidence Collection Method: Extraction of cloud data obtained via CIFT
   
   File/Folder: echo/(2018-07-01_13.17.01)_CIFT_RESULT.zip
@@ -311,35 +298,24 @@ VOICE
 (2018-05-30T11_09_58+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav
 ```
 
-# Analysis
+# Analysis of Amazon Echo Evidence
 
 ## Review of extracted files
-
-| User | Most Likely Identity | Related accounts/identities | Notes |
-| - | - | - | - |
-| JPinkman | Jessie Pinkman | jpinkman2018@gmail.com | |
-| TheBoss | S. Varga | | _associated with Varga by process of elimination_ |
-| pandadodu | D. Pandana | | _associated with Pandana due to name similarity_ |
-| | | emidnight@gmail.com | _email addr present in com.quirky.android.wink.wink_preferences.xml_ |
-| | | francesco | _user id present in data/com.android.chrome/app_chrome/Default/Web Data_ |
-
-
 Then we analyze contents of the extracted files in root level of extract.
-# ls echo_data/\(2018-07-01_13.17.01)_CIFT_RESULT
-cift_amazon_alexa_ACCOUNT.csv        cift_amazon_alexa_SETTING_WIFI.csv
-cift_amazon_alexa_ACQUIRED_FILE.csv  cift_amazon_alexa_SKILL.csv
-cift_amazon_alexa_ALEXA_DEVICE.csv   cift_amazon_alexa_TIMELINE.csv
-cift_amazon_alexa.db                 Evidence_Library
-cift_amazon_alexa_SETTING_MISC.csv   last_progress_log.txt
 
-| Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
-| col 3 is | right-aligned |    $1 |
+| Filename | Description | Related accounts/identities | Notes |
+| - | - | - | - |
+| cift_amazon_alexa_ACCOUNT.csv | abc | abc | |
+| cift_amazon_alexa_ACQUIRED_FILE.csv | S. Varga | | _associated with Varga by process of elimination_ |
+| cift_amazon_alexa_ALEXA_DEVICE.csv | D. Pandana | | _associated with Pandana due to name similarity_ |
+| cift_amazon_alexa.db | | emidnight@gmail.com | _email addr present in com.quirky.android.wink.wink_preferences.xml_ |
+| cift_amazon_alexa_SETTING_MISC.csv | | francesco | _user id present in data/com.android.chrome/app_chrome/Default/Web Data_ |
+| cift_amazon_alexa_SETTING_WIFI.csv | abc | abc | |
+| cift_amazon_alexa_ACCOUNT.csv | abc | abc | |
+| cift_amazon_alexa_SKILL.csv | abc | abc | |
+| cift_amazon_alexa_TIMELINE.csv | abc | abc | |
+| Evidence_Library | abc | abc | |
+| last_progress_log.txt | abc | abc | |
 
-| File  | Description  | Notable Items  |
-|-------|--------------|----------------|
-|       |              |                |
-|       |              |                |
-|       |              |                |
+
+
