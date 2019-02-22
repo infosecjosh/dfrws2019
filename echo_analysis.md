@@ -154,7 +154,10 @@ Archive:  (2018-07-01_13.17.01)_CIFT_RESULT.zip
   inflating: echo_data/(2018-07-01_13.17.01)_CIFT_RESULT/cift_amazon_alexa_SETTING_MISC.csv  
   inflating: echo_data/(2018-07-01_13.17.01)_CIFT_RESULT/cift_amazon_alexa_TIMELINE.csv  
 
-
+```
+Then we set permissions on extracted files to read-only to ensure we don't accidentally modify any of the files.
+```
+# chmod -R 444 \(2018-07-01_13.17.01\)_CIFT_RESULT/
 
 ```
 Then we listed the extracted files.
