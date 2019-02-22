@@ -169,11 +169,9 @@ cift_amazon_alexa_SETTING_MISC.csv   last_progress_log.txt
 
 
 # ls echo_data/\(2018-07-01_13.17.01)_CIFT_RESULT/Evidence_Library
-
 AmazonAlexaCloud
 
 # ls echo_data/\(2018-07-01_13.17.01)_CIFT_RESULT/Evidence_Library/AmazonAlexaCloud
-
 0305c1b97c035364db7251e540c2cb39b9976091.json
 060029277bfe4dbb5fbf4d98c6f797cecf5ce32a.json
 082a17905eb233a9863b97ec9f6b5b8970191fbf.json
@@ -241,7 +239,6 @@ f498518b586fbece8365c2e949ba52404aa52f68.json
 f907e0abeaa1713c73d8e7e2c992e61696cbb079.json
 ff23998fe7551c6396aee843a6321f6762267072.json
 VOICE
-
 
 # ls echo_data/\(2018-07-01_13.17.01)_CIFT_RESULT/Evidence_Library/AmazonAlexaCloud/VOICE
 (2018-05-15T11_27_05+0200)_TEXT(alexa tell i smart alarm to arm my system).wav
