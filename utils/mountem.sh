@@ -106,6 +106,6 @@ if [[ -z "${USERDATA_OFFSET}" ]] ; then
 fi
 
 sudo mount -o loop,offset=${USERDATA_OFFSET},ro "${IMG}" "${RAWMNT}"
-sudo bindfs -u sift -p 555 "${RAWMNT}" "${NICEMNT}"
+sudo bindfs -u ${USER} -p 555 "${RAWMNT}" "${NICEMNT}"
 
 echo "USERDATA volume is user-readable at '${NICEMNT}' and root-readable at '${RAWMNT}'"
