@@ -1,3 +1,16 @@
+# Analysis
+
+## Review of extracted files
+
+| User | Most Likely Identity | Related accounts/identities | Notes |
+| - | - | - | - |
+| JPinkman | Jessie Pinkman | jpinkman2018@gmail.com | |
+| TheBoss | S. Varga | | _associated with Varga by process of elimination_ |
+| pandadodu | D. Pandana | | _associated with Pandana due to name similarity_ |
+| | | emidnight@gmail.com | _email addr present in com.quirky.android.wink.wink_preferences.xml_ |
+| | | francesco | _user id present in data/com.android.chrome/app_chrome/Default/Web Data_ |
+
+
 # Analysis of Jessie Pinkman’s Amazon Echo
   Evidence Collection Method: Extraction of cloud data obtained via CIFT
   
@@ -11,7 +24,7 @@ First we downloaded and verified the integrity of the downloaded artifact to the
 ```
 # sha256sum echo/\(2018-07-01_13.17.01)_CIFT_RESULT.zip 
 7ee2d77a3297bb7ea4030444be6e0e150a272b3302d4f68453e8cfa11ef3241f echo/\(2018-07-01_13.17.01)_CIFT_RESULT.zip
-```
+
 
 ## Extract the zip file contents for analysis
 
@@ -296,6 +309,19 @@ VOICE
 (2018-05-17T10_22_18+0200)_TEXT(yes).wav
 (2018-05-17T10_22_24+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav
 (2018-05-30T11_09_58+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav
+
+
+# Analysis
+
+## Review of extracted files
+
+| User | Most Likely Identity | Related accounts/identities | Notes |
+| - | - | - | - |
+| JPinkman | Jessie Pinkman | jpinkman2018@gmail.com | |
+| TheBoss | S. Varga | | _associated with Varga by process of elimination_ |
+| pandadodu | D. Pandana | | _associated with Pandana due to name similarity_ |
+| | | emidnight@gmail.com | _email addr present in com.quirky.android.wink.wink_preferences.xml_ |
+| | | francesco | _user id present in data/com.android.chrome/app_chrome/Default/Web Data_ |
 
 
 ```
