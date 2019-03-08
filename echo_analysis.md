@@ -311,7 +311,7 @@ Below is a summary of each CSV file that represents the normalized database tabl
 | cift_amazon_alexa_SETTING_MISC.csv | name<br>value<br>device_serial_number<br>source<br>traffic_origin_address | <br>- Traffic Setting has an origin address of: 4204 Colby Ave, Everett WA 98203<br>- Third_party_services: I_HEART_RADIO, TUNE_IN, AMBER |
 | cift_amazon_alexa_SETTING_WIFI.csv | ssid<br>security_method<br>pre_shared_key<br>source | Alexa device was connected to Wifi with SSID "ESC-IoT" (using WPA_PSK with preshared key "esc_iot_2018") |
 | cift_amazon_alexa_SKILL.csv | title<br>developer_name<br>account_linked<br>release_date<br>short<br>desc<br>vendor_id<br>skill_id<br>source | Skills linked: Arlo, Nest Camera, Wink, iSmartAlarm |
-| cift_amazon_alexa_TIMELINE.csv | date<br>time<br>timezone<br>MACB<br>source<br>sourcetype<br>type<br>user<br>host<br>short<br>desc<br>version<br>filename<br>inode<br>notes<br>format<br>extra | |
+| cift_amazon_alexa_TIMELINE.csv | date<br>time<br>timezone<br>MACB<br>source<br>sourcetype<br>type<br>user<br>host<br>short<br>desc<br>version<br>filename<br>inode<br>notes<br>format<br>extra | Provides integrating listing of events by data/time |
 
 
 
