@@ -306,15 +306,12 @@ Below is a summary of each CSV file that represents the normalized database tabl
 | Filename | Columns | Notable Items |
 | - | - | - |
 | cift_amazon_alexa_ACCOUNT.csv | customer_email<br>customer_name<br>phone_number<br>customer_id<br>comms_id<br>authenticated<br>source  | Jessie Pinkman, email jpinkman2018@gmail.com, is the customer for this Alexa device (customer id A2F07N8TDIAK5U) |
-| cift_amazon_alexa_ACQUIRED_FILE.csv | id<br>operation_type<br>src_path<br>desc<br>saved_path<br>sha1<br>saved_timestamp<br>modified_timestamp<br>timezone | Provides mapping of information to json files in Evidence Library. <br><br>- Jessie Pinkman only Alexa account<br>- Alexa device was connected to Wifi with SSID "ESC-IoT" (using WPA_PSK with preshared key "esc_iot_2018")<br>- Traffic Setting has an origin address of: 4204 Colby Ave, Everett WA 98203<br>- 2 Registered Alexa Devices:<br>1. Echo deviceAccountId:"A0529216353ZKG8WU9M6O"<br>2. Jessie's Alexa App's deviceAccountId:"AGQS6C6RFOZF"<br>- Registered Alexa Devices' Preferences:<br>1. "deviceAccountId":"A0529216353ZKG8WU9M6O" lists postal code: 98109, time zone Id of Europe/Zurich<br>2. "deviceAccountId":"AGQS6C6RFOZF" lists address Avenue Forel, Lausanne, VD, CH 1015 and time zone id of Europe/Paris<br> |
-| cift_amazon_alexa_ALEXA_DEVICE.csv | device_account_name<br>device_family<br>device_account_id<br>customer_id<br>device_serial_number<br>device_type<br>sw_version<br>mac_address<br>address<br>postal_code<br>locale<br>search_customer_id<br>timezone<br>region<br>source | | _associated with Pandana due to name similarity_ |
-| cift_amazon_alexa_SETTING_MISC.csv | name<br>value<br>device_serial_number<br>source<br>traffic_origin_address | _user id present in data/com.android.chrome/app_chrome/Default/Web Data_ |
-| cift_amazon_alexa_SETTING_WIFI.csv | ssid<br>security_method<br>pre_shared_key<br>source | |
-| cift_amazon_alexa_SKILL.csv | title<br>developer_name<br>account_linked<br>release_date<br>short<br>desc<br>vendor_id<br>skill_id<br>source | |
+| cift_amazon_alexa_ACQUIRED_FILE.csv | id<br>operation_type<br>src_path<br>desc<br>saved_path<br>sha1<br>saved_timestamp<br>modified_timestamp<br>timezone | Provides mapping of information to json files in Evidence Library and wav audio files in Voice. <br> |
+| cift_amazon_alexa_ALEXA_DEVICE.csv | device_account_name<br>device_family<br>device_account_id<br>customer_id<br>device_serial_number<br>device_type<br>sw_version<br>mac_address<br>address<br>postal_code<br>locale<br>search_customer_id<br>timezone<br>region<br>source | 2 Registered Alexa Devices:<br>1. Echo deviceAccountId:"A0529216353ZKG8WU9M6O" lists postal code: 98109, time zone Id of Europe/Zurich<br>2. Jessie's Alexa App's deviceAccountId:"AGQS6C6RFOZF" lists address Avenue Forel, Lausanne, VD, CH 1015 and time zone id of Europe/Paris |
+| cift_amazon_alexa_SETTING_MISC.csv | name<br>value<br>device_serial_number<br>source<br>traffic_origin_address | <br>- Traffic Setting has an origin address of: 4204 Colby Ave, Everett WA 98203<br>- Third_party_services: I_HEART_RADIO, TUNE_IN, AMBER |
+| cift_amazon_alexa_SETTING_WIFI.csv | ssid<br>security_method<br>pre_shared_key<br>source | Alexa device was connected to Wifi with SSID "ESC-IoT" (using WPA_PSK with preshared key "esc_iot_2018") |
+| cift_amazon_alexa_SKILL.csv | title<br>developer_name<br>account_linked<br>release_date<br>short<br>desc<br>vendor_id<br>skill_id<br>source | Skills linked: Arlo, Nest Camera, Wink, iSmartAlarm |
 | cift_amazon_alexa_TIMELINE.csv | date<br>time<br>timezone<br>MACB<br>source<br>sourcetype<br>type<br>user<br>host<br>short<br>desc<br>version<br>filename<br>inode<br>notes<br>format<br>extra | |
-| Evidence_Library | abc | |
-| cift_amazon_alexa.db | | emidnight@gmail.com _email addr present in com.quirky.android.wink.wink_preferences.xml_ |
-| last_progress_log.txt | abc | |
 
 
 
