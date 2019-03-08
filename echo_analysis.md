@@ -314,4 +314,14 @@ Below is a summary of each CSV file that represents the normalized database tabl
 | cift_amazon_alexa_TIMELINE.csv | date<br>time<br>timezone<br>MACB<br>source<br>sourcetype<br>type<br>user<br>host<br>short<br>desc<br>version<br>filename<br>inode<br>notes<br>format<br>extra | Provides integrating listing of events by data/time |
 
 
+## Review of voice data
+We correlated the src_path field of cift_amazon_alexa_ACQUIRED_FILE.csv to the contents of the extra field of cift_amazon_alexa_TIMELINE.csv (matching on the text after "User's voice: ") then listed what was actually human-audible to compare to waht Alexa thought it heard. The table below describes all relevant captures. The time is in UTC+02:00 (Kaliningrad Time).
+
+| Date | Time | Audible Speaker(s) | Audible content | Alexa Summary | Supporting files |
+| - | - | - | - | - | - |
+| 1970-01-01 | 01:00:00.000 | Person 2 | Laughing | - | - (2018-05-15T15_06_08+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav<br>- 9fb911aa86480a4600715742cd9999dc3bae4223.json |
+| 1970-01-01 | 01:00:00.000 | Jessie, Person 2 | <can’t decipher> | - | - (2018-05-15T15_06_28+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav<br>- bc300ad077a7e42c57dafe3a3880c10ca3190207.json |
+| 1970-01-01 | 01:00:00.000 | Jessie, Person 2 | “wow wonderful story I’m so impressed” | | - (2018-05-15T15_07_18+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav<br>- d9d5c9a5892dd94d4e1497ee5932d0a6a02d0a50.json |
+| 1970-01-01 | 01:00:00.000 | ? | “oooooh” (sounds like despair) | | - (2018-05-15T15_07_34+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav<br>- 5a293239f1fe9ba165020113bd6e07e3dbc4cf73.json |
+| 1970-01-01 | 01:00:00.000 | Jessie, background voice singing or praying | “Alexa what forensic mean for you?" | | - (2018-05-16T15_35_27+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav<br>- d1f67950cd0d4ed2a07d605cd07e18ea74c4ef22.json |
 
