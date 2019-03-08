@@ -317,11 +317,24 @@ Below is a summary of each CSV file that represents the normalized database tabl
 ## Review of voice data
 We correlated the src_path field of cift_amazon_alexa_ACQUIRED_FILE.csv to the contents of the extra field of cift_amazon_alexa_TIMELINE.csv (matching on the text after "User's voice: ") then listed what was actually human-audible to compare to waht Alexa thought it heard. The table below describes all relevant captures. The time is in UTC+02:00 (Kaliningrad Time).
 
-| Date | Time | Audible Speaker(s) | Audible content | Alexa Summary | Supporting files |
-| - | - | - | - | - | - |
-| 1970-01-01 | 01:00:00.000 | Person 2 | Laughing | - | - (2018-05-15T15_06_08+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav<br>- 9fb911aa86480a4600715742cd9999dc3bae4223.json |
-| 1970-01-01 | 01:00:00.000 | Jessie, Person 2 | <can’t decipher> | - | - (2018-05-15T15_06_28+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav<br>- bc300ad077a7e42c57dafe3a3880c10ca3190207.json |
-| 1970-01-01 | 01:00:00.000 | Jessie, Person 2 | “wow wonderful story I’m so impressed” | | - (2018-05-15T15_07_18+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav<br>- d9d5c9a5892dd94d4e1497ee5932d0a6a02d0a50.json |
-| 1970-01-01 | 01:00:00.000 | ? | “oooooh” (sounds like despair) | | - (2018-05-15T15_07_34+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav<br>- 5a293239f1fe9ba165020113bd6e07e3dbc4cf73.json |
-| 1970-01-01 | 01:00:00.000 | Jessie, background voice singing or praying | “Alexa what forensic mean for you?" | | - (2018-05-16T15_35_27+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav<br>- d1f67950cd0d4ed2a07d605cd07e18ea74c4ef22.json |
+| Date | Time | Source | Audible Speaker(s) | Audible content | Alexa Summary | Supporting files |
+| - | - | - | - | - | - | - |
+| 1970-01-01 | 01:00:00.000 | User | Person 2 | Laughing | - | - (2018-05-15T15_06_08+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav<br>- 9fb911aa86480a4600715742cd9999dc3bae4223.json |
+| 1970-01-01 | 01:00:00.000 | User | Jessie, Person 2 | <can’t decipher> | - | - (2018-05-15T15_06_28+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav<br>- bc300ad077a7e42c57dafe3a3880c10ca3190207.json |
+| 1970-01-01 | 01:00:00.000 | User | Jessie, Person 2 | “wow wonderful story I’m so impressed” | | - (2018-05-15T15_07_18+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav<br>- d9d5c9a5892dd94d4e1497ee5932d0a6a02d0a50.json |
+| 1970-01-01 | 01:00:00.000 | User | ? | “oooooh” (sounds like despair) | | - (2018-05-15T15_07_34+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav<br>- 5a293239f1fe9ba165020113bd6e07e3dbc4cf73.json |
+| 1970-01-01 | 01:00:00.000 | User | Jessie, background voice singing or praying | “Alexa what forensic mean for you?" | | - (2018-05-16T15_35_27+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav<br>- d1f67950cd0d4ed2a07d605cd07e18ea74c4ef22.json |
+| 1970-01-01 | 01:00:00.000 | User | ? | "four and six cards” | | - (2018-05-16T15_36_10+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav<br>- c6177afb7ae9f3705bd933ae959a8d4aea200847.json |
+| 1970-01-01 | 01:00:00.000 | User | hear a voice (can’t make out what saying) and a beep | <can't decipher>, beep | | - (2018-05-17T10_22_24+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav<br>- ab1537414fd9ea14c86eff957fea0034a6f95bcf.json |
+| 1970-01-01 | 01:00:00.000 | User | - | - | - (2018-05-30T11_09_58+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav<br>- 449f72e38f53962c99e69a37696999042de94719.json |
+| 2018-05-15 | 11:27:07.576 | User | Jessie | “Alexa tell ismart alarm to arm my system” | alexa tell i smart alarm to arm my system | - (2018-05-15T11_27_05+0200)_TEXT(alexa tell i smart alarm to arm my system).wav<br>- d11061e75bb4ede10f9d7502c372df528f0203c4.json |
+| 2018-05-15 | 11:27:08.893	| Alexa | - | - | your home info error please relink | - d11061e75bb4ede10f9d7502c372df528f0203c4.json |
+| 2018-05-15 | 11:27:17.142 | User | - | - | <not audible> | - 81e823f529d4889073c5b4cc2028ca0445f0cc0a.json |
+| 2018-05-15 | 11:28:54.246 | User | Jessie | “Alexa tell ismart alarm to arm my system” | alexa | - (2018-05-15T11_28_54+0200)_TEXT(alexa).wav<br> - 42b703c962fe38621a93ee478ea811f6c6060c40.json |
+| 2018-05-15 | 11:28:56.725 | User | Jessie | “tell ismart alarm to arm my system” |	tell i. smart alarm to arm my system | - (2018-05-15T11_28_54+0200)_TEXT(tell i. smart alarm to arm my system).wav<br> - 2022746dc0a62a8969d352a39e76556e1860e404.json |
+| 2018-05-15 | 11:28:58.127 | Alexa | - | - | Your Door is open, Are you sure you want to arm your system? | - 2022746dc0a62a8969d352a39e76556e1860e404.json |
+| 2018-05-15 | 11:29:03.585 | User | Jessie | "no" | no | - (2018-05-15T11_29_03+0200)_TEXT(no).wav<br>- 58ebf604db8e4af5baec444c2bc029671b5473fd.json |
+
+
+The 1970 date are odd, but we can tell by the created on the wav file when these audios were captured by Alexa.
 
