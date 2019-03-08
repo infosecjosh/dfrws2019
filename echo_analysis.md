@@ -301,9 +301,7 @@ VOICE
 # Analysis of Amazon Echo Evidence
 
 ## Review of extracted files
-The Alexa modules of CIFT were used to create a normalized database.
-
-Then we analyze contents of the extracted files in root level of extract.
+The Alexa modules of CIFT were used to create a normalized database. We analyzed the contents of the extracted files and noted any items of interest.
 
 | Filename | Description | Related accounts/identities | Notes |
 | - | - | - | - |
