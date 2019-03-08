@@ -301,11 +301,30 @@ VOICE
 # Analysis of Amazon Echo Evidence
 
 ## Review of extracted files
-The Alexa modules of CIFT were used to create a normalized database. We analyzed the contents of the extracted files and noted any items of interest.
+Below is a summary of each file at the root level of the extraction:
+
+| Filename | Description |
+| - | - |
+| cift_amazon_alexa_ACCOUNT.csv | Contains records (columnns customer_email,customer_name, phone_number,customer_id,<br>comms_id,authenticated,source) from table ACCOUNT |
+| cift_amazon_alexa_ACQUIRED_FILE.csv | Contains columns id,operation_type,src_path,desc,saved_path,sha1,saved_timestamp,modified_timestamp,timezone |
+| cift_amazon_alexa_ALEXA_DEVICE.csv | Contains columns device_account_name,device_family,device_account_id,customer_id,device_serial_number,device_type,sw_version,mac_address,address,postal_code,locale,search_customer_id,timezone,region,source |
+| cift_amazon_alexa.db | |
+| cift_amazon_alexa_SETTING_MISC.csv | Contains columns name,value,device_serial_number,source, traffic_origin_address |
+| cift_amazon_alexa_SETTING_WIFI.csv | Contains columns ssid,security_method,pre_shared_key,source |
+| cift_amazon_alexa_SKILL.csv | Contains columns title,developer_name,account_linked,release_date,short,desc,vendor_id,skill_id,source|
+| cift_amazon_alexa_TIMELINE.csv | Contains date,time,timezone,MACB,source,sourcetype,type,user,host,short,desc,version,filename,inode,notes,format,extra |
+| Evidence_Library | abc |
+| last_progress_log.txt | abc |
+
+
+
+
+We analyzed the contents of the extracted files and noted any items of interest.
 
 | Filename | Description | Related accounts/identities | Notes |
 | - | - | - | - |
-| cift_amazon_alexa_ACCOUNT.csv | Contains records (columnns customer_email,customer_name,phone_number,customer_id,comms_id,authenticated,source) from table ACCOUNT  | jpinkman2018@gmail.com | Jessie Pinkman is the customer for this Alexas device (customer id A2F07N8TDIAK5U) |
+| cift_amazon_alexa_ACCOUNT.csv | Contains records (columnns customer_email,customer_name,
+phone_number,customer_id,comms_id,authenticated,source) from table ACCOUNT  | jpinkman2018@gmail.com | Jessie Pinkman is the customer for this Alexas device (customer id A2F07N8TDIAK5U) |
 | cift_amazon_alexa_ACQUIRED_FILE.csv | S. Varga | | _associated with Varga by process of elimination_ |
 | cift_amazon_alexa_ALEXA_DEVICE.csv | D. Pandana | | _associated with Pandana due to name similarity_ |
 | cift_amazon_alexa.db | | emidnight@gmail.com | _email addr present in com.quirky.android.wink.wink_preferences.xml_ |
