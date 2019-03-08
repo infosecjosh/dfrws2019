@@ -301,38 +301,19 @@ VOICE
 # Analysis of Amazon Echo Evidence
 
 ## Review of extracted files
-Below is a summary of each file at the root level of the extraction:
+Below is a summary of each CSV file that represents the normalized database tables CIFT pulled from the alexa database. We analyzed the contents of the extracted files and noted any items of interest.
 
-| Filename | Description |
-| - | - |
-| cift_amazon_alexa_ACCOUNT.csv | Contains records (columnns customer_email,customer_name, phone_number,customer_id,<br>comms_id,authenticated,source) from table ACCOUNT |
-| cift_amazon_alexa_ACQUIRED_FILE.csv | Contains columns id,operation_type,src_path,desc,saved_path,sha1,saved_timestamp,modified_timestamp,timezone |
-| cift_amazon_alexa_ALEXA_DEVICE.csv | Contains columns device_account_name,device_family,device_account_id,customer_id,device_serial_number,device_type,<br>sw_version,mac_address,address,postal_code,locale,search_customer_id,timezone,region,source |
-| cift_amazon_alexa.db | |
-| cift_amazon_alexa_SETTING_MISC.csv | Contains columns name,value,device_serial_number,source, traffic_origin_address |
-| cift_amazon_alexa_SETTING_WIFI.csv | Contains columns ssid,security_method,pre_shared_key,source |
-| cift_amazon_alexa_SKILL.csv | Contains columns title,developer_name,account_linked,release_date,short,desc,vendor_id,skill_id,source|
-| cift_amazon_alexa_TIMELINE.csv | Contains date,time,timezone,MACB,source,sourcetype,type,user,host,short,desc,version,filename,inode,notes,format,extra |
-| Evidence_Library | abc |
-| last_progress_log.txt | abc |
-
-
-
-
-We analyzed the contents of the extracted files and noted any items of interest.
-
-| Filename | Description | Related accounts/identities | Notes |
+| Filename | Columns | Related accounts/identities | Notes |
 | - | - | - | - |
-| cift_amazon_alexa_ACCOUNT.csv | Contains records (columnns customer_email,customer_name, <br>phone_number,customer_id,comms_id,authenticated,source) from table ACCOUNT  | jpinkman2018@gmail.com | Jessie Pinkman is the customer for this Alexas device (customer id A2F07N8TDIAK5U) |
-| cift_amazon_alexa_ACQUIRED_FILE.csv | S. Varga | | _associated with Varga by process of elimination_ |
-| cift_amazon_alexa_ALEXA_DEVICE.csv | D. Pandana | | _associated with Pandana due to name similarity_ |
-| cift_amazon_alexa.db | | emidnight@gmail.com | _email addr present in com.quirky.android.wink.wink_preferences.xml_ |
-| cift_amazon_alexa_SETTING_MISC.csv | | francesco | _user id present in data/com.android.chrome/app_chrome/Default/Web Data_ |
-| cift_amazon_alexa_SETTING_WIFI.csv | abc | abc | |
-| cift_amazon_alexa_ACCOUNT.csv | abc | abc | |
-| cift_amazon_alexa_SKILL.csv | abc | abc | |
-| cift_amazon_alexa_TIMELINE.csv | abc | abc | |
+| cift_amazon_alexa_ACCOUNT.csv | customer_email<br>customer_name<br>phone_number<br>customer_id<br>comms_id<br>authenticated<br>source  | jpinkman2018@gmail.com | Jessie Pinkman is the customer for this Alexas device (customer id A2F07N8TDIAK5U) |
+| cift_amazon_alexa_ACQUIRED_FILE.csv | id<br>operation_type<br>src_path<br>desc<br>saved_path<br>sha1<br>saved_timestamp<br>modified_timestamp<br>timezone | | _associated with Varga by process of elimination_ |
+| cift_amazon_alexa_ALEXA_DEVICE.csv | device_account_name<br>device_family<br>device_account_id<br>customer_id<br>device_serial_number<br>device_type<br>sw_version<br>mac_address<br>address<br>postal_code<br>locale<br>search_customer_id<br>timezone<br>region<br>source | | _associated with Pandana due to name similarity_ |
+| cift_amazon_alexa_SETTING_MISC.csv | name<br>value<br>device_serial_number<br>source<br>traffic_origin_address | francesco | _user id present in data/com.android.chrome/app_chrome/Default/Web Data_ |
+| cift_amazon_alexa_SETTING_WIFI.csv | ssid<br>security_method<br>pre_shared_key<br>source | abc | |
+| cift_amazon_alexa_SKILL.csv | title<br>developer_name<br>account_linked<br>release_date<br>short<br>desc<br>vendor_id<br>skill_id<br>source | abc | |
+| cift_amazon_alexa_TIMELINE.csv | date<br>time<br>timezone<br>MACB<br>source<br>sourcetype<br>type<br>user<br>host<br>short<br>desc<br>version<br>filename<br>inode<br>notes<br>format<br>extra | abc | |
 | Evidence_Library | abc | abc | |
+| cift_amazon_alexa.db | | emidnight@gmail.com | _email addr present in com.quirky.android.wink.wink_preferences.xml_ |
 | last_progress_log.txt | abc | abc | |
 
 
