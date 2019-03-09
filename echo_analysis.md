@@ -339,6 +339,8 @@ We correlated the src_path field of cift_amazon_alexa_ACQUIRED_FILE.csv to the c
 | 2018-05-15 | 15:05:43.976	| other voice at the beginning, voice saying something in foreign language | “Alexa” then hear door shut...”Alexa”...then says something in another language...then says “what time is it" | alexa | -(2018-05-15T15_05_43+0200)_TEXT(alexa).wav<br>-80a7ae31b87ab557ab217822223909e12f06e2f9.json |
 | 2018-05-15 | 15:05:50.362 | other voice at the beginning, voice saying something in foreign language and what time is it may be different? “Alexa” then hear door shut...”Alexa”...then says something in another language...then says “what time is it”	| what time is it	| - | -(2018-05-15T15_05_43+0200)_TEXT(alexa).wav<br>-e880a49c888ede11b80bd5269f92bf68b33d562b.json |
 | 2018-05-15 | 15:05:50.982 | [Alexa] | - | The time is 3:05 PM | -e880a49c888ede11b80bd5269f92bf68b33d562b.json |
+| 2018-05-15 | 15:06:00.501	| Jessie | “Alexa say hello” | alexa say hello | -(2018-05-15T15_05_54+0200)_TEXT(alexa say hello).wav<br>-70877451c52cb6708cb7bb5010a72ae1b2fc2450.json |
+
 
 
 
