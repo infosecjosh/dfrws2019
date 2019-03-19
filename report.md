@@ -2,6 +2,8 @@
 
 This repository is our team's work towards the 2018 DFRWS Challenge.  More details about the DFRWS Challenge can be found on the [DFRWS Challenge GitHub page](https://github.com/dfrws/dfrws2018-challenge).
 
+-------------------------
+
 # DFRWS Challenge 2018 
 
 Submission by NIWC-LANT
