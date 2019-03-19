@@ -57,7 +57,7 @@ We created plaso parsers to support certain artifacts of interest and have provi
 
 ## Timeline
 | Date | Time | Event | Device Source | Notes |
-| --- | --- | --- | --- |
+| --- | --- | --- | --- | --- |
 | 2018-05-17 | 10:22:20.720 | 30 seconds from this time date Alexa triggered iSmartAlarm to set the alarm even though the door was open | Alexa | Odd owner would set alarm with door open unless owner was wanting to set to home mode |
 
 
