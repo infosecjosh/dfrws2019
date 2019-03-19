@@ -36,10 +36,10 @@ From October 2018 through the submission deadline the SPAWAR Systems Center Atla
 
 The section contains details that were provided by the challenge organizers about the scnario.
 
+
 ![drug lab floorplan](https://raw.githubusercontent.com/dfrws/dfrws2018-challenge/master/DFRWS2018-IoT-ForensicChallengeDiagram.png)
 
-
-
+```
 On 17 May 2018 at 10:40, the police were alerted that an illegal drug lab was invaded and unsuccessfully set on fire. The police respond promptly, and a forensic team is on scene at 10:45, including a digital forensic specialist.
 
 The owner the illegal drug lab, Jessie Pinkman, is nowhere to be found. Police interrogate two of Jessie Pinkman’s known associates: D. Pandana and S. Varga. Pandana and Verga admit having access to the drug lab’s WiFi network but deny any involvement in the raid. They also say that Jessie Pinkman’s had the IoT security systems installed because he feared attacks from a rival gang and that Jessie kept the alarm engaged in “Home” mode whenever he was inside the drug lab.
@@ -55,6 +55,7 @@ The digital forensic specialist also notices that the a QBee Camera seems to be 
 Back at the forensic laboratory, the digital forensic specialist uses the bootloader to collect a memory image of the two base stations as well as an archive of some folder of interest of the Arlo base station.
 
 Jessie Pinkman's Samsung Galaxy Edge S6 is found at the scene, likely dropped during the raid. The digital forensic specialist acquires a physical image of this Samsung device.
+```
 
    
 ## Executive Summary  
