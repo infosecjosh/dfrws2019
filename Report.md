@@ -20,7 +20,7 @@ Submission date: 20 MAR 2019
 * [Acknowledgements](#acknowledgements)
 
 ## Executive Summary
-From October 2018 through the submission deadline the Navy Information Warfare Center (NIWC LANT) performed a digital forensics examination of the following devices. This report will outline the data extraction, alternative conclusions, and the tools developed to answer the questions presented by the challenge.
+From October 2018 through the submission deadline the Navy Information Warfare Center (NIWC LANT) performed a digital forensics examination of the devices listed in the Evidence section below. This report will outline the data extraction, alternative conclusions, and the tools developed to answer the questions presented by the challenge.
 
 ## Objectives
 The attorney general assigned the following objectives:
