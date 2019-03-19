@@ -112,7 +112,7 @@ Due to the time that we had to invest in this challenge we chose to focus our ef
    * [challenge github repo](https://github.com/dfrws/dfrws2018-challenge/)
    * [challenge artifacts on github](https://drive.google.com/drive/folders/17szABuOp3wEI9FAWsx5Q4ThAtjPecm4Q?usp=sharing)
 
-## [Challenge Rules] (https://gitlab.com/lewis.joshua/dfrws2019/blob/master/challenge_rules.md)
+## [Challenge Rules](https://gitlab.com/lewis.joshua/dfrws2019/blob/master/challenge_rules.md)
 
 
 
