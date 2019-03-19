@@ -125,7 +125,7 @@ Due to the time that we had to invest in this challenge we chose to focus our ef
 
 ## Acknowledgements
 
-The authors would like to thank the DFRWS challenge developers for putting this activity together. Opportunities like this continue to advance the technolgies and methodoligies used by digital forensics examiners and researchs. DFRWS continues to Thank you.
+The authors would like to thank the Digital Forensic Research Workshop and the developers of this years challenge for putting this activity together. Opportunities like this are critical to advancing the technolgies and methodoligies used by digital forensics examiners and researchers. Thank you.
 
 ## Appendices
 
