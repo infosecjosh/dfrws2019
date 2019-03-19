@@ -1,11 +1,14 @@
+#Overview
+
+This repository is our team's work towards the 2018 DFRWS Challenge.  More details about the DFRWS Challenge can be found on the [DFRWS Challenge GitHub page](https://github.com/dfrws/dfrws2018-challenge).
+
 # DFRWS Challenge 2018 
-Submission by ORG
+
+Submission by NIWC-LANT
 
 Team: Joshua Lewis, Nicholas Phillpott, Randy Sharo, Shawn Zwach, Kelly Hines
 
-Submission date:
-
-Revision date:
+Submission date: 18 MAR 2019
 
 --------------------------
 
