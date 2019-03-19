@@ -37,14 +37,14 @@ Evidence items are listed in the order they were presented by the challenge docu
 
 ### Jessie Pinkman's Phone
 Pinkman's phone is described by the file name to be a Samsung Galaxy S6 Edge.
-<table>
+<table witdh=100%>
 <tr><th colspan=2 align=left>Archive of Physical Extraction</th></tr>
 <tr><td>Evidence Type</td><td>Archive</td></tr>
 <tr><td>Description</td><td>Physical extraction of Jessie Pinkman’s Samsung phone</td></tr>
 <tr><td>File</td><td>samsung/Samsung GSM_SM-G925F Galaxy S6 Edge.7z</td></tr>
 <tr><td>SHA256</td><td>ae83b8ec1d4338f6c4e0a312e73d7b410904fab504f7510723362efe6186b757</td></tr>
 </table>
-<br>
+
 <table>
 <tr><th colspan=2 align=left>Image File from Jessie Pinkman’s Phone Archive</th></tr>
 <tr><td>Evidence Type</td><td>Image</td></tr>
@@ -52,7 +52,7 @@ Pinkman's phone is described by the file name to be a Samsung Galaxy S6 Edge.
 <tr><td>File</td><td>blk0_sda.bin</td></tr>
 <tr><td>SHA256</td><td>29e3ecfaccda09d8ff2026cf71d282c7026f7d0962c1508cd6f15beb51ec4ac4</td></tr>
 </table>
-<br>
+
 <table>
 <tr><th colspan=2 align=left>Image File from Jessie Pinkman’s Phone Archive</th></tr>
 <tr><td>Evidence Type</td><td>Image</td></tr>
@@ -60,7 +60,7 @@ Pinkman's phone is described by the file name to be a Samsung Galaxy S6 Edge.
 <tr><td>File</td><td>blk16_sdb.bin</td></tr>
 <tr><td>SHA256</td><td>b167346b8eabda6dd8c7148e4aa15cd5f62148393accb7570e60f2505f010b7b</td></tr>
 </table>
-<br>
+
 <table>
 <tr><th colspan=2 align=left>Image File from Jessie Pinkman’s Phone Archive</th></tr>
 <tr><td>Evidence Type</td><td>Image</td></tr>
@@ -68,7 +68,7 @@ Pinkman's phone is described by the file name to be a Samsung Galaxy S6 Edge.
 <tr><td>File</td><td>blk32_sdc.bin</td></tr>
 <tr><td>SHA256</td><td>1301ca17cf7de7da7b52ae178c1dbbfed8fa4bcc97f081c6fb29c981ef43fd0b</td></tr>
 </table>
-<br>
+
 <table>
 <tr><th colspan=2 align=left>/proc/ Archive from Jessie Pinkman’s Phone Archive</th></tr>
 <tr><td>Evidence Type</td><td>Archive</td></tr>
@@ -82,11 +82,11 @@ iSmartAlarm is an ecosystem of security hardware and software.
 <table>
 <tr><th colspan=2 align=left>iSmartAlarm Diagnostic Logs</th></tr>
 <tr><td>Evidence Type</td><td>Binary Log</td></tr>
-<tr><td>Description</td><td>Image contains binary data, HTTP headers, JSON data, and message descriptions just as "CSUDP" and "ISAT".</td></tr>
+<tr><td>Description</td><td>File contains binary data, HTTP headers, JSON data, and message descriptions just as "CSUDP" and "ISAT".</td></tr>
 <tr><td>File</td><td>ismartalarm/diagnostics/2018-05-17T10_54_28/server_stream</td></tr>
 <tr><td>SHA256</td><td>8033ba6d37ad7f8ba22587ae560c04dba703962ed16ede8c36a55c9553913736</td></tr>
 </table>
-<br>
+
 <table>
 <tr><th colspan=2 align=left>iSmartAlarm Memory Image</th></tr>
 <tr><td>Evidence Type</td><td>Image</td></tr>
@@ -94,7 +94,7 @@ iSmartAlarm is an ecosystem of security hardware and software.
 <tr><td>File</td><td>ismartalarm/dump/ismart_00.img</td></tr>
 <tr><td>SHA256</td><td>b175f98ddb8c79e5a1e7db84eeaa691991939065ae17bad84cdbd915f65d9a10</td></tr>
 </table>
-<br>
+
 <table>
 <tr><th colspan=2 align=left>iSmartAlarm Memory Image</th></tr>
 <tr><td>Evidence Type</td><td>Image</td></tr>
@@ -104,9 +104,60 @@ iSmartAlarm is an ecosystem of security hardware and software.
 </table>
 
 ### Arlo
+Arlo Technologies is a home automation company. These evidence items are related to one of their cameras.
+<table>
+<tr><th colspan=2 align=left>Arlo Memory image</th></tr>
+<tr><td>Evidence Type</td><td>Image</td></tr>
+<tr><td>Description</td><td>Arlo – Memory image</td></tr>
+<tr><td>File</td><td>arlo/dfrws_arlo.img</td></tr>
+<tr><td>SHA256</td><td>3b957a90a57e5e4485aa78d79c9a04270a2ae93f503165c2a0204de918d7ac70</td></tr>
+</table>
+
+<table>
+<tr><th colspan=2 align=left>Arlo NVRAM Log</th></tr>
+<tr><td>Evidence Type</td><td>Log</td></tr>
+<tr><td>Description</td><td>Arlo – NVRAM settings</td></tr>
+<tr><td>File</td><td>arlo/nvram.log</td></tr>
+<tr><td>SHA256</td><td>f5d680d354a261576dc8601047899b5173dbbad374a868a20b97fbd963dca798</td></tr>
+</table>
+
+<table>
+<tr><th colspan=2 align=left>Arlo NAND</th></tr>
+<tr><td>Evidence Type</td><td>Archive</td></tr>
+<tr><td>Description</td><td>Arlo – NAND: TAR archive of the folder /tmp/media/nand</td></tr>
+<tr><td>File</td><td>arlo/arlo_nand.tar.gz</td></tr>
+<tr><td>SHA256</td><td>857455859086cd6face6115e72cb1c63d2befe11db92beec52d1f70618c5e421</td></tr>
+</table>
+
 ### WinkHub
+The Wink ecosystem of products allows control and configuration of many diverse smarthome devices via a single user interface.
+<table>
+<tr><td>Evidence Type</td><td>Archive</td></tr>
+<tr><td>Description</td><td>Filesystem TAR archive</td></tr>
+<tr><td>File</td><td>wink/wink.tar.gz</td></tr>
+<tr><td>SHA256</td><td>083e7428dc1d0ca335bbcfc11c6263720ab8145ffc637954a7733afc7b23e8c6</td></tr>
+</table>
+
 ### Amazon Echo
+A smart speaker that responds by various names and can manage other devices or applications via "skills".
+<table>
+<tr><td>Evidence Type</td><td>Archive</td></tr>
+<tr><td>Description</td><td>Archive of cloud data captured with <a href="https://www.dfrws.org/conferences/dfrws-usa-2017/sessions/digital-forensic-approaches-amazon-alexa-ecosystem">CIFT</a></td></tr>
+<tr><td>File</td><td>echo/(2018-07-01_13.17.01)_CIFT_RESULT.zip</td></tr>
+<tr><td>SHA256</td><td>7ee2d77a3297bb7ea4030444be6e0e150a272b3302d4f68453e8cfa11ef3241f</td></tr>
+</table>
+
 ### Network Capture
+<table>
+<tr><td>Evidence Type</td><td>Packet Capture</td></tr>
+<tr><td>Description</td><td>Digital forensic specialist gathered this capture after noticing the QBee camera was disabled.</td></tr>
+<tr><td>File</td><td>network/dfrws_police.pcap</td></tr>
+<tr><td>SHA256</td><td>1837ee390e060079fab1e17cafff88a1837610ef951153ddcb7cd85ad478228e</td></tr>
+</table>
+
+### Lab Layout Diagram
+
+![image](https://raw.githubusercontent.com/dfrws/dfrws2018-challenge/master/DFRWS2018-IoT-ForensicChallengeDiagram.png)
 
 ## Steps to Reproduce
 Steps to reproduce examination here
