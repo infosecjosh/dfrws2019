@@ -38,7 +38,7 @@ From October 2018 through the submission deadline the Navy Information Warfare C
 
 ## Scenario Background
 
-The section contains details that were provided by the challenge organizers about the scnario.
+The section contains details that were provided by the challenge organizers about the scenario.
 
 
 ![drug lab floorplan](https://raw.githubusercontent.com/dfrws/dfrws2018-challenge/master/DFRWS2018-IoT-ForensicChallengeDiagram.png)
