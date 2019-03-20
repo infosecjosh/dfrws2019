@@ -15,7 +15,7 @@ First we downloaded and verified the integrity of the downloaded artifact to the
 
 ## Extract the zip file contents for analysis
 
-During the next step we extracted the archived file and began reviewing the contents.
+During the next step we extracted the archived file and listed the contents.
 
 ```
 # mkdir wink_data
@@ -33,6 +33,15 @@ etc                 mnt         tmp
 home                opt         usr
 lib                 proc        var
 ```
+
+
+## As an alternative to extracting, we used the avfs tool (which is a virtual filesystem that allows browsing of compressed files) to mount the file system and review contents
+```
+# sudo apt install -y avfs
+# mountavfs
+# cd /home/sift/.avfs/mnt/hgfs/vmshare/DFRWS/wink.tar.gz#
+```
+
 # Suspicious access to Wink via SSH
 
 ## Abuse of ssh (dropbear) 
