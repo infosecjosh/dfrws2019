@@ -89,7 +89,7 @@ We created plaso parsers to support certain artifacts of interest and have provi
 We believe the lab was raided on 05/15. Although the local Amazon Echo had it's time reset to Jan 1 1970, the cloud added a date/time stamp to a voice of despair which was recorded saying "ooooooh" (in wav file 2018-05-15T15_07_34+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav). This suggests the assailants had access to the lab 2 days prior to when the police were called.
 
 ### Involvement of Jessie Pinkman's friends
-* Determine which, if any, of Jessie Pinkman's friends were involved in the raid and document the confidence level in that hypothesis
+Without having background information on Jessie's friends that law enforcement gathered and verfied it is difficult to pinpoint which of the friends is one of the peculiar users. Forensics must take into account physical evidence, testimony (such as alibis) as well as the digital evidence. We found that someone by the alias of fluffy was purposely doing backdoor types of things as indicated in the wink evidence. We know that fluffy was associated with Cthulhuuuu's iPhone (Chrome IOS-PHONE). However, without further investigation information or access to Cthulhuuu's phone we were unable to tie this to the real identity of potentially one of Jessie's friend. 
 
 ### How the QBee camera was disabled
 In our research of Qbee devices we found a blog that talks about iSmart and QBee vulnerabilities and parsing. This blog had key information on a CVE for the QBee camera and alos included a proof of concept exploit. It is notable this blog belongs to Francesco Servida who is actually mentioned in the challenge acknowledgements which we found was a hidden tip. The links to this information are as follows:
