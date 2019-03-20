@@ -164,6 +164,10 @@ Interactive shell with access to host mount points and /cases directory:
 sudo docker run --rm -ti -v /cases:/cases -v /mnt:/mnt --entrypoint /bin/bash iot-plaso:latest
 
 ## Alternative Conclusions
+### Time the illegal drug lab was raided
+Another alternative is that the drug lab was raided 2018-05-17 at 10:22:25.439 just 5 minutes after Jessie set the alarm with the door open. The Amazon Echo recorded a voice at this time. On the wav file ((2018-05-17T10_22_24+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav) you can hear a voice and then a beep. This alludes to the lab being raided aftr the alarm was last set and when Jessie left. 
+
+
 ### How the QBee camera was disabled
 We also noted NTP packets in the network packet capture indicating the QBee camera kept rebooting and on boot shows time as Jan 1 1970. It appears someone UDP's to a Amazon host, opens a TLS session then NTP time resets causes QBee to reboot. Our secondary hypotheseis is 
 someone installed instructions in the Amazon cloud to make the QBee reboot every time it wakes up (in effect disabling the camera function). Without access to the Amazon cloud host or QBee certs we were unable to crack the TLS session.
