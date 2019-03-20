@@ -92,6 +92,8 @@ In our research of Qbee devices we found a blog that talks about iSmart and QBee
 https://blog.francescoservida.ch/2018/09/16/cve-2018-16225-public-disclosure-qbee-camera-vulnerability/
 https://blog.francescoservida.ch/wp-content/uploads/2018/09/proof_of_concept_network.zip
 
+The following image shows the creds disclosed using the above CVE:
+![QBee creds](./image.png)
 
 ## Alternative Conclusions
 
