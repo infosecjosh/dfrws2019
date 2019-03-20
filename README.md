@@ -4,7 +4,7 @@ This repository is Navy Information Warfare Center, Atlantic's submission to the
 
 Submission by: Naval Information Warfare Center, Atlantic (NIWC LANT)
 
-Team: Kelly Hines, Joshua Lewis, Nicholas Phillpott, Randy Sharo
+Team: Kelly Hines, Joshua Lewis, Nicholas Phillpott, Randy Sharo, Shawn Zwach
 
 Submission date: 20 MAR 2019
 
