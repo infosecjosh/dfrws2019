@@ -343,8 +343,10 @@ We correlated the src_path field of cift_amazon_alexa_ACQUIRED_FILE.csv to the c
 | 2018-05-15 | 15:06:01.196 | [Alexa] | - | "Hi!" | -70877451c52cb6708cb7bb5010a72ae1b2fc2450.json |
 | 2018-05-15 | 15:06:05.529 | Jessie | "alexa how are you" | "alexa how are you" | -(2018-05-15T15_06_03+0200)_TEXT(alexa how are you).wav<br>-a8bec2729885261ae45b0b306352b7db27303318.json |
 | 2018-05-15 | 15:06:06.156 | [Alexa] | - | "All systems go!" | -a8bec2729885261ae45b0b306352b7db27303318.json |
+| 2018-05-15 | 15:06:10.358 | [Discarded Recording] | Sounds like a strangers voice laughing | - | -(2018-05-15T15_06_08+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav | 
 | 2018-05-15 | 15:06:12.915 | Jessie, Person 2 | Voice 1: ?table for two? Voice 2: “Alexa what is the weather for today?” Voice 1: “?are you a beach?” | "alexa" | -(2018-05-15T15_06_12+0200)_TEXT(alexa).wav<br>-b7aae84f094d1b181eb654bb45657782b696c047.json<br>-(2018-05-15T15_06_12+0200)_TEXT(Weather in Le Pigeon, Switzerland (AccuWeather.com)).wav<br>-(2018-05-15T15_06_12+0200)_TEXT(what's the weather for today).wav | 
 | 2018-05-15 | 15:06:15.124 | [Alexa] | - | "Right now in Le Pigeon, it's 16 degrees Celsius with mostly cloudy skies. Today's forecast has lots of clouds and thunderstorms, with a high of 17 degrees and a low of 9 degrees." | f907e0abeaa1713c73d8e7e2c992e61696cbb079.json |
+| 2018-05-15 | 15:06:29.681 | [Discarded Recording] | Sounds like 2 voices, can't make out what they are saying | - | -(2018-05-15T15_06_28+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav | 
 | 2018-05-15 | 15:06:47.480 | Jessie, Person 2 | Voice 1: “Alexa” Voice ?: “you’re sleeping” Voice ?: “what’s up” | "alexa" | -(2018-05-15T15_06_47+0200)_TEXT(alexa).wav<br>-7faff2d92632146d6a66994a0dcb69af83a761f5.json |
 | 2018-05-15 | 15:06:49.499 | Jessie, Person 2 | Voice 1: “Alexa” Voice ?: “you’re sleeping” Voice ?: “what’s up” | "what's up" | -(2018-05-15T15_06_47+0200)_TEXT(what's up).wav<br>-afdd06417c5f1c8e07e7356412191fed05e57779.json | 
 | 2018-05-15 | 15:06:50.543 | [Alexa] | - | "Good afternoon" | -afdd06417c5f1c8e07e7356412191fed05e57779.json |
@@ -353,8 +355,10 @@ We correlated the src_path field of cift_amazon_alexa_ACQUIRED_FILE.csv to the c
 | 2018-05-15 | 15:06:50.546 | [Alexa] | - | "By the way, I just read an interesting story. Canadian actress Margot Kidder, famous for playing Lois Lane, is dead at 69.. Do you want to hear more about that?" | -afdd06417c5f1c8e07e7356412191fed05e57779.json |
 | 2018-05-15 | 15:07:08.267 | Jessie, Person 2 |“Yes yes” | "yes"| -(2018-05-15T15_07_07+0200)_TEXT(yes).wav<br>-afdd06417c5f1c8e07e7356412191fed05e57779.json | 
 | 2018-05-15 | 15:07:08.796 | [Alexa] | - | "Canadian actress Margot Kidder, famous for playing Lois Lane alongside Christopher Reeve's Superman, has passed away. She was 69.." | -afdd06417c5f1c8e07e7356412191fed05e57779.json | 
+| 2018-05-15 | 15:07:25.106 | [Discarded Recording] | Possibly two voices “wow wonderful story I’m so impressed” | - | -(2018-05-15T15_07_18+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav | 
 | 2018-05-15 | 15:07:29.082 | Jessie | “Alexa did you have another story” | "alexa" | -(2018-05-15T15_07_28+0200)_TEXT(alexa).wav<br>-70c7f283c560829fd1d221786c7d8d9f59a71c6b.json<br>-(2018-05-15T15_07_28+0200)_TEXT(did you have another story).wav<br>-a63936fe6724ba5cc86e195f09124cc093e135ea.json | 
 | 2018-05-15 | 15:07:31.390 | [Alexa] | - | "Sorry, I don't know that one." | -a63936fe6724ba5cc86e195f09124cc093e135ea.json |
+| 2018-05-15 | 15:07:36.174 | [Discarded Recording] | Sounds like despair "oooooooh" | - | -(2018-05-15T15_07_34+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav |
 | 2018-05-15 | 15:07:41.402 | ?Jessie | “Alexa bye I see you soon” | "alexa" | -(2018-05-15T15_07_41+0200)_TEXT(alexa).wav<br>-639f82826aa814e3faa8dad3617c54b9c42589aa.json<br>-(2018-05-15T15_07_41+0200)_TEXT(well i see you soon).wav<br>-0fa8eab961d947113d0b7a946e192bd1230db1a6.json |
 | 2018-05-15 | 15:07:43.791 | [Alexa] | - | - | 0fa8eab961d947113d0b7a946e192bd1230db1a6.json |
 | 2018-05-15 | 15:07:48.861 | ?Jessie | “Alexa bye see you” | "alexa" | -(2018-05-15T15_07_48+0200)_TEXT(alexa).wav<br>-d0197feb4ffd41eff65264a1e5f8b8b248e8b431.json<br>-7893eada8583fdcdb08b04ccc7d4729b51b2079b.json | 
@@ -372,6 +376,7 @@ We correlated the src_path field of cift_amazon_alexa_ACQUIRED_FILE.csv to the c
 | 2018-05-16 | 15:35:21.507 | [Alexa] | - | "'friendsgiving' is usually defined as a thanksgiving feast held by and for someone's friends." | -cee9e603b9c1ee58fa32d3e47797da7cfb996fa7.json | 
 | 2018-05-16 | 15:36:00.257 | Jessie, background voice | “Alexa….what’s forensic?” | "alexa what's four and six" | -(2018-05-16T15_36_00+0200)_TEXT(alexa).wav<br>-f498518b586fbece8365c2e949ba52404aa52f68.json<br>-(2018-05-16T15_36_00+0200)_TEXT(what's four and six).wav<br>-3407d82d529e01bdafc6c721d4e88b73de4d0149.json | 
 | 2018-05-16 | 15:36:06.600 | [Alexa] | - | "4 plus 6 equals 10." | -3407d82d529e01bdafc6c721d4e88b73de4d0149.json | 
+| 2018-05-16 | 15:36:12.761 | [Discarded Recording] | Sounds like saying….“four and six cards” | - | -(2018-05-16T15_36_10+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav |
 | 2018-05-17 | 10:16:08.742 | Jessie, background noise | “Alexa play Led Zepplin” | "alexa play led zeppelin" | -(2018-05-17T10_16_07+0200)_TEXT(alexa play led zeppelin).wav<br>-082a17905eb233a9863b97ec9f6b5b8970191fbf.json |
 | 2018-05-17 | 10:16:09.458 |  [Alexa] | - | "To play Spotify, link your premium account first using the Alexa App." | -082a17905eb233a9863b97ec9f6b5b8970191fbf.json | 
 | 2018-05-17 | 10:16:20.470 | Background noise | background noise maybe laughing | unknown | -(2018-05-17T10_16_15+0200)_TEXT(Unknown).wav | 
@@ -379,8 +384,8 @@ We correlated the src_path field of cift_amazon_alexa_ACQUIRED_FILE.csv to the c
 | 2018-05-17 | 10:22:13.530 | [Alexa] | - | "Your Door is open, Are you sure you want to arm your system?" | -0305c1b97c035364db7251e540c2cb39b9976091.json |
 | 2018-05-17 | 10:22:19.409 | Jessie | "yes" | "yes" | -(2018-05-17T10_22_18+0200)_TEXT(yes).wav<br>-2b8c27e2807996578e4baa0954d0340e632f3b6d.json | 
 | 2018-05-17 | 10:22:20.720 | [Alexa] | - | "Your system will set to Arm in 30 seconds." | -2b8c27e2807996578e4baa0954d0340e632f3b6d.json |
-
-
+| 2018-05-17 | 10:22:25.439 | [Discarded Recording] | hear a voice (can’t make out what saying) and a beep | - | -(2018-05-17T10_22_24+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav |
+| 2018-05-30 | 11:10:01.989 | [Discarded Recording] | hear 2-3 voices can’t make out what they are saying | - | -(2018-05-30T11_09_58+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav | 
 
 
 
