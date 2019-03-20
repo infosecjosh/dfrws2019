@@ -33,8 +33,11 @@ realclean: clean
 	sudo $(DOCKER) volume rm docker_esdata1
 
 plaso-import: build
+	mkdir /cases/dfrws2019
+	cp dfrws-plaso.db /cases/dfrws2019
 	@echo Default elastic password is 'changeme'
-	sudo $(DOCKER) run -ti --rm -v /cases:/cases iot-plaso:latest psort -o elastic --raw_fields --index_name dfrws2019 --server $(ELASTIC_IP) --elastic_user elastic /cases/dfrws2019/events.plaso
+	sudo $(DOCKER) run -ti --rm -v /cases:/cases iot-plaso:latest psort -z Europe/Zurich -o elastic --raw_fields --index_name dfrws2019 --server $(ELASTIC_IP) --elastic_user elastic /cases/dfrws2019/dfrws-plaso.db
+
 
 $(DOCKER):
 	sudo apt-get install -y docker
