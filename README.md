@@ -57,7 +57,7 @@ Evidence items are listed in the order they were presented by the challenge docu
 | JPinkman | Jessie Pinkman | jpinkman2018@gmail.com | |
 | TheBoss | S. Varga | | _associated with Varga by process of elimination_ |
 | pandadodu | D. Pandana | | _associated with Pandana due to name similarity_ |
-| | | emidnight@gmail.com | _email addr present in com.quirky.android.wink.wink_preferences.xml_ |
+| | | emidnight@gmail.com | _email addr present in com.quirky.android.wink.wink_preferences.xml_ Email also present in the chrome Autofill history /mnt/userdata/data/com.android.chrome/app_chrome/Default/Web Data last used 5/15/2018 at 9:23:56 |
 | | | francesco | _user id present in data/com.android.chrome/app_chrome/Default/Web Data_ |
 
 #### fluffy
