@@ -84,6 +84,7 @@ We created plaso parsers to support certain artifacts of interest and have provi
 
 ## Conclusions
 ### Time the illegal drug lab was raided
+We believe the lab was raided on 05/15. Although the local Amazon Echo had it's time reset to Jan 1 1970, the cloud added a date/time stamp to a voice of despair which was recorded saying "ooooooh" (in wav file 2018-05-15T15_07_34+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav). This suggests the assailants had access to the lab 2 days prior to when the police were called.
 
 ### Involvement of Jessie Pinkman's friends
 * Determine which, if any, of Jessie Pinkman's friends were involved in the raid and document the confidence level in that hypothesis
