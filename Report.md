@@ -13,7 +13,7 @@ Submission date: 20 MAR 2019
 ## Table of Contents
 * [Executive Summary](#executive-summary)
 * [Objectives](#objectives)
-* [Evidence](#evidence)
+* [Evidence Review](#evidence)
 * [Timeline](#timeline)
 * [Conclusion](#conclusion)
 * [Alternative Conclusions](#alternative-conclusions)
@@ -28,8 +28,8 @@ The attorney general assigned the following objectives:
 * Determine which, if any, of Jessie Pinkman's friends were involved in the raid and document the confidence level in that hypothesis
 * Determine how the QBee camera was disabled
 
-## Evidence
-Evidence items are listed in the order they were presented by the challenge documentation. Notably, to share this challenge among teams, evidence items are not original evidence but copies of the previously collected evidence.
+## Evidence Review
+Evidence items are listed in the order they were presented by the challenge documentation. Each analysis link shows the detailed extraction and analysis of each evidence item. Notably, to share this challenge among teams, evidence items are not original evidence but copies of the previously collected evidence.
 
 | File Description | Filename | Analysis | SHA256 Hash |
 | --- | --- | --- | --- |
@@ -39,13 +39,32 @@ Evidence items are listed in the order they were presented by the challenge docu
 | Arlo – Memory image | arlo/dfrws_arlo.img |  | 3b957a90a57e5e4485aa78d79c9a04270a2ae93f503165c2a0204de918d7ac70 |
 | Arlo – NVRAM settings | arlo/nvram.log |  | f5d680d354a261576dc8601047899b5173dbbad374a868a20b97fbd963dca798 |
 | Arlo – NAND: TAR archive of the folder /tmp/media/nand | arlo/arlo_nand.tar.gz | [Link](https://gitlab.com/lewis.joshua/dfrws2019/blob/master/arlo/nand.md) | 857455859086cd6face6115e72cb1c63d2befe11db92beec52d1f70618c5e421 |
-| WinkHub – Filesystem TAR archive | wink/wink.tar.gz | [Link 1](https://gitlab.com/lewis.joshua/dfrws2019/blob/master/Wink/suspicious_access.md), [Link 2](https://gitlab.com/lewis.joshua/dfrws2019/blob/master/Wink/Wink) | 083e7428dc1d0ca335bbcfc11c6263720ab8145ffc637954a7733afc7b23e8c6 |
+| WinkHub – Filesystem TAR archive | wink/wink.tar.gz | [Link](https://gitlab.com/lewis.joshua/dfrws2019/blob/master/wink_analysis.md) | 083e7428dc1d0ca335bbcfc11c6263720ab8145ffc637954a7733afc7b23e8c6 |
 | Amazon Echo – Extraction of cloud data obtained via CIFT | echo/(2018-07-01_13.17.01)_CIFT_RESULT.zip | [Link](https://gitlab.com/lewis.joshua/dfrws2019/blob/master/echo_analysis.md) | 7ee2d77a3297bb7ea4030444be6e0e150a272b3302d4f68453e8cfa11ef3241f |
-| Network capture | network/dfrws_police.pcap | [Link](https://gitlab.com/lewis.joshua/dfrws2019/blob/master/dfrws_police.pcap.md) | 1837ee390e060079fab1e17cafff88a1837610ef951153ddcb7cd85ad478228e |
+| Network capture | network/dfrws_police.pcap | [Link](https://gitlab.com/lewis.joshua/dfrws2019/blob/master/network_analysis.md) | 1837ee390e060079fab1e17cafff88a1837610ef951153ddcb7cd85ad478228e |
 
 ### Lab Layout Diagram
 
 ![image](https://raw.githubusercontent.com/dfrws/dfrws2018-challenge/master/DFRWS2018-IoT-ForensicChallengeDiagram.png)
+
+### User identities and associations
+
+#### ISmartAlarm ids
+
+| User | Most Likely Identity | Related accounts/identities | Notes |
+| - | - | - | - |
+| JPinkman | Jessie Pinkman | jpinkman2018@gmail.com | |
+| TheBoss | S. Varga | | _associated with Varga by process of elimination_ |
+| pandadodu | D. Pandana | | _associated with Pandana due to name similarity_ |
+| | | emidnight@gmail.com | _email addr present in com.quirky.android.wink.wink_preferences.xml_ |
+| | | francesco | _user id present in data/com.android.chrome/app_chrome/Default/Web Data_ |
+
+#### fluffy
+   * `fluffy@hogwarts` ssh key on Wink device.  Logged in as root from `172.21.94.4`
+   * Multiple `Fluffy` sessions captured in `data/com.android.chrome/app_chrome/Default/Sync Data/SyncData.sqlite3`
+   * `data/com.android.chrome/app_chrome/Default/Sync Data/LevelDB/000003.log` associates `Fluffy` with `Cthulhuuuu's iPhone` (Chrome IOS-PHONE)
+
+
 
 ## Steps to Reproduce
 
