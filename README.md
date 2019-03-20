@@ -101,6 +101,71 @@ The following image shows the creds disclosed using the above CVE:
 
 ## Tool Build and Operating Instructions
 
+
+![Tools](./Tools.jpeg)
+
+Tool Build & Operating Instructions
+Our tools are delivered as python source code, and scripts to build a set of Docker images.
+The general flow of data is as follows:
+
+Prerequisites
+The tools are intended to be run from an Ubuntu 16.04 host with SIFT-CLI installed as described here:
+ https://github.com/sans-dfir/sift-cli#installation
+The user must have sudo access to install packages and run docker containers.  The build scripts provided will invoke sudo as needed; the user must be prepared to enter their password.  It must also have support for docker-compose and the protobuf bindings for python.
+The host must also have internet or other network access that allows it to download images from Docker Hub and Elastic ( https://hub.docker.com and https://www.docker.elastic.co ).
+
+Building the Docker Images
+From the top-level of the delivery package, type:
+cd docker
+make images build
+
+This will download the required Docker Hub images and apply a patch to the standard log2timeline/plaso image.  The system should now have five docker images installed:
+Docker Image
+Description
+Iot-plaso:latest
+Plaso with IoT plugins added
+log2timeline/plaso:latest
+Base image for iot-plaso
+docker.elastic.co/kibana/kibana:5.2.1
+Visualizer for Elasticsearch
+docker.elastic.co/logstash/logstash:5.2.1
+Data ingest for Elasticsearch
+docker.elastic.co/elasticsearch/elasticsearch:5.2.1
+Search and analytics engine
+Building Python Protobuf Bindings
+Download and install protobuf >= v3.5.1.
+wget  \ https://github.com/google/protobuf/releases/download/v3.5.1/protobuf-all-3.5.1.tar.gz
+tar zxf protobuf-all-3.5.1.tar.gz
+cd protobuf-3.5.1
+make
+sudo make install
+cd python
+python setup.py build
+sudo python setup.py install
+
+Launching Tools
+Elasticsearch and Kibana
+Elasticsearch and Kibana are launched using docker-compose.  The file docker/Makefile can automatically launch these tools via the command:
+cd docker ; make elastic-start
+
+The provided docker-compose.yml script will bind Elasticsearch to port 9100 and Kibana to port 5601 on the host machine.  Kibana will be reachable by navigating your web browser to http://localhost:5601
+The default login and password for Elasticsearch and Kibana will be:
+Login: elastic
+Password: changeme
+The containers can be shut down and deleted via the commands:
+make elastic-stop ; make clean
+
+Ingested data will remain in the docker storage volume esdata1 until you purge it with the command:
+make realclean
+
+iot-plaso
+The iot-plaso image can perform many different functions, depending on command-line arguments provided.   Typical invocations will be as follows:
+Load plaso database into elasticsearch:
+sudo docker run --rm -ti -v /cases:/cases iot-plaso:latest psort -o elastic --raw_fields --index_name dfrws2018 --server $(ELASTIC_IP) --elastic_user elastic /cases/dfrws2018/events.plaso
+
+Interactive shell with access to host mount points and /cases directory:
+sudo docker run --rm -ti -v /cases:/cases -v /mnt:/mnt --entrypoint /bin/bash iot-plaso:latest
+
 ## Alternative Conclusions
 ### How the QBee camera was disabled
 We also noted NTP packets in the network packet capture indicating the QBee camera kept rebooting and on boot shows time as Jan 1 1970. It appears someone UDP's to a Amazon host, opens a TLS session then NTP time resets causes QBee to reboot. Our secondary hypotheseis is 
