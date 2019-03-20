@@ -12,11 +12,10 @@ all: build elastic-start
 images: $(DOCKER)
 	sudo $(DOCKER) pull docker.elastic.co/elasticsearch/elasticsearch:$(ELASTIC_VERSION)
 	sudo $(DOCKER) pull docker.elastic.co/kibana/kibana:$(ELASTIC_VERSION)
-	sudo $(DOCKER) pull docker.elastic.co/logstash/logstash:$(ELASTIC_VERSION)
 	sudo $(DOCKER) pull log2timeline/plaso
 
 build: $(DOCKER)
-	sudo $(DOCKER) build -t iot-plaso:latest -f patched-plaso.dockerfile .
+		sudo $(DOCKER) build -t iot-plaso:latest -f patched-plaso.dockerfile .
 
 elastic-start: $(DOCKER_COMPOSE)
 	sudo $(DOCKER_COMPOSE) up -d
@@ -35,8 +34,7 @@ realclean: clean
 
 plaso-import: build
 	@echo Default elastic password is 'changeme'
-	sudo $(DOCKER) run -ti --rm -v /cases:/cases iot-plaso:latest psort -o elastic --raw_fields --index_name dfrws2018 --server $(ELASTIC_IP) --elastic_user elastic /cases/dfrws2018/events.plaso
-
+	sudo $(DOCKER) run -ti --rm -v /cases:/cases iot-plaso:latest psort -o elastic --raw_fields --index_name dfrws2019 --server $(ELASTIC_IP) --elastic_user elastic /cases/dfrws2019/events.plaso
 
 $(DOCKER):
 	sudo apt-get install -y docker

@@ -14,7 +14,6 @@ PSORT=`which psort.py`
 function make_plaso_timeline() {
 	"${L2T}" -z "${TZ}" --parsers sqlite "${plaso_db}" "${MNT}"
 	"${PSORT}" -z "${TZ}" -o elastic --raw_fields --elastic_user elastic --index_name dfrws2019 "${plaso_db}" "date > '${CAPTURE_START}' and date < '${CAPTURE_END}'"
-
 }
 
 # "Main"
@@ -22,6 +21,5 @@ function make_plaso_timeline() {
 set -e
 
 plaso_db="dfrws-plaso.db"
-plaso_csv="dfrws-plaso.csv"
 
 make_plaso_timeline
