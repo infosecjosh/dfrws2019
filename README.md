@@ -92,10 +92,17 @@ In our research of Qbee devices we found a blog that talks about iSmart and QBee
 https://blog.francescoservida.ch/2018/09/16/cve-2018-16225-public-disclosure-qbee-camera-vulnerability/
 https://blog.francescoservida.ch/wp-content/uploads/2018/09/proof_of_concept_network.zip
 
+We reviewed Jessie Pinkman's Samsung phone and noted use of the QBee Cam application (for example in the data directory we noted the directory com.vestiacom.qbeecamera). Since traffic between the client (in this case the QBee Cam application for Android) and the QBee was unencrypted someone on Jessie's local network could have easily sniffed this unecrypted traffic to capture the required cookie session data to establish a session with the QBee. We believe someone Jessie knew that was in his home was able to reuse this intercepted cookie to authorize requests to camera and disable it which is exactly how the CVE-2018-16225 vulnerability works. 
+A further review of the dsim directoy on the Jessie's phone shows a screenshot with the word private over it such that the image is not visible which implies the attacker put the QBee in to privacy mode which locks the camera. These observations together impley the QBee camera was disabled (by enablement of privacy mode) using Fernando's exploit by someone on the Jessie's local network. 
+
 The following image shows the creds disclosed using the above CVE:
 ![QBee creds](./image.png)
 
+
 ## Alternative Conclusions
+### How the QBee camera was disabled
+We also noted NTP packets in the network packet capture indicating the QBee camera kept rebooting and on boot shows time as Jan 1 1970. It appears someone UDP's to a Amazon host, opens a TLS session then NTP time resets causes QBee to reboot. Our secondary hypotheseis is 
+someone installed instructions in the Amazon cloud to make the QBee reboot every time it wakes up (in effect disabling the camera function). Without access to the Amazon cloud host or QBee certs we were unable to crack the TLS session.
 
 ## Acknowledgements
 
