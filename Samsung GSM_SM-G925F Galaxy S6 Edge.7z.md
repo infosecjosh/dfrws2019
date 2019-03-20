@@ -242,6 +242,8 @@ We wrote a script called mountem.sh to mount the USERDATA partition.  You will n
 ./utils/mountem.sh
 ```
 
+Jessie's phone had the Arlo mobile app installed. The pictures we discovred on the phone that were captured by the arlo camera were found in `userdata/data/com.netgear.android`
+
 
 
   need to look more into wink databaes files /mnt/Samsung/data/com.quirky.android.wink.wink/databases/persistenceDB
