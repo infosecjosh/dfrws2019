@@ -100,4 +100,6 @@ Re-reading the [challenge details](https://github.com/dfrws/dfrws2018-challenge/
 
 > The digital forensic specialist preserves the diagnostic logs from the iSmartAlarm base station, and acquires a copy of the filesystem of the WinkHub. He also collects the iSmartAlarm and Arlo base stations to perform an in-depth analysis at the forensic laboratory.
 
-So these are probably memory images taken while u-boot is running -- not flash images.  Still, only 8MB were collected, which is probably smaller than the Cube's full RAM.
+So these are probably memory images taken while u-boot is running -- not flash images.  Still, only 8MB were collected, which is probably smaller than the Cube's full RAM.  
+
+So we were not really sure how this happend.  In digital forensics best practices, the analyst taking the image would have fully detailed the process that he used to create the image in a scientific repeatable process.  However we were provided limited details.
