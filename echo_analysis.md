@@ -385,5 +385,9 @@ We correlated the src_path field of cift_amazon_alexa_ACQUIRED_FILE.csv to the c
 
 
 
-The 1970 date are odd, but we can tell by the created on the wav file when these audios were captured by Alexa. Also notable is Alexa is told to set the iSmartAlarm the day of the incident even though the door is open.
+The 1970 dates are odd, but we can tell by the created date/time on the wav file when these audios were captured by Alexa. 
+
+Also, notable is Alexa is told to set the iSmartAlarm the day of the incident even though the door is open. It should be noted from the challenge details that Jessie Pinkman had the IoT security systems installed because he feared attacks from a rival gang and that Jessie kept the alarm engaged in “Home” mode whenever he was inside the drug lab.
+So what is "Home" mode?
+> Home - Only Contact Sensors Sensors are activated when the system is set to Home. Set your system to this mode when you're home. Pets will not trigger the alarm when they move around in the house.
 
