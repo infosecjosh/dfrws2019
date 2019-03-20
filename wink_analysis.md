@@ -362,4 +362,10 @@ The `fluffy@hogwarts` key appears in the wink `/database` and `/database_default
 SSDP traffic referencing dial-multiscreen-org appears in proximity to `Fluffy` in `dfrws_arlo.img`
 
 # Utility to review data
-We wrote a python script to review data called [DumpWinkPersistenceDB.py](Wink/DumpWinkPersistenceDB.py)
+We wrote a python script to review data from the persistencedb called [DumpWinkPersistenceDB.py](Wink/DumpWinkPersistenceDB.py). The script outputs key data to a text file and includes timestamps for may 17th from smoke detector and camera. Below is the output:
+
+```
+```
+
+
+
