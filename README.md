@@ -16,6 +16,7 @@ Submission date: 20 MAR 2019
 * [Evidence Review](#evidence-review)
 * [Timeline](#timeline)
 * [Conclusions](#conclusions)
+* [Tool Build and Operating Instructions](#toolBuild)
 * [Alternative Conclusions](#alternative-conclusions)
 * [Acknowledgements](#acknowledgements)
 
@@ -98,6 +99,7 @@ A further review of the dsim directoy on the Jessie's phone shows a screenshot w
 The following image shows the creds disclosed using the above CVE:
 ![QBee creds](./image.png)
 
+## Tool Build and Operating Instructions
 
 ## Alternative Conclusions
 ### How the QBee camera was disabled
