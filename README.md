@@ -101,21 +101,20 @@ The following image shows the creds disclosed using the above CVE:
 
 ## Tool Build and Operating Instructions
 
+Our tools are delivered as python source code, and scripts to build a set of Docker images.
+
+The general flow of data is as follows:
 
 ![Tools](./Tools.jpeg)
 
-Tool Build & Operating Instructions
-Our tools are delivered as python source code, and scripts to build a set of Docker images.
-The general flow of data is as follows:
-
-Prerequisites
+###Prerequisites
 The tools are intended to be run from an Ubuntu 16.04 host with SIFT-CLI installed as described here:
  https://github.com/sans-dfir/sift-cli#installation
-The user must have sudo access to install packages and run docker containers.  The build scripts provided will invoke sudo as needed; the user must be prepared to enter their password.  It must also have support for docker-compose and the protobuf bindings for python.
+The user must have sudo access to install packages and run docker containers.  The build scripts provided will invoke sudo as needed; the user must be prepared to enter their password.  It must also have support for docker and docker-compose.
 The host must also have internet or other network access that allows it to download images from Docker Hub and Elastic ( https://hub.docker.com and https://www.docker.elastic.co ).
 
 Building the Docker Images
-From the top-level of the delivery package, type:
+From the top-level of the dfrws2019 repository package, type:
 cd docker
 make images build
 
@@ -132,16 +131,6 @@ docker.elastic.co/logstash/logstash:5.2.1
 Data ingest for Elasticsearch
 docker.elastic.co/elasticsearch/elasticsearch:5.2.1
 Search and analytics engine
-Building Python Protobuf Bindings
-Download and install protobuf >= v3.5.1.
-wget  \ https://github.com/google/protobuf/releases/download/v3.5.1/protobuf-all-3.5.1.tar.gz
-tar zxf protobuf-all-3.5.1.tar.gz
-cd protobuf-3.5.1
-make
-sudo make install
-cd python
-python setup.py build
-sudo python setup.py install
 
 Launching Tools
 Elasticsearch and Kibana
