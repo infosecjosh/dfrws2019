@@ -3,8 +3,18 @@
   File/Folder: Samsung GSM_SM-G925F Galaxy S6 Edge.7z
   
   SHA256: ae83b8ec1d4338f6c4e0a312e73d7b410904fab504f7510723362efe6186b757
+
+--------------------
+
+Outline
+
+* [Initial Processing and Data Extraction](#Initial-Processing-and-Data-Extraction)
+* [Interesting Activity](#Interesting-Activity)
+
+
+## Initial Processing and Data Extraction
   
-## Download and verify the integrity of downloaded artifact
+### Download and verify the integrity of downloaded artifact
 
 First we downloaded and verified the integrity of the downloaded artifact to the SHA256 hash provided by the challenge.
 ```
@@ -12,7 +22,7 @@ First we downloaded and verified the integrity of the downloaded artifact to the
 ae83b8ec1d4338f6c4e0a312e73d7b410904fab504f7510723362efe6186b757  Samsung GSM_SM-G925F Galaxy S6 Edge.7z
 ```
 
-## Extract the 7zip file contents for analysis
+### Extract the 7zip file contents for analysis
 
 During the next step we extracted the compressed 7zip file and began looking at its contents.
 
@@ -247,14 +257,14 @@ We also wrote a script that would generate a timeline using plaso if you have pl
 ./utils/timelinegen.sh
 ```
 
+## Interesting Activity
 
-Jessie's phone had the Arlo mobile app installed. The pictures we discovered on the phone that were captured by the arlo camera were found in `userdata/data/com.netgear.android`
+### Chrome History
 
 
-  need to look more into wink databaes files /mnt/Samsung/data/com.quirky.android.wink.wink/databases/persistenceDB
-  
-  "SuperLab Kitchen Nest Protect (LabSmoker)""
-  "SuperLab Tabletting Camera"
+### Pictures
+
+## 
 
 found a lot in the Chrome sqlite3 db
 
@@ -342,3 +352,13 @@ root@siftworkstation -> /m/samsung
 ./data/com.google.android.gm/files/downloads
 ./data/com.google.android.apps.maps/app_offline_downloads
 ```
+
+Jessie's phone had the Arlo mobile app installed. The pictures we discovered on the phone that were captured by the arlo camera were found in `userdata/data/com.netgear.android`
+
+
+  need to look more into wink databaes files /mnt/Samsung/data/com.quirky.android.wink.wink/databases/persistenceDB
+  
+  "SuperLab Kitchen Nest Protect (LabSmoker)""
+  "SuperLab Tabletting Camera"
+
+
