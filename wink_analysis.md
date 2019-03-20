@@ -41,6 +41,8 @@ lib                 proc        var
 # mountavfs
 # cd /home/sift/.avfs/mnt/hgfs/vmshare/DFRWS/wink.tar.gz#
 ```
+## Creds
+db at `wink.tar.gz\database\lutron-db.sqlite` contains creds admin:1988
 
 # Suspicious access to Wink via SSH
 
