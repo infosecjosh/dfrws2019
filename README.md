@@ -94,7 +94,8 @@ https://blog.francescoservida.ch/2018/09/16/cve-2018-16225-public-disclosure-qbe
 https://blog.francescoservida.ch/wp-content/uploads/2018/09/proof_of_concept_network.zip
 
 We reviewed Jessie Pinkman's Samsung phone and noted use of the QBee Cam application (for example in the data directory we noted the directory com.vestiacom.qbeecamera). Since traffic between the client (in this case the QBee Cam application for Android) and the QBee was unencrypted someone on Jessie's local network could have easily sniffed this unecrypted traffic to capture the required cookie session data to establish a session with the QBee. We believe someone Jessie knew that was in his home was able to reuse this intercepted cookie to authorize requests to camera and disable it which is exactly how the CVE-2018-16225 vulnerability works. 
-A further review of the dsim directoy on the Jessie's phone shows a screenshot with the word private over it such that the image is not visible which implies the attacker put the QBee in to privacy mode which locks the camera. These observations together impley the QBee camera was disabled (by enablement of privacy mode) using Fernando's exploit by someone on the Jessie's local network. 
+A further review of the dsim directoy on the Jessie's phone shows a screenshot with the word private over it such that the image is not visible which implies the attacker put the QBee in to privacy mode which locks the camera. These observations together impley the QBee camera was disabled (by enablement of privacy mode) using Fernando's exploit by someone on the Jessie's local network. Lastly, we found the user id francesco
+present in data/com.android.chrome/app_chrome/Default/Web Data which furthers our conclusion this exploit was used to disable the QBee camera.
 
 The following image shows the creds disclosed using the above CVE:
 ![QBee creds](./image.png)
