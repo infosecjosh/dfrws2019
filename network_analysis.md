@@ -14,11 +14,11 @@ First we downloaded and verified the integrity of the downloaded artifact to the
 ```
 
 
-## Analysis of Contents
+# Analysis of Contents
 
 We used Wireshark to review the contents. Below are the notable items found.
 
-# LAN Hosts
+## LAN Hosts
 
 |Name|MAC|IP(s)|OUI|Notes|
 |----|---|-----|---|-----|
@@ -35,7 +35,7 @@ We used Wireshark to review the contents. Below are the notable items found.
 |    | a6:f1:e8:80:85:64 | 172.20.10.1 | | recorded in tv.peel.app database on Samsung phone |
 |    | <unknown> | 172.21.94.4 | | _was used to ssh into Wink as root_ |
 
-# WAN Hosts
+## WAN Hosts
 
 |Name|IP(s)| Whois | Notes|
 |----|-----|-------|------|
