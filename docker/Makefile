@@ -40,7 +40,9 @@ plaso-import: build
 
 
 $(DOCKER):
+	sudo apt-get update
 	sudo apt-get install -y docker
 
 $(DOCKER_COMPOSE):
+	sudo apt-get update
 	sudo apt-get install -y docker-compose
