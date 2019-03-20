@@ -132,20 +132,26 @@ Visualizer for Elasticsearch
 docker.elastic.co/elasticsearch/elasticsearch:5.2.1
 Search and analytics engine
 
-Launching Tools
-Elasticsearch and Kibana
+### Launching Tools
+
+#### Elasticsearch and Kibana
 Elasticsearch and Kibana are launched using docker-compose.  The file docker/Makefile can automatically launch these tools via the command:
 cd docker ; make elastic-start
 
 The provided docker-compose.yml script will bind Elasticsearch to port 9100 and Kibana to port 5601 on the host machine.  Kibana will be reachable by navigating your web browser to http://localhost:5601
+
 The default login and password for Elasticsearch and Kibana will be:
 Login: elastic
 Password: changeme
 The containers can be shut down and deleted via the commands:
-make elastic-stop ; make clean
-
+```
+make elastic-stop ; 
+make clean
+```
 Ingested data will remain in the docker storage volume esdata1 until you purge it with the command:
+```
 make realclean
+```
 
 iot-plaso
 The iot-plaso image can perform many different functions, depending on command-line arguments provided.   Typical invocations will be as follows:
