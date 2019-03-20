@@ -78,6 +78,8 @@ We created plaso parsers to support certain artifacts of interest and have provi
 ## Timeline
 | Date | Time | Event | Device Source | Notes |
 | --- | --- | --- | --- | --- |
+| 2018-05-15 | 08:34:32 | First password reset email received | Phone | | 
+| 2018-05-15 | 10:52:05 | Last password reset email received | Phone | | 
 | 2018-05-15 | 15:07:34 | Echo time reset to 1970 but Alexa recorded sound of despair "ooooh" | Alexa | Seems odd same time NTP issue was occuring on network that sound of despair was recorded 
 | 2018-05-17 | 10:22:20 | 30 seconds from this time date Alexa triggered iSmartAlarm to set the alarm even though the door was open | Alexa | Odd owner would set alarm with door open unless owner was wanting to set to home mode |
 | 2018-05-17 | 10:22:25 | Just 5 seconds after Jessie set the alarm with the door open the Amazon Echo recorded a voice. On the wav file ((2018-05-17T10_22_24+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav) you can hear a voice and then a beep. | Alexa | |
@@ -86,7 +88,8 @@ We created plaso parsers to support certain artifacts of interest and have provi
 
 ## Conclusions
 ### Time the illegal drug lab was raided
-We believe the lab was raided on 05/15. Although the local Amazon Echo had it's time reset to Jan 1 1970, the cloud added a date/time stamp to a voice of despair which was recorded saying "ooooooh" (in wav file 2018-05-15T15_07_34+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav). This suggests the assailants had access to the lab 2 days prior to when the police were called.
+We believe the lab was raided on 05/15 but the smoke alarm detected smoke on 5/17. Although the local Amazon Echo had it's time reset to Jan 1 1970, the cloud added a date/time stamp to a voice of despair which was recorded saying "ooooooh" (in wav file 2018-05-15T15_07_34+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav). This suggests the assailants had access to the lab 2 days prior to when the police were called. Also on the phone evidence we noted many password resets on the 15th from 08:34:32 to 10:52:05 which further suggests someone took over the lab on 5/15 and had physical access to Jessie's phone. 2018-05-17 at 10:22:25.439 just 5 seconds after the alarm is set with the door open the Amazon Echo recorded a voice on the wav file ((2018-05-17T10_22_24+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav) and you can hear a voice and then a beep which indicates the smoke detector. 
+
 
 ### Involvement of Jessie Pinkman's friends
 Without having background information on Jessie's friends that law enforcement gathered and verfied it is difficult to pinpoint which of the friends is one of the peculiar users. Forensics must take into account physical evidence, testimony (such as alibis) as well as the digital evidence. We found that someone by the alias of fluffy was purposely doing backdoor types of things as indicated in the wink evidence. We know that fluffy was associated with Cthulhuuuu's iPhone (Chrome IOS-PHONE). However, without further investigation information or access to Cthulhuuu's phone we were unable to tie this to the real identity of potentially one of Jessie's friend. 
