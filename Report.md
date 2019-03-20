@@ -82,6 +82,16 @@ We created plaso parsers to support certain artifacts of interest and have provi
 | 2018-05-17 | 10:45:00 | Police and forensic team arrive on scene | Challenge Details | |
 
 ## Conclusion
+### Time the illegal drug lab was raided
+
+### Involvement of essie Pinkman's friends
+* Determine which, if any, of Jessie Pinkman's friends were involved in the raid and document the confidence level in that hypothesis
+
+###How the QBee camera was disabled
+In our research of Qbee devices we found a blog that talks about iSmart and QBee vulnerabilities and parsing. This blog had key information on a CVE for the QBee camera and alos included a proof of concept exploit. It is notable this blog belongs to Francesco Servida who is actually mentioned in the challenge acknowledgements which we found was a hidden tip. The links to this information are as follows:
+https://blog.francescoservida.ch/2018/09/16/cve-2018-16225-public-disclosure-qbee-camera-vulnerability/
+https://blog.francescoservida.ch/wp-content/uploads/2018/09/proof_of_concept_network.zip
+
 
 ## Alternative Conclusions
 
