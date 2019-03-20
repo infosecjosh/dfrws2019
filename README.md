@@ -78,7 +78,9 @@ We created plaso parsers to support certain artifacts of interest and have provi
 ## Timeline
 | Date | Time | Event | Device Source | Notes |
 | --- | --- | --- | --- | --- |
+| 2018-05-15 | 15:07:34 | Echo time reset to 1970 but Alexa recorded sound of despair "ooooh" | Alexa | Seems odd same time NTP issue was occuring on network that sound of despair was recorded 
 | 2018-05-17 | 10:22:20 | 30 seconds from this time date Alexa triggered iSmartAlarm to set the alarm even though the door was open | Alexa | Odd owner would set alarm with door open unless owner was wanting to set to home mode |
+| 2018-05-17 | 10:22:25 | Just 5 seconds after Jessie set the alarm with the door open the Amazon Echo recorded a voice. On the wav file ((2018-05-17T10_22_24+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav) you can hear a voice and then a beep. | Alexa | |
 | 2018-05-17 | 10:40:00 | Police alerted an illegal drug lab was invaded and unsuccessfully set on fire | Challenge Details | |
 | 2018-05-17 | 10:45:00 | Police and forensic team arrive on scene | Challenge Details | |
 
@@ -165,7 +167,7 @@ sudo docker run --rm -ti -v /cases:/cases -v /mnt:/mnt --entrypoint /bin/bash io
 
 ## Alternative Conclusions
 ### Time the illegal drug lab was raided
-Another alternative is that the drug lab was raided 2018-05-17 at 10:22:25.439 just 5 minutes after Jessie set the alarm with the door open. The Amazon Echo recorded a voice at this time. On the wav file ((2018-05-17T10_22_24+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav) you can hear a voice and then a beep. This alludes to the lab being raided aftr the alarm was last set and when Jessie left. 
+Another alternative is that the drug lab was raided 2018-05-17 at 10:22:25.439 just 5 seconds after Jessie set the alarm with the door open. The Amazon Echo recorded a voice at this time. On the wav file ((2018-05-17T10_22_24+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav) you can hear a voice and then a beep. This alludes to the lab being raided after the alarm was last set by Jessie. 
 
 
 ### How the QBee camera was disabled
