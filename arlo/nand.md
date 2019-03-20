@@ -1,10 +1,25 @@
-## Overview - Arlo NAND
-
-Artifact description from challenge details:
-```
-Arlo – NAND: TAR archive of the folder /tmp/media/nand
+# Data Extraction of Arlo Evidence
+  Evidence Collection Method: TAR archive of the folder /tmp/media/nand
+  
   File/Folder: arlo/arlo_nand.tar.gz
+  
   SHA256: 857455859086cd6face6115e72cb1c63d2befe11db92beec52d1f70618c5e421
+  
+## Download and verify the integrity of downloaded artifact
+
+First we downloaded and verified the integrity of the downloaded artifact to the SHA256 hash provided by the challenge.
+```
+# sha256sum arlo/arlo_nand.tar.gz
+857455859086cd6face6115e72cb1c63d2befe11db92beec52d1f70618c5e421 arlo/arlo_nand.tar.gz
+```
+
+## Extract the zip file contents for analysis
+
+During the next step we extracted the zip file and began reviewing the contents.
+
+```
+# mkdir arlo_nand_data
+# tar -xvf arlo/arlo_nand.tar.gz -C arlo_nand_data
 ```
 
 ## Device Details
