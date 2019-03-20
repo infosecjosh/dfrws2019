@@ -14,7 +14,7 @@ services:
       nofile:
         soft: 65536
         hard: 65536
-    mem_limit: 4g
+    mem_limit: 3g
     cap_add:
       - IPC_LOCK
     volumes:
