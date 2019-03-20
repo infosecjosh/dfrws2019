@@ -8,7 +8,7 @@ You also need `docker` and `docker-compose`.  The Makefile will attempt to insta
 
 # Build
 
-This will build `iot-plaso:latest`, which is plaso with dfrws iot plugins.  You only have to do this once.
+This will build `iot-plaso:latest`, which is plaso with dfrws 2019 parser plugins.  You only have to do this once.
 
    `make build`
 
@@ -20,11 +20,11 @@ This will build `iot-plaso:latest`, which is plaso with dfrws iot plugins.  You 
 
    When finished, run `make elastic-stop`.  You can remove old containers with `make clean`
 
-## Launching plaso
+## Launching plaso psort
 
-   Example of plaso launch command (shares the `/data` directory on your workstation):
-      `sudo docker run -v /data/:/data iot-plaso:latest psort /data/evidences.plaso`
+   `make plaso-import`
 
+   This will run import the data that we collected.
 
 ## Elasticsearch info
    URL:      http://localhost:9200
@@ -35,4 +35,3 @@ This will build `iot-plaso:latest`, which is plaso with dfrws iot plugins.  You 
    URL:      http://localhost:5601
    Login:    elastic
    Password: changeme
-

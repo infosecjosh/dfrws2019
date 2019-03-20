@@ -15,7 +15,7 @@ images: $(DOCKER)
 	sudo $(DOCKER) pull log2timeline/plaso
 
 build: $(DOCKER)
-		sudo $(DOCKER) build -t iot-plaso:latest -f patched-plaso.dockerfile .
+	sudo $(DOCKER) build -t iot-plaso:latest -f sz-plaso.dockerfile .
 
 elastic-start: $(DOCKER_COMPOSE)
 	sudo $(DOCKER_COMPOSE) up -d
@@ -33,11 +33,10 @@ realclean: clean
 	sudo $(DOCKER) volume rm docker_esdata1
 
 plaso-import: build
-	mkdir /cases/dfrws2019
-	cp dfrws-plaso.db /cases/dfrws2019
+	if [ -e /cases/dfrws-plaso.db ]; then rm /cases/dfrws-plaso.db; fi
+	cp dfrws-plaso.db /cases/dfrws-plaso.db
 	@echo Default elastic password is 'changeme'
-	sudo $(DOCKER) run -ti --rm -v /cases:/cases iot-plaso:latest psort -z Europe/Zurich -o elastic --raw_fields --index_name dfrws2019 --server $(ELASTIC_IP) --elastic_user elastic /cases/dfrws2019/dfrws-plaso.db
-
+	sudo $(DOCKER) run -ti --rm -v /cases:/cases --network docker_esnet iot-plaso:latest -z Europe/Zurich -o elastic --raw_fields --index_name dfrws2019 --server $(ELASTIC_IP) --elastic_user elastic /cases/dfrws2019/dfrws-plaso.db
 
 $(DOCKER):
 	sudo apt-get update
