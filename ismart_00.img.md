@@ -102,4 +102,4 @@ Re-reading the [challenge details](https://github.com/dfrws/dfrws2018-challenge/
 
 So these are probably memory images taken while u-boot is running -- not flash images.  Still, only 8MB were collected, which is probably smaller than the Cube's full RAM.  
 
-So we were not really sure how this happend.  In digital forensics best practices, the analyst taking the image would have fully detailed the process that he used to create the image in a scientific repeatable process.  However we were provided limited details.
+So we were not really sure how this happend.  In digital forensics best practices, the analyst taking the image would have provided fully detailed the process that he used to create the image in a scientific repeatable process.  However we were provided limited details and sometimes this happens in real forensics.  
