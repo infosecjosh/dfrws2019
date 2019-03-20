@@ -25,12 +25,12 @@ During the next step we extracted the archived file and began reviewing the cont
 Then we listed the extracted files.
 ```
 # ls wink_data/
-bin			            lib32			root
-database	            linuxrc			run
-database_default        media			sbin
-dev			            mfgtests		sys
-etc		    	        mnt			    tmp
-home			        opt			    usr
-lib			            proc			var
+bin                 lib32       root
+database            linuxrc     run
+database_default    media       sbin
+dev                 mfgtests    sys
+etc                 mnt         tmp
+home                opt         usr
+lib                 proc        var
 ```
 
