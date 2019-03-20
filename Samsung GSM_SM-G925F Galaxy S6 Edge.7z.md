@@ -237,7 +237,7 @@ $ cat diskstats
  253       0 vnswap0 0 0 0 0 0 0 0 0 0 0 0
 ```
 
-We wrote a script called mountem.sh to mount the USERDATA partition.  You will need to clone the dfrws2019 repo and then run the command below.
+We wrote a script called [mountem.sh](./utils/mountem.sh) to mount the USERDATA partition.  You will need to clone the dfrws2019 repo and then run the command below.
 ```
 ./utils/mountem.sh
 ```
