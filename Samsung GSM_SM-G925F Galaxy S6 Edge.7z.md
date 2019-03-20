@@ -257,7 +257,7 @@ We also wrote a script that would generate a timeline using plaso if you have pl
 ./utils/timelinegen.sh
 ```
 
-We ran the command below to list all files with the .db extension that were not created or modified in 2015.  This was helpful to focus only on files that were modified or created during particular periods while we were doing analysis.  This can also be viewed in Kibana from the log2timeline data.
+We ran the command below to list all files with the .db extension that were not created or modified in 2015.  This was helpful to focus only on files that were modified or created during particular periods while we were doing analysis.  This can also be viewed in Kibana from the log2timeline data.  This led us to look further at /mnt/userdata/data/com.google.android.gm/databases/mailstore.jpinkman2018@gmail.com.db file.  We also noticed that a large number of the files were modified and accessed 05-15-2018.  This is largely due to the way that a lot of the apps on the phone ran in the background and updated regularly.
 ```
 find . -name *.db | xargs stat ./com.android.settings/databases/search_index.db -c "%n "Access:" %x "Modify:" %y "Change:" %z "Size:" %s" | grep -v "Create: 2015*Modify: 2015" | sort -nk 15 > ~/samsung.txt
 
