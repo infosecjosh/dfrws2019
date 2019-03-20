@@ -30,6 +30,9 @@ During the next step we extracted the zip file and began reviewing the contents.
 ```
 # mkdir arlo_nand_data
 # tar -xvf arlo/arlo_nand.tar.gz -C arlo_nand_data
+# cd /tmp/media/nand
+# ls
+# eventlog	eventlog.0	log-archive	updatelog	vzdaemon
 ```
 
 ## Evidence Details - arlo_nand.tar.gz
