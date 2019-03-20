@@ -15,7 +15,7 @@ Submission date: 20 MAR 2019
 * [Objectives](#objectives)
 * [Evidence Review](#evidence-review)
 * [Timeline](#timeline)
-* [Conclusion](#conclusion)
+* [Conclusions](#conclusion)
 * [Alternative Conclusions](#alternative-conclusions)
 * [Acknowledgements](#acknowledgements)
 
@@ -81,7 +81,7 @@ We created plaso parsers to support certain artifacts of interest and have provi
 | 2018-05-17 | 10:40:00 | Police alerted an illegal drug lab was invaded and unsuccessfully set on fire | Challenge Details | |
 | 2018-05-17 | 10:45:00 | Police and forensic team arrive on scene | Challenge Details | |
 
-## Conclusion
+## Conclusions
 ### Time the illegal drug lab was raided
 
 ### Involvement of Jessie Pinkman's friends
