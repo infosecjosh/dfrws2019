@@ -58,7 +58,6 @@ procdata.zip:  Zip archive data, at least v2.0 to extract
 
 Then for each of the blk* files we ran the mmls command to display the partition layout of a volume system.  
 
-run mmls against contents
 ```
 $ mmls blk0_sda.bin
 GUID Partition Table (EFI)
@@ -242,8 +241,14 @@ We wrote a script called [mountem.sh](./utils/mountem.sh) to mount the USERDATA 
 ./utils/mountem.sh
 ```
 
-Jessie's phone had the Arlo mobile app installed. The pictures we discovred on the phone that were captured by the arlo camera were found in `userdata/data/com.netgear.android`
+We also wrote a script that would generate a timeline using plaso if you have plaso installed on your local machine with the parser plugins and formatters that we wrote for this challenge.
 
+```
+./utils/timelinegen.sh
+```
+
+
+Jessie's phone had the Arlo mobile app installed. The pictures we discovered on the phone that were captured by the arlo camera were found in `userdata/data/com.netgear.android`
 
 
   need to look more into wink databaes files /mnt/Samsung/data/com.quirky.android.wink.wink/databases/persistenceDB
