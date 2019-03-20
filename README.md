@@ -107,16 +107,18 @@ The general flow of data is as follows:
 
 ![Tools](./Tools.jpeg)
 
-###Prerequisites
+### Prerequisites
 The tools are intended to be run from an Ubuntu 16.04 host with SIFT-CLI installed as described here:
  https://github.com/sans-dfir/sift-cli#installation
 The user must have sudo access to install packages and run docker containers.  The build scripts provided will invoke sudo as needed; the user must be prepared to enter their password.  It must also have support for docker and docker-compose.
 The host must also have internet or other network access that allows it to download images from Docker Hub and Elastic ( https://hub.docker.com and https://www.docker.elastic.co ).
 
-Building the Docker Images
+### Building the Docker Images
 From the top-level of the dfrws2019 repository package, type:
+```
 cd docker
 make images build
+```
 
 This will download the required Docker Hub images and apply a patch to the standard log2timeline/plaso image.  The system should now have five docker images installed:
 Docker Image
@@ -127,8 +129,6 @@ log2timeline/plaso:latest
 Base image for iot-plaso
 docker.elastic.co/kibana/kibana:5.2.1
 Visualizer for Elasticsearch
-docker.elastic.co/logstash/logstash:5.2.1
-Data ingest for Elasticsearch
 docker.elastic.co/elasticsearch/elasticsearch:5.2.1
 Search and analytics engine
 
