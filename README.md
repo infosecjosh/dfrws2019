@@ -13,7 +13,7 @@ Submission date: 20 MAR 2019
 ## Table of Contents
 * [Executive Summary](#executive-summary)
 * [Objectives](#objectives)
-* [Evidence Review](#evidence)
+* [Evidence Review](#evidence-review)
 * [Timeline](#timeline)
 * [Conclusion](#conclusion)
 * [Alternative Conclusions](#alternative-conclusions)
@@ -84,7 +84,7 @@ We created plaso parsers to support certain artifacts of interest and have provi
 ## Conclusion
 ### Time the illegal drug lab was raided
 
-### Involvement of essie Pinkman's friends
+### Involvement of Jessie Pinkman's friends
 * Determine which, if any, of Jessie Pinkman's friends were involved in the raid and document the confidence level in that hypothesis
 
 ### How the QBee camera was disabled
