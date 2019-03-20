@@ -153,7 +153,7 @@ Ingested data will remain in the docker storage volume esdata1 until you purge i
 make realclean
 ```
 
-iot-plaso
+#### iot-plaso
 The iot-plaso image can perform many different functions, depending on command-line arguments provided.   Typical invocations will be as follows:
 Load plaso database into elasticsearch:
 sudo docker run --rm -ti -v /cases:/cases iot-plaso:latest psort -o elastic --raw_fields --index_name dfrws2018 --server $(ELASTIC_IP) --elastic_user elastic /cases/dfrws2018/events.plaso
