@@ -237,10 +237,9 @@ $ cat diskstats
  253       0 vnswap0 0 0 0 0 0 0 0 0 0 0 0
 ```
 
-not the best way to do this
-
+We wrote a script called mountem.sh to mount the USERDATA partition.  You will need to clone the dfrws2019 repo and then run the command below.
 ```
- sudo mount -o loop,offset=4329570304 /home/joshuacl/Downloads/Samsung/blk0_sda.bin /mnt/Samsung/
+./utils/mountem.sh
 ```
 
 
@@ -251,6 +250,10 @@ not the best way to do this
   "SuperLab Tabletting Camera"
 
 found a lot in the Chrome sqlite3 db
+
+```
+log2timeline.py --parsers sqlite ~/chromehist.plaso /mnt/user
+```
 
 ```
 INSERT INTO "urls" VALUES(1,'https://inbox.google.com/accounts/SetOSID?authuser=0&continue=https%3A%2F%2Finbox.google.com%2F%3Fpli%3D1&osidt=ALWU2cuzXI8vadmxJJkzpn2ArZ6rTOMW63fT9spEisIFAuNHFBl_nGyns5Uv1S2TleaGGJY6HYgfc9VMYN67A5-ms9-eK4xS_KoFhwNzmtMWYjOKFkmebLFs3Ari8tCm7Kbk2adYtJ8u','Inbox – jpinkman2018@gmail.com',1,0,13165668726083260,0);

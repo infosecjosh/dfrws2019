@@ -1,4 +1,24 @@
-# LAN Hosts
+# Data Extraction of network capture
+  Evidence Collection Method: Network capture taken once police arrived
+  
+  File/Folder: network/dfrws_police.pcap
+  
+  SHA256: 1837ee390e060079fab1e17cafff88a1837610ef951153ddcb7cd85ad478228e
+  
+## Download and verify the integrity of downloaded artifact
+
+First we downloaded and verified the integrity of the downloaded artifact to the SHA256 hash provided by the challenge.
+```
+# sha256sum network/dfrws_policy.pcap
+1837ee390e060079fab1e17cafff88a1837610ef951153ddcb7cd85ad478228e network/dfrws_policy.pcap
+```
+
+
+# Analysis of Contents
+
+We used Wireshark to review the contents. Below are the notable items found.
+
+## LAN Hosts
 
 |Name|MAC|IP(s)|OUI|Notes|
 |----|---|-----|---|-----|
@@ -15,7 +35,7 @@
 |    | a6:f1:e8:80:85:64 | 172.20.10.1 | | recorded in tv.peel.app database on Samsung phone |
 |    | <unknown> | 172.21.94.4 | | _was used to ssh into Wink as root_ |
 
-# WAN Hosts
+## WAN Hosts
 
 |Name|IP(s)| Whois | Notes|
 |----|-----|-------|------|
