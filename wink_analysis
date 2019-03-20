@@ -11,28 +11,6 @@ First we downloaded and verified the integrity of the downloaded artifact to the
 ```
 # sha256sum wink.tar.gz 
 083e7428dc1d0ca335bbcfc11c6263720ab8145ffc637954a7733afc7b23e8c6 wink.tar.gz
-```
 
-
-## Extract the zip file contents for analysis
-
-During the next step we extracted the archived file and began reviewing the contents.
-
-```
-# mkdir wink_data
-# tar -xvf wink.tar.gz -C wink_data
-```
-
-Then we listed the extracted files.
-```
-# ls wink_data/
-bin			        lib32			root
-database	        linuxrc			run
-database_default    media			sbin
-dev			        mfgtests		sys
-etc		    	    mnt			    tmp
-home			    opt			    usr
-lib			        proc			var
-```
 
 
