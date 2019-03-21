@@ -179,4 +179,4 @@ someone installed instructions in the Amazon cloud to make the QBee reboot every
 
 ## Acknowledgements
 
-The authors would like to thank the Digital Forensic Research Workshop and the developers of this years challenge for putting this activity together. Opportunities like this are critical to advancing the technolgies and methodoligies used by digital forensics examiners and researchers. Thank you. 
+The authors would like to thank the Digital Forensic Research Workshop and the developers of this years challenge for putting this challenge together. Opportunities like this are critical to advancing the technolgies and methodoligies used by digital forensics examiners and researchers. Thank you. 
