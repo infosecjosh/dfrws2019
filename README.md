@@ -2,7 +2,7 @@
 
 This repository is Navy Information Warfare Center, Atlantic's submission to the 2018 DFRWS Challenge.  More details about the challenge can be found on the [DFRWS Challenge GitHub page](https://github.com/dfrws/dfrws2018-challenge).
 
-Submission by: Naval Information Warfare Center, Atlantic (NIWC LANT)
+Submission by: Naval Information Warfare Center Atlantic (NIWC LANT)
 
 Team: Kelly Hines, Joshua Lewis, Nicholas Phillpott, Randy Sharo, Shawn Zwach
 
