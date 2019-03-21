@@ -159,8 +159,18 @@ make images build
 This will download the required Docker Hub images and apply a patch to the standard log2timeline/plaso image.  The system should now have five docker images installed:
 
 | Docker Image | Description | 
+<<<<<<< HEAD
 | --- | --- |
 | Iot-plaso:latest | Plaso with plugins added |  
+=======
+<<<<<<< HEAD
+| --- | --- |
+| Iot-plaso:latest | Plaso with plugins added |  
+=======
+| --- | --- | --- |
+| Iot-plaso:latest | Plaso with plugins added|  
+>>>>>>> 014727f... changes to readme.md
+>>>>>>> b01ec6c5ad98dbb4962fe091c9cfec002f076c20
 | log2timeline/plaso:latest | Base image for iot-plaso |  
 | docker.elastic.co/kibana/kibana:5.2.1 | Visualizer for Elasticsearch |  
 | docker.elastic.co/elasticsearch/elasticsearch:5.2.1 | Search and analytics engine |
