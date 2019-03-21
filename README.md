@@ -137,7 +137,7 @@ The following image shows the creds disclosed using the above CVE:
 
 ## Tool Build and Operating Instructions
 
-Our tools are delivered as python source code, and scripts to build a set of Docker images.
+Our tools are delivered as python source code, and scripts to build a set of Docker images.  In addition to the tools included in this repo there were two plaso sqlite plugins written for the challenge.  They are available at https://github.com/infosecjosh/plaso/tree/dfrws2019.  These are specifically the ismartalarm_android and android_gmail plugins and formatters.
 
 The general flow of data is as follows:
 
