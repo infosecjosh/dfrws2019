@@ -80,19 +80,48 @@ We created plaso parsers to support certain artifacts of interest and have provi
 | --- | --- | --- | --- | --- |
 | 2018-05-15 | 08:34:32 | First password reset email received | Phone | | 
 | 2018-05-15 | 10:52:05 | Last password reset email received | Phone | | 
+| 2018-05-15 | 12:38:20 | JPinkman armed alarm | Phone | |
+| 2018-05-15 | 12:41:35 | JPinkman disarmed alarm | Phone | |
+| 2018-05-15 | 13:03:11 | pandadodu caused alarm "PANIC"| Phone | |
+| 2018-05-15 | 13:03:28 | pandadodu caused alarm "PANIC"| Phone | |
+| 2018-05-15 | 13:03:36 | pandadodu disarmed alarm | Phone | |
+| 2018-05-15 | 13:03:43 | pandadodu caused alarm "PANIC" | Phone | |
+| 2018-05-15 | 13:03:47 | pandadodu disarmed alarm | Phone | |
+| 2018-05-15 | 13:03:47 | TheBoss caused a sensor to have Action: 2 and Action: 4 | Phone | |
+| 2018-05-15 | 13:04:43 | pandadodu set alarm to HOME | Phone | |
+| 2018-05-15 | 13:05:43 | JPinkman set alarm to DISARM | Phone | |
 | 2018-05-15 | 15:07:34 | Echo time reset to 1970 but Alexa recorded sound of despair "ooooh" | Alexa | Seems odd same time NTP issue was occuring on network that sound of despair was recorded 
-| 2018-05-17 | 10:22:20 | 30 seconds from this time date Alexa triggered iSmartAlarm to set the alarm even though the door was open | Alexa | Odd owner would set alarm with door open unless owner was wanting to set to home mode |
+| 2018-05-16 | 13:47:14 | TheBoss caused alarm "PANIC" | Phone | | 
+| 2018-05-16 | 13:47:15 | TheBoss caused alarm "PANIC" | Phone | | 
+| 2018-05-16 | 13:47:18 | TheBoss set alarm to HOME | Phone | | 
+| 2018-05-16 | 13:47:33 | TheBoss set alarm to DISARM | Phone | | 
+| 2018-05-16 | 13:47:40 | TheBoss set alarm to DISARM | Phone | | 
+| 2018-05-16 | 13:53:10 | JPinkman set alarm to HOME | Phone | | 
+| 2018-05-16 | 13:53:51 | JPinkman set alarm to ARM | Phone | | 
+| 2018-05-16 | 13:55:07 | JPinkman set alarm to DISARM | Phone | | 
+| 2018-05-16 | 13:55:11 | JPinkman set alarm to DISARM | Phone | | 
+| 2018-05-16 | 13:55:17 | JPinkman set alarm to DISARM | Phone | | 
+| 2018-05-16 | 13:55:27 | JPinkman set alarm to ARM | Phone | | 
+| 2018-05-17 | 07:45:22 | TheBoss set alarm to DISARM | Phone | | 
+| 2018-05-17 | 07:47:50 | JPinkman set alarm to ARM | Phone | | 
+| 2018-05-17 | 08:09:57 | TheBoss set alarm to DISARM | Phone | | 
+| 2018-05-17 | 08:22:22 | JPinkman set alarm to ARM | Phone | | 
+| 2018-05-17 | 08:22:30 | TheBoss set alarm to DISARM | Phone | | 
+| 2018-05-17 | 08:34:17 | TheBoss set alarm to HOME | Phone | | 
+| 2018-05-17 | 08:34:31 | pandadodu set alarm to DISARM | Phone | | 
+| 2018-05-17 | 08:37:52 | pandadodu set alarm to DISARM | Phone | | 
+| 2018-05-17 | 10:22:20 | 30 seconds from this time date Alexa triggered iSmartAlarm to set the alarm even though the door was open AND alarm was off | Alexa | Odd owner would set alarm with door open unless owner was wanting to set to home mode |
 | 2018-05-17 | 10:22:25 | Just 5 seconds after Jessie set the alarm with the door open the Amazon Echo recorded a voice. On the wav file ((2018-05-17T10_22_24+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav) you can hear a voice and then a beep. | Alexa | |
 | 2018-05-17 | 10:40:00 | Police alerted an illegal drug lab was invaded and unsuccessfully set on fire | Challenge Details | |
 | 2018-05-17 | 10:45:00 | Police and forensic team arrive on scene | Challenge Details | |
 
 ## Conclusions
 ### Time the illegal drug lab was raided
-We believe the lab was raided on 05/15 but the smoke alarm detected smoke on 5/17. Although the local Amazon Echo had it's time reset to Jan 1 1970, the cloud added a date/time stamp to a voice of despair which was recorded saying "ooooooh" (in wav file 2018-05-15T15_07_34+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav). This suggests the assailants had access to the lab 2 days prior to when the police were called. Also on the phone evidence we noted many password resets on the 15th from 08:34:32 to 10:52:05 which further suggests someone took over the lab on 5/15 and had physical access to Jessie's phone. 2018-05-17 at 10:22:25.439 just 5 seconds after the alarm is set with the door open the Amazon Echo recorded a voice on the wav file ((2018-05-17T10_22_24+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav) and you can hear a voice and then a beep which indicates the smoke detector. 
+We believe the lab was raided on 05/15 due to all of the odd alarm activity but the smoke alarm detected smoke on 5/17. Although the local Amazon Echo had it's time reset to Jan 1 1970, the cloud added a date/time stamp to a voice of despair which was recorded saying "ooooooh" (in wav file 2018-05-15T15_07_34+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav). This suggests the assailants had access to the lab 2 days prior to when the police were called. Also on the phone evidence we noted many password resets on the 15th from 08:34:32 to 10:52:05 which further suggests someone took over the lab on 5/15 and had physical access to Jessie's phone. 2018-05-17 at 10:22:25.439 just 5 seconds after the alarm is set with the door open the Amazon Echo recorded a voice on the wav file ((2018-05-17T10_22_24+0200)_TEXT(TRANSCRIPT NOT AVAILABLE).wav) and you can hear a voice and then a beep which indicates the smoke detector. 
 
 
 ### Involvement of Jessie Pinkman's friends
-Without having background information on Jessie's friends that law enforcement gathered and verfied it is difficult to pinpoint which of the friends is one of the peculiar users. Forensics must take into account physical evidence, testimony (such as alibis) as well as the digital evidence. We found that someone by the alias of fluffy was purposely doing backdoor types of things as indicated in the wink evidence. We know that fluffy was associated with Cthulhuuuu's iPhone (Chrome IOS-PHONE). However, without further investigation information or access to Cthulhuuu's phone we were unable to tie this to the real identity of potentially one of Jessie's friend. 
+Without having background information on Jessie's friends that law enforcement gathered and verfied it is difficult to pinpoint which of the friends is one of the particular users. Forensics must take into account physical evidence, testimony (such as alibi) as well as the digital evidence. We found that someone by the alias of fluffy was purposely doing backdoor types of things as indicated in the wink evidence. We know that fluffy was associated with Cthulhuuuu's iPhone (Chrome IOS-PHONE). However, without further investigation information or access to Cthulhuuu's phone we were unable to tie this to the real identity of potentially one of Jessie's friend. 
 
 ### How the QBee camera was disabled
 In our research of Qbee devices we found a blog that talks about iSmart and QBee vulnerabilities and parsing. This blog had key information on a CVE for the QBee camera and alos included a proof of concept exploit. It is notable this blog belongs to Francesco Servida who is actually mentioned in the challenge acknowledgements which we found was a hidden tip. The links to this information are as follows:
@@ -118,7 +147,7 @@ The general flow of data is as follows:
 The tools are intended to be run from an Ubuntu 16.04 host with SIFT-CLI installed as described here:
  https://github.com/sans-dfir/sift-cli#installation
 The user must have sudo access to install packages and run docker containers.  The build scripts provided will invoke sudo as needed; the user must be prepared to enter their password.  It must also have support for docker and docker-compose.
-The host must also have internet or other network access that allows it to download images from Docker Hub and Elastic ( https://hub.docker.com and https://www.docker.elastic.co ).
+The host must also have internet or other network access that allows it to download images from Docker Hub and Elastic (https://hub.docker.com and https://www.docker.elastic.co).
 
 ### Building the Docker Images
 From the top-level of the dfrws2019 repository package, type:
@@ -128,16 +157,14 @@ make images build
 ```
 
 This will download the required Docker Hub images and apply a patch to the standard log2timeline/plaso image.  The system should now have five docker images installed:
-Docker Image
-Description
-Iot-plaso:latest
-Plaso with IoT plugins added
-log2timeline/plaso:latest
-Base image for iot-plaso
-docker.elastic.co/kibana/kibana:5.2.1
-Visualizer for Elasticsearch
-docker.elastic.co/elasticsearch/elasticsearch:5.2.1
-Search and analytics engine
+
+| Docker Image | Description | 
+| --- | --- | --- |
+| Iot-plaso:latest | Plaso with plugins added|  
+| log2timeline/plaso:latest | Base image for iot-plaso |  
+| docker.elastic.co/kibana/kibana:5.2.1 | Visualizer for Elasticsearch |  
+| docker.elastic.co/elasticsearch/elasticsearch:5.2.1 | Search and analytics engine |
+
 
 ### Launching Tools
 
@@ -148,11 +175,15 @@ cd docker ; make elastic-start
 The provided docker-compose.yml script will bind Elasticsearch to port 9100 and Kibana to port 5601 on the host machine.  Kibana will be reachable by navigating your web browser to http://localhost:5601
 
 The default login and password for Elasticsearch and Kibana will be:
+
+```
 Login: elastic
 Password: changeme
+```
+
 The containers can be shut down and deleted via the commands:
 ```
-make elastic-stop ; 
+make elastic-stop
 make clean
 ```
 Ingested data will remain in the docker storage volume esdata1 until you purge it with the command:
@@ -161,12 +192,19 @@ make realclean
 ```
 
 #### iot-plaso
+
 The iot-plaso image can perform many different functions, depending on command-line arguments provided.   Typical invocations will be as follows:
 Load plaso database into elasticsearch:
 sudo docker run --rm -ti -v /cases:/cases iot-plaso:latest psort -o elastic --raw_fields --index_name dfrws2018 --server $(ELASTIC_IP) --elastic_user elastic /cases/dfrws2018/events.plaso
 
 Interactive shell with access to host mount points and /cases directory:
 sudo docker run --rm -ti -v /cases:/cases -v /mnt:/mnt --entrypoint /bin/bash iot-plaso:latest
+
+You can also just ingest the plaso database that we've already generated using 
+
+``` 
+make plaso import 
+```
 
 ## Alternative Conclusions
 ### Time the illegal drug lab was raided
