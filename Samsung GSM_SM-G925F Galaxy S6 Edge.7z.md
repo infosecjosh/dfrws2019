@@ -257,7 +257,7 @@ We also wrote a script that would generate a timeline using plaso if you have pl
 ./utils/timelinegen.sh
 ```
 
-We ran the command below to list all files with the .db extension that were not created or modified in 2015.  This was helpful to focus only on files that were modified or created during particular periods while we were doing analysis.  This can also be viewed in Kibana from the log2timeline data.  This led us to look further at /mnt/userdata/data/com.google.android.gm/databases/mailstore.jpinkman2018@gmail.com.db file.  We also noticed that a large number of the files were modified and accessed 05-15-2018.  This is largely due to the way that a lot of the apps on the phone ran in the background and updated regularly.
+We ran the command below to list all files with the .db extension that were not created or modified in 2015.  This was helpful to focus only on files that were modified or created during particular periods while we were doing analysis.  This can also be viewed in Kibana from the log2timeline data.  This led us to look further at /mnt/userdata/data/com.google.android.gm/databases/mailstore.jpinkman2018@gmail.com.db file.  We also noticed that a large number of the files were modified and accessed 05-15-2018.  This is largely due to the way that a lot of the apps on the phone ran in the background and updated regularly.  This output could also be easily tailored down to see specific dates/times of interest with the cut command.
 ```
 find . -name *.db | xargs stat ./com.android.settings/databases/search_index.db -c "%n "Access:" %x "Modify:" %y "Change:" %z "Size:" %s" | grep -v "Create: 2015*Modify: 2015" | sort -nk 15 > ~/samsung.txt
 
@@ -1529,100 +1529,91 @@ find /mnt/userdata -xtype f -print0 | xargs -0 file | grep "image data" | cut -f
 
 ### Chrome History
 
+There was some Chrome web browser history.  However there was not much around the events that took place until after the Police were on-site.  We're assuming that the police were really interested in installing elasticsearch using docker.  We would be happy to help. :) 
+
+![Docker Elastic](./docker.png)
+
 ### I-Smart Alarm
+
+A plaso sqlite parser and formatter was developed and we used that to feed the data into elasticsearch..  This is where we found a lot of information about the alarms.  This data was found at /userdata/data/iSA.common/databases/iSmartAlarm.DB 
+
+![ismartalarm](./ismartalarm.png)
+
+| Date | Time | Event | Device Source | Notes |
+| --- | --- | --- | --- | --- |
+| 2018-05-15 | 12:38:20 | JPinkman armed alarm | Phone | |
+| 2018-05-15 | 12:41:35 | JPinkman disarmed alarm | Phone | |
+| 2018-05-15 | 13:03:11 | pandadodu caused alarm "PANIC"| Phone | |
+| 2018-05-15 | 13:03:28 | pandadodu caused alarm "PANIC"| Phone | |
+| 2018-05-15 | 13:03:36 | pandadodu disarmed alarm | Phone | |
+| 2018-05-15 | 13:03:43 | pandadodu caused alarm "PANIC" | Phone | |
+| 2018-05-15 | 13:03:47 | pandadodu disarmed alarm | Phone | |
+| 2018-05-15 | 13:03:47 | TheBoss caused a sensor to have Action: 2 and Action: 4 | Phone | |
+| 2018-05-15 | 13:04:43 | pandadodu set alarm to HOME | Phone | |
+| 2018-05-15 | 13:05:43 | JPinkman set alarm to DISARM | Phone | |
+| 2018-05-16 | 13:47:14 | TheBoss caused alarm "PANIC" | Phone | | 
+| 2018-05-16 | 13:47:15 | TheBoss caused alarm "PANIC" | Phone | | 
+| 2018-05-16 | 13:47:18 | TheBoss set alarm to HOME | Phone | | 
+| 2018-05-16 | 13:47:33 | TheBoss set alarm to DISARM | Phone | | 
+| 2018-05-16 | 13:47:40 | TheBoss set alarm to DISARM | Phone | | 
+| 2018-05-16 | 13:53:10 | JPinkman set alarm to HOME | Phone | | 
+| 2018-05-16 | 13:53:51 | JPinkman set alarm to ARM | Phone | | 
+| 2018-05-16 | 13:55:07 | JPinkman set alarm to DISARM | Phone | | 
+| 2018-05-16 | 13:55:11 | JPinkman set alarm to DISARM | Phone | | 
+| 2018-05-16 | 13:55:17 | JPinkman set alarm to DISARM | Phone | | 
+| 2018-05-16 | 13:55:27 | JPinkman set alarm to ARM | Phone | | 
+| 2018-05-17 | 07:45:22 | TheBoss set alarm to DISARM | Phone | | 
+| 2018-05-17 | 07:47:50 | JPinkman set alarm to ARM | Phone | | 
+| 2018-05-17 | 08:09:57 | TheBoss set alarm to DISARM | Phone | | 
+| 2018-05-17 | 08:22:22 | JPinkman set alarm to ARM | Phone | | 
+| 2018-05-17 | 08:22:30 | TheBoss set alarm to DISARM | Phone | | 
+| 2018-05-17 | 08:34:17 | TheBoss set alarm to HOME | Phone | | 
+| 2018-05-17 | 08:34:31 | pandadodu set alarm to DISARM | Phone | | 
+| 2018-05-17 | 08:37:52 | pandadodu set alarm to DISARM | Phone | | 
 
 ### Whatsapps
 
-### Pictures
+Whatsapp is a communication and messaging application owned by Facebook. It stores old messages in encryted databases in a folder in its data directory. We were unable to find the key used by the app to decrypt and display messages to the user.
 
-## 
+#### Whats app on Jessie Pinkmans phone 
 
-found a lot in the Chrome sqlite3 db
-
-```
-log2timeline.py --parsers sqlite ~/chromehist.plaso /mnt/user
-```
+In the data image, running a find for whatsapp reveals:
 
 ```
-INSERT INTO "urls" VALUES(1,'https://inbox.google.com/accounts/SetOSID?authuser=0&continue=https%3A%2F%2Finbox.google.com%2F%3Fpli%3D1&osidt=ALWU2cuzXI8vadmxJJkzpn2ArZ6rTOMW63fT9spEisIFAuNHFBl_nGyns5Uv1S2TleaGGJY6HYgfc9VMYN67A5-ms9-eK4xS_KoFhwNzmtMWYjOKFkmebLFs3Ari8tCm7Kbk2adYtJ8u','Inbox – jpinkman2018@gmail.com',1,0,13165668726083260,0);
-INSERT INTO "urls" VALUES(2,'https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://inbox.google.com/&followup=https://inbox.google.com/&authuser=0','Inbox – jpinkman2018@gmail.com',1,0,13165668726083260,0);
-INSERT INTO "urls" VALUES(3,'https://alexa.amazon.com/?openid.assoc_handle=amzn_dp_project_dee&aToken=Atza%7CIwEBIIo1qQmNeh1tckOQMNJw2UWhwTlcdMnCwqsat7buVIO9Z8ovh1hva51ZZSOqcDhEjoqPs7VrqxZDVGZMQBEOG-pJPeYKudyn5fV3_c9_CWEx2E1--jvCaMpLU3_dpcWesP7FWfKjJbaQ6md579RDvG-dQ3lIzWI1kUDH1pppIibn1Q0zCOzDo9eS0CB2KaOyKV3H7hAzIfGsQyfvI74y_VT1XCbiqPTP341EvX98vGpm9wFub22VWinIPquikUVCUbV2rNfejJ1ch_JfAtVN2E5xNK-8R2b388xZxCjueCi_PEdRCyzBjXkFAseb-pWQ9XywTTRpa_yd07x12m5bv5z8E_uAqajLv-eV6yQmlYK1i9uGuKZ8OVI7xoV94A1_qTU68Oek_6XMq6jdnGfFcRYG&openid.claimed_id=https%3A%2F%2Fwww.amazon.com%2Fap%2Fid%2Famzn1.account.AGGMG4DRSURCQ7QT4TCLAINUZT2Q&openid.identity=https%3A%2F%2Fwww.amazon.com%2Fap%2Fid%2Famzn1.account.AGGMG4DRSURCQ7QT4TCLAINUZT2Q&openid.mode=id_res&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.op_endpoint=https%3A%2F%2Fwww.amazon.com%2Fap%2Fsignin&openid.response_nonce=2018-03-27T08%3A26%3A39Z-6673743547905493514&openid.return_to=https%3A%2F%2Falexa.amazon.com%2F&openid.signed=assoc_handle%2CaToken%2Cclaimed_id%2Cidentity%2Cmode%2Cns%2Cop_endpoint%2Cresponse_nonce%2Creturn_to%2Cns.pape%2Cpape.auth_policies%2Cpape.auth_time%2Csigned&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.auth_policies=http%3A%2F%2Fschemas.openid.net%2Fpape%2Fpolicies%2F2007%2F06%2Fnone&openid.pape.auth_time=2018-03-27T08%3A26%3A39Z&openid.sig=TMLVwLuyUWnOzHYVRJoxO4s7MD%2Bujs5iMuVYF%2BTDnD0%3D&serial=&','Amazon Alexa',1,0,13166612808855851,0);
-INSERT INTO "urls" VALUES(4,'https://alexa.amazon.de/spa/index.html','Amazon Anmelden',1,0,13166613117577335,0);
-INSERT INTO "urls" VALUES(5,'https://www.amazon.de/ap/signin?showRmrMe=1&openid.return_to=https%3A%2F%2Falexa.amazon.de%2Fspa%2Findex.html&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_dp_project_dee_de&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&','Amazon Anmelden',1,0,13166613117577335,0);
-INSERT INTO "urls" VALUES(6,'https://alexa.amazon.com/?openid.assoc_handle=amzn_dp_project_dee&aToken=Atza%7CIwEBIJJBWDVSaes5SCT-ycC3_FCQJA9hGDFDD3Hbsvr8Jq_OQ2q0m7pufLgqrkV3o7rpB_MXBu-zdaTk9uLoEaP7WKc_FRV5sBGjr3O7TqJsZpGn6QsyLVNZlyPM2G--EM4SU67eot5cHUqT3bfOH5yTg6Xf6KsraRmpFVPiyRoM0TFff1itGAiOdBb0UnvvPgRFBKSxrBMwwyYhVTrwzpHH_PkMTzOwO8cLWcayk2PI9uCEBesIJZzY8rHYuHEAuKeacM_VCiTbO0p-gtT2L0sZF98k6ObF802cRkxPPjBrHbSnOpaXUGk0IkHtQPMAMxcAmUSb_6dhlvnHY4TNVIJD8cWYqfqy-kHgHrUCuzd2ejQqRtcadGrCdUOcV0EAHfUGadDTHxypo1X2-6dbEm3GeCVT&openid.claimed_id=https%3A%2F%2Fwww.amazon.com%2Fap%2Fid%2Famzn1.account.AGGMG4DRSURCQ7QT4TCLAINUZT2Q&openid.identity=https%3A%2F%2Fwww.amazon.com%2Fap%2Fid%2Famzn1.account.AGGMG4DRSURCQ7QT4TCLAINUZT2Q&openid.mode=id_res&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.op_endpoint=https%3A%2F%2Fwww.amazon.com%2Fap%2Fsignin&openid.response_nonce=2018-03-27T08%3A31%3A58Z-8098002837425949003&openid.return_to=https%3A%2F%2Falexa.amazon.com%2F&openid.signed=assoc_handle%2CaToken%2Cclaimed_id%2Cidentity%2Cmode%2Cns%2Cop_endpoint%2Cresponse_nonce%2Creturn_to%2Cns.pape%2Cpape.auth_policies%2Cpape.auth_time%2Csigned&openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&openid.pape.auth_policies=http%3A%2F%2Fschemas.openid.net%2Fpape%2Fpolicies%2F2007%2F06%2Fnone&openid.pape.auth_time=2018-03-27T08%3A31%3A58Z&openid.sig=fIWEFP6ghyaPGIVDrTzvdarFByjvCxXZ4nejmf4o%2BII%3D&serial=&','Amazon Alexa',1,0,13166613119608793,0);
-INSERT INTO "urls" VALUES(7,'http://alexa.amazon.com/spa/index.html','Amazon Alexa',3,0,13166613119608793,0);
-INSERT INTO "urls" VALUES(8,'https://www.amazon.com/ap/signin?showRmrMe=1&openid.return_to=https%3A%2F%2Falexa.amazon.com%2F&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_dp_project_dee&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&','Amazon Alexa',3,2,13166613119608793,0);
-INSERT INTO "urls" VALUES(9,'https://www.amazon.com/','Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more',1,1,13166613130557252,0);
-INSERT INTO "urls" VALUES(10,'https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://inbox.google.com/?pli%3D1&followup=https://inbox.google.com/?pli%3D1','Accedi - Google Account',1,0,13166613272903285,0);
-INSERT INTO "urls" VALUES(11,'https://inbox.google.com/?pli=1','Inbox – jpinkman2018@gmail.com',10,2,13166613287875141,0);
-INSERT INTO "urls" VALUES(12,'http://play.spotify.com/','Spotify Web Player',1,1,13166614539055372,0);
-INSERT INTO "urls" VALUES(13,'https://open.spotify.com/','Spotify Web Player',1,0,13166614539055372,0);
-INSERT INTO "urls" VALUES(14,'https://play.spotify.com/','Spotify Web Player',1,0,13166614539055372,0);
-INSERT INTO "urls" VALUES(15,'http://inbox.google.com/','Inbox by Gmail',2,2,13166618616516080,0);
-INSERT INTO "urls" VALUES(16,'https://inbox.google.com/u/0/','Inbox by Gmail',1,0,13166618616516080,0);
-INSERT INTO "urls" VALUES(17,'http://transmission.Pinkman.ch/','Accedi',1,1,13167773851483300,0);
-INSERT INTO "urls" VALUES(18,'https://transmission.Pinkman.ch/','Accedi',1,0,13167773851483300,0);
-INSERT INTO "urls" VALUES(19,'https://aai.Pinkman.ch/adfs/ls?version=1.0&action=signin&realm=urn%3AAppProxy%3Acom&appRealm=8ed200d8-b61b-e811-8977-00155d01144d&returnUrl=https%3A%2F%2Ftransmission.Pinkman.ch%2F&client-request-id=21899236-D019-0000-29A5-892119D0D301','kettu',3,0,13167773861186538,0);
-INSERT INTO "urls" VALUES(20,'https://www.google.ch/search?q=iptables+interface&oq=sslsplit+interface&aqs=chrome..69i57j69i60.6379j0j7&sourceid=chrome&ie=UTF-8','iptables interface - Cerca con Google',1,1,13168430307774963,0);
-INSERT INTO "urls" VALUES(21,'http://172.16.42.1:1471/','WiFi Pineapple',5,3,13168431184051736,0);
-INSERT INTO "urls" VALUES(22,'https://store.nest.com/ch/it/account/orders','Page Not Found',2,1,13168440432902206,0);
-INSERT INTO "urls" VALUES(23,'https://store.nest.com/ch/fr/account/subscriptions/3a592060-26d1-11e8-83b6-0e2d565eed46','Nest Store',5,1,13168440984198267,0);
-INSERT INTO "urls" VALUES(24,'http://regex101.com/','Online regex tester and debugger: PHP, PCRE, Python, Golang and JavaScript',1,1,13168955775809820,0);
-INSERT INTO "urls" VALUES(25,'https://regex101.com/','Online regex tester and debugger: PHP, PCRE, Python, Golang and JavaScript',1,0,13168955775809820,0);
-INSERT INTO "urls" VALUES(26,'https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html','Install Elasticsearch with Docker | Elasticsearch Reference [6.2] | Elastic',2,1,13169202241936849,0);
-INSERT INTO "urls" VALUES(27,'http://moodle.unil.ch/','MoodleUnil: Login al sito',1,1,13169207966892691,0);
-INSERT INTO "urls" VALUES(28,'https://moodle.unil.ch/login/index.php','MoodleUnil: Login al sito',1,0,13169207966892691,0);
-INSERT INTO "urls" VALUES(29,'http://office.com/','Not available',1,1,13169225636829217,1);
-INSERT INTO "urls" VALUES(30,'https://nest.com/it/','Nest | Crea una casa connessa',4,0,13170342562195097,0);
-INSERT INTO "urls" VALUES(31,'https://nest.com/','Nest | Crea una casa connessa',4,0,13170342562195097,0);
-INSERT INTO "urls" VALUES(32,'http://nest.com/','Nest | Crea una casa connessa',5,5,13170342562195097,0);
-INSERT INTO "urls" VALUES(33,'http://nest.com/it/','Nest | Crea una casa connessa',4,0,13170342562195097,0);
-INSERT INTO "urls" VALUES(34,'https://arlo.netgear.com/','Arlo Smart Home Security Cameras | Home Monitoring | Arlo by NETGEAR',5,0,13170342822842799,0);
-INSERT INTO "urls" VALUES(35,'http://arlo.netgear.com/','Arlo Smart Home Security Cameras | Home Monitoring | Arlo by NETGEAR',3,3,13170342822842799,0);
-INSERT INTO "urls" VALUES(36,'http://alexa.amazon.com/','Amazon Alexa',4,4,13170846768702842,0);
-INSERT INTO "urls" VALUES(37,'https://mail.google.com/mail/','Inbox – jpinkman2018@gmail.com',5,0,13170846884389653,0);
-INSERT INTO "urls" VALUES(38,'http://gmail.com/','Inbox – jpinkman2018@gmail.com',3,3,13170846884389653,0);
-INSERT INTO "urls" VALUES(39,'https://inbox.google.com/','Inbox – jpinkman2018@gmail.com',11,0,13170846884389653,0);
-INSERT INTO "urls" VALUES(40,'https://www.google.com/gmail/','Inbox – jpinkman2018@gmail.com',3,0,13170846884389653,0);
-INSERT INTO "urls" VALUES(41,'https://gmail.com/','Inbox – jpinkman2018@gmail.com',3,0,13170846884389653,0);
-INSERT INTO "urls" VALUES(42,'https://alexa.amazon.com/spa/index.html','Amazon Alexa',13,0,13170846948370113,0);
-INSERT INTO "urls" VALUES(43,'http://10.20.30.1/','Pi-Pinapple',4,2,13170849361384629,0);
-INSERT INTO "urls" VALUES(44,'http://10.20.30.1/accounts/login/?next=/','Pi-Pinapple',4,0,13170849361384629,0);
-INSERT INTO "urls" VALUES(45,'https://www.google.ch/search?q=android+apk&oq=android+apk&aqs=chrome..69i57j35i39j0l2.4067j0j4&client=ms-android-samsung&sourceid=chrome-mobile&ie=UTF-8','android apk - Google-Suche',1,0,13170856541446672,0);
-INSERT INTO "urls" VALUES(46,'https://m.apkpure.com/app','Download APP APK Android App Online - Free Pure APK Downloader',1,0,13170856548111119,0);
-INSERT INTO "urls" VALUES(47,'https://m.apkpure.com/search','Search - APKPure Android App Store',1,0,13170856550052626,0);
-INSERT INTO "urls" VALUES(48,'https://m.apkpure.com/search?q=Alexa','Alexa search results | APKPure.com',1,0,13170856555525013,0);
-INSERT INTO "urls" VALUES(49,'https://m.apkpure.com/amazon-alexa/com.amazon.dee.app','Amazon Alexa APK Download - Free Music & Audio APP for Android | APKPure.com',1,0,13170856558095383,0);
-INSERT INTO "urls" VALUES(50,'https://m.apkpure.com/amazon-alexa/com.amazon.dee.app/download?from=details','Download Amazon Alexa 2.2.208186.0 APK | APKPure.com',1,0,13170856560903504,0);
-DELETE FROM sqlite_sequence;
+./media/0/Android/data/com.whatsapp
+./media/0/Android/data/com.whatsapp/cache/SSLSessionCache/pps.whatsapp.net.443
+./media/0/Android/data/com.whatsapp/cache/SSLSessionCache/mmg-fna.whatsapp.net.443
+./media/0/Android/data/com.whatsapp/cache/SSLSessionCache/mmg.whatsapp.net.443
+./media/0/WhatsApp
+./media/0/WhatsApp/Media/WhatsApp Audio
+./media/0/WhatsApp/Media/WhatsApp Animated Gifs
+./media/0/WhatsApp/Media/WhatsApp Voice Notes
+./media/0/WhatsApp/Media/WhatsApp Video
+./media/0/WhatsApp/Media/WhatsApp Images
+./media/0/WhatsApp/Media/WhatsApp Documents
+./media/0/WhatsApp/Media/WhatsApp Profile Photos
+./media/0/WhatsApp/Media/WhatsApp Stickers
+./data/com.whatsapp
+./data/com.whatsapp/files/Logs/whatsapp.log
+./data/com.whatsapp/files/Logs/whatsapp-2018-05-16.1.log.gz
+./data/com.whatsapp/shared_prefs/com.whatsapp_preferences.xml
+./data/com.whatsapp/databases/_jobqueue-WhatsAppJobManager
+./data/com.whatsapp/databases/_jobqueue-WhatsAppJobManager-journal
+./app/com.whatsapp-1
+./app/com.whatsapp-1/lib/arm64/libwhatsapp.so
+./dalvik-cache/profiles/com.whatsapp
 ```
-  
-  
-```  
-root@siftworkstation -> /m/samsung 
-# find . -name *download*
-./media/0/Android/data/com.google.android.googlequicksearchbox/files/download_cache
-./media/0/Android/data/flipboard.boxer.app/files/image-download-cache
-./media/0/Android/data/com.android.providers.downloads
-./media/0/Android/data/com.google.android.tts/files/download_cache
-./data/com.google.android.configupdater/files/downloads
-./data/com.android.providers.downloads
-./data/com.android.providers.downloads/cache/downloadfile.bin
-./data/com.android.providers.downloads/databases/downloads.db
-./data/com.android.providers.downloads/databases/downloads.db-journal
-./data/com.google.android.gms/cache/downloadservice
-./data/com.google.android.gms/databases/downloads.db
-./data/com.google.android.gms/databases/downloads.db-journal
-./data/com.google.android.gms/app_download
-./data/com.facebook.appmanager/databases/file_downloader
-./data/com.facebook.appmanager/databases/file_downloader-journal
-./data/com.facebook.appmanager/databases/downloads.db
-./data/com.facebook.appmanager/databases/downloads.db-journal
-./data/com.instagram.android/app_downloaded_modules
-./data/com.facebook.katana/lib-xzs/libdownloadservice-jni.so
-./data/com.google.android.gm/files/downloads
-./data/com.google.android.apps.maps/app_offline_downloads
-```
+
+#### Finding the meddage database
+
+In ```./media/0/WhatsApp/Databases/``` is the file ```msgstore.db.crypt12```, the database is encryted and requries some key to read messages in. We were unable to find how to decrypt the mesasges in the database. 
+
+#### Media used by Whatsapp 
+
+In ```./media/0/WhatsApp/Media/``` there are some image .jpg giles and audio .opus files. These were considered with other image and audio files. 
+
+#### Pictures
+
 
 Jessie's phone had the Arlo mobile app installed. The pictures we discovered on the phone that were captured by the arlo camera were found in `userdata/data/com.netgear.android`
 
